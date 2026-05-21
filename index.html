@@ -6,19 +6,11 @@
   <meta name="description" content="Proinstal Empordà: instal·lacions, reformes integrals, climatització, electricitat, fontaneria, plaques solars, fusteria, pèrgoles i restauracions a l'Alt i Baix Empordà." />
   <meta name="theme-color" content="#111111" />
   <title>Proinstal Empordà | Reformes i Instal·lacions a l'Empordà</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <style>
-    :root{
-      --orange:#E8620A; --orange2:#ff7a1a; --orange-dark:#B84D07;
-      --ink:#111111; --dark:#191919; --dark2:#292929; --muted:#777;
-      --paper:#F5F1EC; --cream:#FFF9F2; --white:#fff; --line:#E5DDD4;
-      --shadow:0 24px 70px rgba(0,0,0,.18);
-      --radius:22px;
-    }
+    :root{--orange:#E8620A;--orange-dark:#B84D07;--ink:#111;--paper:#F5F1EC;--white:#fff;--line:#E5DDD4;--shadow:0 24px 70px rgba(0,0,0,.18);--radius:22px;}
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:Barlow,sans-serif;color:var(--ink);background:var(--white);overflow-x:hidden}
@@ -32,194 +24,378 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:15px 24px;border-radius:999px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;font-size:.84rem;transition:.25s}
     .btn-primary{background:var(--orange);color:#fff;box-shadow:0 16px 35px rgba(232,98,10,.32)}
     .btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px)}
-    .btn-dark{background:#111;color:#fff}.btn-dark:hover{background:#333;transform:translateY(-2px)}
     .btn-ghost{border:1px solid rgba(255,255,255,.28);color:#fff}.btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
 
-    nav{position:fixed;inset:0 0 auto 0;height:74px;background:rgba(17,17,17,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
+    nav{position:fixed;inset:0 0 auto 0;height:74px;background:rgba(17,17,17,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
     .navin{height:74px;display:flex;align-items:center;justify-content:space-between;width:min(1240px,92vw);margin:auto}
-    .logo{font-family:'Barlow Condensed';font-weight:900;font-size:1.55rem;color:#fff;letter-spacing:.02em}.logo span{color:var(--orange)}
+    .logo{font-family:'Barlow Condensed';font-weight:900;font-size:1.55rem;color:#fff}.logo span{color:var(--orange)}
     .navlinks{display:flex;align-items:center;gap:1.5rem;color:rgba(255,255,255,.72);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em}
     .navlinks a:hover{color:var(--orange)}
     .navphone{background:var(--orange);padding:10px 17px;border-radius:999px;color:#fff!important}
 
     .hero{min-height:100vh;background:#111;position:relative;display:grid;align-items:center;padding:110px 0 70px;overflow:hidden}
-    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.94) 0%,rgba(17,17,17,.75) 43%,rgba(17,17,17,.28) 100%),url('hero-portada/hero-reformas-instalaciones-01.jpg') center/cover no-repeat;transform:scale(1.03)}
-    .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:140px;background:linear-gradient(0deg,#fff,transparent)}
-    .hero-content{position:relative;z-index:2;width:min(1240px,92vw);margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center}
-    .hero-card{max-width:680px;color:#fff}.hero-card h1{font-family:'Barlow Condensed';font-size:clamp(3.4rem,7vw,7.8rem);font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.045em;margin:1rem 0 1.25rem}.hero-card h1 span{color:var(--orange)}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.95) 0%,rgba(17,17,17,.7) 50%,rgba(17,17,17,.2) 100%),url('slide-03-equip.jpg') center/cover no-repeat}
+    .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:100px;background:linear-gradient(0deg,#fff,transparent)}
+    .hero-content{position:relative;z-index:2;width:min(1240px,92vw);margin:auto}
+    .hero-card{max-width:680px;color:#fff}
+    .hero-card h1{font-family:'Barlow Condensed';font-size:clamp(3.4rem,7vw,7.8rem);font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.045em;margin:1rem 0 1.25rem}
+    .hero-card h1 span{color:var(--orange)}
     .hero-card p{color:rgba(255,255,255,.72);font-size:1.14rem;line-height:1.75;max-width:570px;font-weight:300;margin-bottom:2rem}
-    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}.trustrow{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2rem;color:rgba(255,255,255,.66);font-size:.9rem}.trustrow b{color:#fff}
-    .floating-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:1rem;backdrop-filter:blur(10px);box-shadow:var(--shadow)}
-    .photo-stack{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.photo-stack img{height:240px;width:100%;object-fit:cover;border-radius:18px}.photo-stack img:first-child{grid-column:1/3;height:290px}.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:.9rem}.mini{background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1rem;text-align:center;color:#fff}.mini b{font-family:'Barlow Condensed';font-size:2.1rem;color:var(--orange)}.mini small{display:block;color:rgba(255,255,255,.6);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+    .trustrow{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2rem;color:rgba(255,255,255,.66);font-size:.9rem}
+    .trustrow b{color:#fff}
 
-    section{padding:95px 0}.intro{background:#fff}.intro-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:center}.intro-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}.intro-img img{height:570px;width:100%;object-fit:cover}.badge-over{position:absolute;left:22px;bottom:22px;background:#111;color:#fff;border-radius:18px;padding:1.1rem 1.25rem;max-width:300px;border-left:5px solid var(--orange)}.badge-over b{color:var(--orange)}
-    .checks{display:grid;gap:.8rem;margin-top:1.6rem}.check{display:flex;gap:.8rem;align-items:flex-start;color:#555}.check i{display:grid;place-items:center;flex:0 0 24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;font-style:normal;font-size:.8rem;font-weight:800}
+    section{padding:95px 0}
+    .intro{background:#fff}
+    .intro-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:center}
+    .intro-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}
+    .intro-img img{height:570px;width:100%;object-fit:cover}
+    .badge-over{position:absolute;left:22px;bottom:22px;background:#111;color:#fff;border-radius:18px;padding:1.1rem 1.25rem;max-width:300px;border-left:5px solid var(--orange)}
+    .badge-over b{color:var(--orange)}
+    .checks{display:grid;gap:.8rem;margin-top:1.6rem}
+    .check{display:flex;gap:.8rem;align-items:flex-start;color:#555}
+    .check i{display:grid;place-items:center;flex:0 0 24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;font-style:normal;font-size:.8rem;font-weight:800}
 
-    .services{background:var(--paper)}.section-head{text-align:center;max-width:780px;margin:0 auto 3.5rem}.section-head .lead{margin-top:1rem}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.service{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.6rem;min-height:240px;position:relative;overflow:hidden;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.1)}.service::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--orange)}.service .ico{width:48px;height:48px;background:#fff0e6;color:var(--orange);border-radius:14px;display:grid;place-items:center;font-weight:900;margin-bottom:1.1rem}.service h3{font-family:'Barlow Condensed';font-size:1.45rem;text-transform:uppercase;margin-bottom:.55rem}.service p{color:#666;line-height:1.62;font-size:.93rem;font-weight:300}
+    .services{background:var(--paper)}
+    .section-head{text-align:center;max-width:780px;margin:0 auto 3.5rem}
+    .section-head .lead{margin-top:1rem}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .service{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.6rem;min-height:240px;position:relative;overflow:hidden;transition:.25s}
+    .service:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.1)}
+    .service::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--orange)}
+    .service .ico{width:48px;height:48px;background:#fff0e6;border-radius:14px;display:grid;place-items:center;font-size:1.4rem;margin-bottom:1.1rem}
+    .service h3{font-family:'Barlow Condensed';font-size:1.45rem;text-transform:uppercase;margin-bottom:.55rem}
+    .service p{color:#666;line-height:1.62;font-size:.93rem;font-weight:300}
 
-    .projects{background:#111;color:#fff}.projects .lead{color:rgba(255,255,255,.62)}.project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.project{position:relative;border-radius:20px;overflow:hidden;min-height:290px;background:#222}.project.large{grid-column:span 2;min-height:380px}.project img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:.45s}.project:hover img{transform:scale(1.07)}.project::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.08))}.project-info{position:absolute;z-index:2;left:20px;right:20px;bottom:18px}.project-info small{color:var(--orange);font-weight:800;text-transform:uppercase;letter-spacing:.12em}.project-info h3{font-family:'Barlow Condensed';font-size:1.8rem;text-transform:uppercase;margin-top:.3rem}
+    /* ── BEFORE/AFTER SLIDER ── */
+    .ba-section{background:#111;padding:90px 0}
+    .ba-section .section-head .title{color:#fff}
+    .ba-section .section-head .lead{color:rgba(255,255,255,.5)}
+    .ba-nav{display:flex;justify-content:center;gap:.6rem;margin-bottom:2rem;flex-wrap:wrap}
+    .ba-tab{padding:9px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;cursor:pointer;transition:.2s;background:transparent}
+    .ba-tab.active,.ba-tab:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+    .ba-container{position:relative;width:min(900px,92vw);margin:0 auto;border-radius:20px;overflow:hidden;cursor:col-resize;user-select:none;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+    .ba-container img{display:block;width:100%;height:520px;object-fit:cover;pointer-events:none}
+    .ba-after{position:absolute;inset:0;overflow:hidden}
+    .ba-after img{width:100%;height:520px;object-fit:cover;position:absolute;top:0;left:0}
+    .ba-handle{position:absolute;top:0;bottom:0;width:3px;background:#fff;cursor:col-resize;transform:translateX(-50%)}
+    .ba-handle::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--orange);border:3px solid #fff;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+    .ba-handle::after{content:"◀ ▶";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:.75rem;font-weight:900;letter-spacing:-.05em;white-space:nowrap}
+    .ba-label-antes{position:absolute;top:16px;left:16px;background:rgba(0,0,0,.75);color:#fff;padding:6px 14px;border-radius:6px;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;z-index:5}
+    .ba-label-despres{position:absolute;top:16px;right:16px;background:var(--orange);color:#fff;padding:6px 14px;border-radius:6px;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;z-index:5}
+    .ba-hint{text-align:center;color:rgba(255,255,255,.4);font-size:.85rem;margin-top:1rem}
+    .ba-cta{text-align:center;margin-top:2rem}
 
-    .beforeafter{background:var(--cream)}.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2.5rem}.ba-card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 35px rgba(0,0,0,.06)}.ba-card img{height:360px;width:100%;object-fit:cover}.ba-card div{padding:1.2rem 1.4rem}.ba-card h3{font-family:'Barlow Condensed';font-size:1.55rem;text-transform:uppercase}.ba-card p{color:#666;margin-top:.35rem;line-height:1.55}
+    .process{background:#fff}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}
+    .step{background:#111;color:#fff;border-radius:20px;padding:1.7rem;border-bottom:5px solid var(--orange)}
+    .step b{font-family:'Barlow Condensed';font-size:3.2rem;color:var(--orange);line-height:1}
+    .step h3{font-family:'Barlow Condensed';text-transform:uppercase;font-size:1.45rem;margin:.8rem 0 .45rem}
+    .step p{color:rgba(255,255,255,.64);line-height:1.6;font-weight:300}
 
-    .process{background:#fff}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}.step{background:#111;color:#fff;border-radius:20px;padding:1.7rem;border-bottom:5px solid var(--orange)}.step b{font-family:'Barlow Condensed';font-size:3.2rem;color:var(--orange);line-height:1}.step h3{font-family:'Barlow Condensed';text-transform:uppercase;font-size:1.45rem;margin:.8rem 0 .45rem}.step p{color:rgba(255,255,255,.64);line-height:1.6;font-weight:300}
+    .zones{background:var(--paper)}
+    .zones-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:center}
+    .tags{display:flex;flex-wrap:wrap;gap:.65rem}
+    .tag{padding:9px 15px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:.9rem;font-weight:600}
+    .tag.hot{background:#111;color:#fff;border-color:#111}
+    .tag.orange{background:var(--orange);color:#fff;border-color:var(--orange)}
 
-    .zones{background:var(--paper)}.zones-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:center}.tags{display:flex;flex-wrap:wrap;gap:.65rem}.tag{padding:9px 15px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:.9rem;font-weight:600}.tag.hot{background:#111;color:#fff;border-color:#111}.tag.orange{background:var(--orange);color:#fff;border-color:var(--orange)}
+    .contact{background:#111;color:#fff;position:relative;overflow:hidden}
+    .contact::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.97),rgba(17,17,17,.8)),url('slide-06-solars-despres.jpg') center/cover no-repeat}
+    .contact .wrap{position:relative;z-index:2}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem}
+    .contact .lead{color:rgba(255,255,255,.62)}
+    .contact-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:2rem;backdrop-filter:blur(10px)}
+    .contact-items{display:grid;gap:1rem;margin-top:2rem}
+    .contact-item{padding:1rem;border-radius:16px;background:rgba(255,255,255,.06);color:rgba(255,255,255,.78)}
+    .contact-item b{display:block;color:#fff;margin-bottom:.25rem}
+    .contact-item a{color:var(--orange)}
+    form{display:grid;gap:1rem}
+    .twocol{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    input,select,textarea{width:100%;padding:15px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.08);color:#fff;font:inherit;outline:none}
+    textarea{min-height:135px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:var(--orange)}
+    select option{background:#222}
+    .form-note{font-size:.82rem;color:rgba(255,255,255,.48);line-height:1.5}
+    .submit{border:0;cursor:pointer;width:100%;font-family:Barlow,sans-serif}
 
-    .contact{background:#111;color:#fff;position:relative;overflow:hidden}.contact::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.96),rgba(17,17,17,.78)),url('exteriores-fachadas-cerramientos/cerramiento-fachada-10.jpg') center/cover no-repeat}.contact .wrap{position:relative;z-index:2}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem}.contact .lead{color:rgba(255,255,255,.62)}.contact-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:2rem;backdrop-filter:blur(10px)}.contact-items{display:grid;gap:1rem;margin-top:2rem}.contact-item{padding:1rem;border-radius:16px;background:rgba(255,255,255,.06);color:rgba(255,255,255,.78)}.contact-item b{display:block;color:#fff;margin-bottom:.25rem}
-    form{display:grid;gap:1rem}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:1rem}input,select,textarea{width:100%;padding:15px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.08);color:#fff;font:inherit;outline:none}textarea{min-height:135px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--orange)}select option{background:#222}.form-note{font-size:.82rem;color:rgba(255,255,255,.48);line-height:1.5}.submit{border:0;cursor:pointer;width:100%;font-family:Barlow,sans-serif}
+    footer{background:#0B0B0B;color:rgba(255,255,255,.46);padding:2rem 0;border-top:1px solid rgba(255,255,255,.08)}
+    .foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+    .foot b{font-family:'Barlow Condensed';font-size:1.35rem;color:#fff}.foot b span{color:var(--orange)}
+    .foot a{color:rgba(255,255,255,.46);transition:.2s}.foot a:hover{color:var(--orange)}
 
-    footer{background:#0B0B0B;color:rgba(255,255,255,.46);padding:2rem 0;border-top:1px solid rgba(255,255,255,.08)}.foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}.foot b{font-family:'Barlow Condensed';font-size:1.35rem;color:#fff}.foot b span{color:var(--orange)}
-    .whatsapp{position:fixed;right:22px;bottom:22px;z-index:80;background:#25D366;color:#fff;border-radius:999px;padding:15px 18px;font-weight:900;box-shadow:0 18px 45px rgba(37,211,102,.35);display:flex;gap:.55rem;align-items:center}.whatsapp:hover{transform:translateY(-2px)}
+    .whatsapp{position:fixed;right:22px;bottom:22px;z-index:80;background:#25D366;color:#fff;border-radius:999px;padding:15px 20px;font-weight:900;box-shadow:0 18px 45px rgba(37,211,102,.35);display:flex;gap:.55rem;align-items:center;font-size:.9rem;transition:.2s}
+    .whatsapp:hover{transform:translateY(-2px)}
 
     .reveal{opacity:0;transform:translateY(18px);transition:.6s}.reveal.show{opacity:1;transform:none}
-    @media(max-width:980px){.navlinks{display:none}.hero-content,.intro-grid,.zones-grid,.contact-grid{grid-template-columns:1fr}.floating-panel{display:none}.services-grid,.project-grid,.steps{grid-template-columns:1fr 1fr}.project.large{grid-column:span 2}.ba-grid{grid-template-columns:1fr}.hero-card h1{font-size:4.2rem}.twocol{grid-template-columns:1fr}}
-    @media(max-width:620px){nav{height:66px}.navin{height:66px}.hero{padding-top:90px}.hero-card h1{font-size:3.25rem}.hero-actions{display:grid}.services-grid,.project-grid,.steps{grid-template-columns:1fr}.project.large{grid-column:span 1}.title{font-size:2.6rem}.section-head{text-align:left}.whatsapp{left:16px;right:16px;justify-content:center}.intro-img img{height:420px}.project{min-height:330px}}
-  </style>
 
+    @media(max-width:980px){
+      .navlinks{display:none}
+      .hero-card h1{font-size:4.2rem}
+      .intro-grid,.zones-grid,.contact-grid{grid-template-columns:1fr}
+      .services-grid,.steps{grid-template-columns:1fr 1fr}
+      .twocol{grid-template-columns:1fr}
+      .ba-container img,.ba-after img{height:360px}
+    }
+    @media(max-width:620px){
+      .hero-card h1{font-size:3.2rem}
+      .hero-actions{display:grid}
+      .services-grid,.steps{grid-template-columns:1fr}
+      .ba-container img,.ba-after img{height:260px}
+      .whatsapp{left:16px;right:16px;justify-content:center}
+    }
+  </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"LocalBusiness","name":"Proinstal Empordà","address":{"@type":"PostalAddress","streetAddress":"Carrer Roca de la Balena 4","addressLocality":"Vilajuïga","postalCode":"17493","addressRegion":"Girona","addressCountry":"ES"},"telephone":["+34671510146","+34635014684"],"email":"info@proinstalemporda.com","areaServed":["Alt Empordà","Baix Empordà","Girona"],"url":"https://proinstalemporda.com","sameAs":["https://www.instagram.com/proinstalemporda/"]}
   </script>
 </head>
 <body>
-  <nav>
-    <div class="navin">
-      <a href="#" class="logo">PROINSTAL <span>EMPORDÀ</span></a>
-      <div class="navlinks">
-        <a href="#serveis">Serveis</a><a href="#projectes">Treballs</a><a href="#proces">Procés</a><a href="#zones">Zones</a><a class="navphone" href="tel:+34671510146">Trucar</a>
+
+<nav>
+  <div class="navin">
+    <a href="#" class="logo">PROINSTAL <span>EMPORDÀ</span></a>
+    <div class="navlinks">
+      <a href="#serveis">Serveis</a>
+      <a href="#projectes">Treballs</a>
+      <a href="#proces">Procés</a>
+      <a href="#zones">Zones</a>
+      <a class="navphone" href="tel:+34671510146">📞 Trucar</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-card">
+      <div class="smallcap">Reformes · Instal·lacions · Restauracions</div>
+      <h1>Professionals a l'<span>Empordà</span></h1>
+      <p>Electricitat, fontaneria, climatització, plaques solars, fusteria, pèrgoles, tancaments i reformes integrals. Un equip únic per coordinar-ho tot amb serietat, netedat i garantia.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/34671510146?text=Hola%20Proinstal%20Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost" target="_blank">💬 Demanar pressupost</a>
+        <a class="btn btn-ghost" href="#projectes">Veure treballs</a>
+      </div>
+      <div class="trustrow">
+        <span><b>+15</b> anys d'experiència</span>
+        <span><b>Alt i Baix Empordà</b></span>
+        <span><b>Pressupost gratuït</b></span>
       </div>
     </div>
-  </nav>
+  </div>
+</header>
 
-  <header class="hero">
-    <div class="hero-content">
-      <div class="hero-card">
-        <div class="smallcap">Reformes · Instal·lacions · Restauracions</div>
-        <h1>Solucions professionals per a casa teva a l'<span>Empordà</span></h1>
-        <p>Electricitat, fontaneria, climatització, plaques solars, fusteria, pèrgoles, tancaments i reformes integrals. Un equip únic per coordinar-ho tot amb serietat, netedat i garantia.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/34671510146?text=Hola%20Proinstal%20Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost" target="_blank">Demanar pressupost</a>
-          <a class="btn btn-ghost" href="#projectes">Veure treballs</a>
-        </div>
-        <div class="trustrow"><span><b>+15</b> anys</span><span><b>Alt i Baix Empordà</b></span><span><b>Pressupost gratuït</b></span></div>
-      </div>
-      <div class="floating-panel">
-        <div class="photo-stack">
-          <img src="hero-portada/hero-reformas-instalaciones-02.jpg" alt="Reforma i instal·lació realitzada per Proinstal Empordà" loading="eager">
-          <img src="exteriores-fachadas-cerramientos/cerramiento-fachada-04.jpg" alt="Tancaments i exteriors" loading="lazy">
-          <img src="terrazas-suelos-exteriores/terraza-suelo-exterior-05.jpg" alt="Terrasses i paviments exteriors" loading="lazy">
-        </div>
-        <div class="mini-stats"><div class="mini"><b>8</b><small>especialitats</small></div><div class="mini"><b>24h</b><small>resposta</small></div><div class="mini"><b>100%</b><small>garantia</small></div></div>
+<section class="intro reveal">
+  <div class="wrap intro-grid">
+    <div class="intro-img">
+      <img src="slide-02-bany-despres.jpg" alt="Reforma de bany professional">
+      <div class="badge-over"><b>Un sol equip.</b><br>Menys problemes, menys industrials i més control de qualitat.</div>
+    </div>
+    <div>
+      <div class="smallcap">Empresa de confiança</div>
+      <h2 class="title" style="margin-top:.5rem">De la petita reparació a la reforma <span>integral</span></h2>
+      <p class="lead" style="margin-top:1.2rem">Treballem amb particulars, comunitats, locals comercials i segones residències. Ens encarreguem de visitar, valorar, executar i deixar-ho acabat amb comunicació clara durant tot el procés.</p>
+      <div class="checks">
+        <div class="check"><i>✓</i><span>Pressupost detallat abans de començar, sense sorpreses.</span></div>
+        <div class="check"><i>✓</i><span>Coordinació de tots els oficis: electricitat, aigua, clima, fusteria i obra.</span></div>
+        <div class="check"><i>✓</i><span>Treballs pensats per aguantar el clima de costa: humitat, sol, vent i salinitat.</span></div>
+        <div class="check"><i>✓</i><span>Servei local a Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga i Girona.</span></div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section class="intro reveal">
-    <div class="wrap intro-grid">
-      <div class="intro-img"><img src="interiores-reformas/reforma-interior-06.jpg" alt="Reforma interior professional"><div class="badge-over"><b>Un sol equip.</b><br>Menys problemes, menys industrials diferents i més control de qualitat.</div></div>
-      <div>
-        <div class="smallcap">Empresa de confiança</div>
-        <h2 class="title">De la petita reparació a la reforma <span>integral</span></h2>
-        <p class="lead" style="margin-top:1.2rem">Treballem amb particulars, comunitats, locals comercials i segones residències. Ens encarreguem de visitar, valorar, executar i deixar-ho acabat amb una comunicació clara durant tot el procés.</p>
-        <div class="checks">
-          <div class="check"><i>✓</i><span>Pressupost detallat abans de començar.</span></div>
-          <div class="check"><i>✓</i><span>Coordinació de tots els oficis: electricitat, aigua, clima, fusteria i obra.</span></div>
-          <div class="check"><i>✓</i><span>Treballs pensats per aguantar el clima de costa: humitat, sol, vent i salinitat.</span></div>
-          <div class="check"><i>✓</i><span>Servei local a Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga i Girona.</span></div>
-        </div>
+<section class="services" id="serveis">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="smallcap">Serveis principals</div>
+      <h2 class="title">Instal·lacions i reformes <span>360º</span></h2>
+      <p class="lead">Especialistes en cada ofici, coordinats per un sol equip de confiança.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service reveal"><div class="ico">⚡</div><h3>Electricitat</h3><p>Quadres, punts de llum, avaries, certificats, instal·lacions noves i millora d'eficiència energètica.</p></article>
+      <article class="service reveal"><div class="ico">☀️</div><h3>Plaques solars</h3><p>Autoconsum, bateries, estudis de consum i instal·lacions adaptades a cada habitatge o empresa.</p></article>
+      <article class="service reveal"><div class="ico">❄️</div><h3>Climatització</h3><p>Aire condicionat, splits, conductes, aerotèrmia, manteniment i reparació de totes les marques.</p></article>
+      <article class="service reveal"><div class="ico">💧</div><h3>Fontaneria</h3><p>Fuites, sanitaris, cuines, lavabos, termos, calderes i instal·lacions d'aigua completes.</p></article>
+      <article class="service reveal"><div class="ico">🪵</div><h3>Fusteria</h3><p>Portes, finestres, tancaments, mobles a mida, paviments, tarimes i acabats interiors.</p></article>
+      <article class="service reveal"><div class="ico">🏗️</div><h3>Reformes</h3><p>Banys, cuines, interiors, locals, façanes i reformes integrals clau en mà.</p></article>
+      <article class="service reveal"><div class="ico">🏡</div><h3>Pèrgoles</h3><p>Pèrgoles bioclimàtiques, tendals, terrasses, paviments exteriors i espais d'ombra funcionals.</p></article>
+      <article class="service reveal"><div class="ico">🔧</div><h3>Reparacions</h3><p>Humitats, desperfectes, restauracions, manteniment preventiu i solucions ràpides d'urgència.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER INTERACTIU -->
+<section class="ba-section" id="projectes">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:2rem">
+      <div class="smallcap">Abans i després</div>
+      <h2 class="title">Mou el divisor i descobreix la <span>transformació</span></h2>
+      <p class="lead">Arrossega per veure el canvi real en cada projecte</p>
+    </div>
+
+    <div class="ba-nav reveal">
+      <button class="ba-tab active" onclick="canviarProjecte(0)">🛁 Bany</button>
+      <button class="ba-tab" onclick="canviarProjecte(1)">🏡 Terrassa</button>
+      <button class="ba-tab" onclick="canviarProjecte(2)">☀️ Plaques solars</button>
+      <button class="ba-tab" onclick="canviarProjecte(3)">🚪 Garatge ext.</button>
+      <button class="ba-tab" onclick="canviarProjecte(4)">🔌 Garatge int.</button>
+    </div>
+
+    <div class="ba-container reveal" id="baContainer">
+      <img id="baAntes" src="slide-02-bany-abans.jpg" alt="Abans">
+      <div class="ba-after" id="baAfter" style="width:50%">
+        <img id="baDespres" src="slide-02-bany-despres.jpg" alt="Després">
+      </div>
+      <div class="ba-handle" id="baHandle" style="left:50%"></div>
+      <div class="ba-label-antes">ABANS</div>
+      <div class="ba-label-despres">DESPRÉS</div>
+    </div>
+
+    <p class="ba-hint reveal">← Arrossega el divisor per comparar →</p>
+
+    <div class="ba-cta reveal">
+      <a class="btn btn-primary" href="#contacte">Vull una reforma així</a>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="proces">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="smallcap">Com treballem</div>
+      <h2 class="title">Clar, ràpid i <span>sense sorpreses</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><b>01</b><h3>Contacte</h3><p>Ens expliques què necessites per WhatsApp, telèfon o formulari. Resposta en menys de 24h.</p></div>
+      <div class="step reveal"><b>02</b><h3>Visita</h3><p>Mirem l'espai, mesures, estat real i possibles solucions sense cap cost.</p></div>
+      <div class="step reveal"><b>03</b><h3>Pressupost</h3><p>Et preparem una proposta clara amb materials, treball i terminis. Sense lletra petita.</p></div>
+      <div class="step reveal"><b>04</b><h3>Execució</h3><p>Fem el treball amb ordre, netedat, comunicació constant i garantia final.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="zones" id="zones">
+  <div class="wrap zones-grid">
+    <div class="reveal">
+      <div class="smallcap">Zona de servei</div>
+      <h2 class="title" style="margin-top:.5rem">Alt i Baix <span>Empordà</span></h2>
+      <p class="lead" style="margin-top:1rem">Cobrim tota la zona de Girona per a reformes, instal·lacions i reparacions.</p>
+    </div>
+    <div class="tags reveal">
+      <span class="tag orange">Figueres</span><span class="tag orange">Roses</span><span class="tag orange">Vilajuïga</span>
+      <span class="tag hot">Empuriabrava</span><span class="tag hot">l'Escala</span>
+      <span class="tag">Castelló d'Empúries</span><span class="tag">Cadaqués</span><span class="tag">Peralada</span>
+      <span class="tag">Sant Pere Pescador</span><span class="tag">Llançà</span><span class="tag">el Port de la Selva</span>
+      <span class="tag">Palafrugell</span><span class="tag">Palamós</span><span class="tag">la Bisbal d'Empordà</span><span class="tag">Girona</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacte">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="smallcap">Contacte</div>
+      <h2 class="title" style="color:#fff;margin-top:.5rem">Demanar <span>pressupost</span></h2>
+      <p class="lead" style="margin-top:1rem">Omple el formulari i t'enviarem la consulta per WhatsApp. Ràpid, directe i sense complicacions.</p>
+      <div class="contact-items">
+        <div class="contact-item"><b>Telèfons</b><a href="tel:+34671510146">671 510 146</a> · <a href="tel:+34635014684">635 014 684</a></div>
+        <div class="contact-item"><b>Email</b><a href="mailto:info@proinstalemporda.com">info@proinstalemporda.com</a></div>
+        <div class="contact-item"><b>Adreça</b>Carrer Roca de la Balena 4, Vilajuïga 17493</div>
+        <div class="contact-item"><b>Instagram</b><a href="https://www.instagram.com/proinstalemporda/" target="_blank">@proinstalemporda</a></div>
       </div>
     </div>
-  </section>
-
-  <section class="services" id="serveis">
-    <div class="wrap">
-      <div class="section-head reveal"><div class="smallcap">Serveis principals</div><h2 class="title">Instal·lacions i reformes <span>360º</span></h2><p class="lead">Una web més creïble quan cada servei queda clar, directo y con fotos reales detrás.</p></div>
-      <div class="services-grid">
-        <article class="service reveal"><div class="ico">⚡</div><h3>Electricitat</h3><p>Quadres, punts de llum, avaries, certificats, instal·lacions noves i millora d'eficiència.</p></article>
-        <article class="service reveal"><div class="ico">☀️</div><h3>Plaques solars</h3><p>Autoconsum, bateries, estudis de consum i instal·lacions adaptades a cada habitatge.</p></article>
-        <article class="service reveal"><div class="ico">❄️</div><h3>Climatització</h3><p>Aire condicionat, splits, conductes, manteniment, substitució i reparació d'equips.</p></article>
-        <article class="service reveal"><div class="ico">💧</div><h3>Fontaneria</h3><p>Fuites, sanitaris, cuines, lavabos, termos, instal·lacions d'aigua i desguassos.</p></article>
-        <article class="service reveal"><div class="ico">🪵</div><h3>Fusteria</h3><p>Portes, tancaments, mobles a mida, paviments, tarimes i acabats interiors.</p></article>
-        <article class="service reveal"><div class="ico">🏗️</div><h3>Reformes</h3><p>Banys, cuines, interiors, locals, façanes i reformes integrals clau en mà.</p></article>
-        <article class="service reveal"><div class="ico">🏡</div><h3>Pèrgoles</h3><p>Pèrgoles, tendals, terrasses, paviments exteriors i espais d'ombra funcionals.</p></article>
-        <article class="service reveal"><div class="ico">🔧</div><h3>Reparacions</h3><p>Humitats, desperfectes, restauracions, manteniment i solucions ràpides.</p></article>
-      </div>
+    <div class="contact-box reveal">
+      <form id="quoteForm">
+        <div class="twocol"><input id="nom" placeholder="Nom" required><input id="tel" placeholder="Telèfon" required></div>
+        <select id="servei"><option>Reforma integral</option><option>Electricitat</option><option>Fontaneria</option><option>Aire condicionat</option><option>Plaques solars</option><option>Fusteria</option><option>Pèrgoles / exteriors</option><option>Reparació d'humitats</option><option>Altres</option></select>
+        <input id="zona" placeholder="Població / zona">
+        <textarea id="missatge" placeholder="Explica breument què necessites..."></textarea>
+        <button class="btn btn-primary submit" type="submit">💬 Enviar per WhatsApp</button>
+        <p class="form-note">Al clicar, s'obrirà WhatsApp amb el missatge preparat. Només hauràs de revisar-lo i enviar-lo.</p>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="projects" id="projectes">
-    <div class="wrap">
-      <div class="section-head reveal"><div class="smallcap">Treballs reals</div><h2 class="title">Galeria de <span>projectes</span></h2><p class="lead">Fotos reales integradas para que la web no parezca plantilla genérica.</p></div>
-      <div class="project-grid">
-        <a class="project large reveal" href="#contacte"><img src="exteriores-fachadas-cerramientos/cerramiento-fachada-08.jpg" alt="Tancaments i façanes"><div class="project-info"><small>Exteriors</small><h3>Tancaments i façanes</h3></div></a>
-        <a class="project reveal" href="#contacte"><img src="terrazas-suelos-exteriores/terraza-suelo-exterior-06.jpg" alt="Terrasses i paviments"><div class="project-info"><small>Terrasses</small><h3>Sòls exteriors</h3></div></a>
-        <a class="project reveal" href="#contacte"><img src="interiores-reformas/reforma-interior-12.jpg" alt="Reformes interiors"><div class="project-info"><small>Interior</small><h3>Reformes</h3></div></a>
-        <a class="project reveal" href="#contacte"><img src="humedades-reparaciones/humedad-reparacion-01.jpg" alt="Humedats i reparacions"><div class="project-info"><small>Reparació</small><h3>Humitats</h3></div></a>
-        <a class="project large reveal" href="#contacte"><img src="banos-lavaderos-fontaneria/bano-fontaneria-01.jpg" alt="Banys i fontaneria"><div class="project-info"><small>Fontaneria</small><h3>Banys i lavabos</h3></div></a>
-      </div>
+<footer>
+  <div class="wrap foot">
+    <b>PROINSTAL <span>EMPORDÀ</span></b>
+    <p>© 2026 Proinstal Empordà · Reformes i instal·lacions a Girona</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="https://www.instagram.com/proinstalemporda/" target="_blank">📷 Instagram</a>
+      <a href="mailto:info@proinstalemporda.com">Email</a>
+      <a href="tel:+34671510146">Trucar</a>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <section class="beforeafter">
-    <div class="wrap">
-      <div class="section-head reveal"><div class="smallcap">Abans i després</div><h2 class="title">El canvi que el client <span>veu</span></h2><p class="lead">Sección pensada para vender: muestra transformación, limpieza y resultado final.</p></div>
-      <div class="ba-grid">
-        <article class="ba-card reveal"><img src="interiores-reformas/reforma-interior-20.jpg" alt="Reforma interior acabada"><div><h3>Interiors renovats</h3><p>Reformes funcionals amb acabats nets, actuals i pensats per al dia a dia.</p></div></article>
-        <article class="ba-card reveal"><img src="terrazas-suelos-exteriores/terraza-suelo-exterior-10.jpg" alt="Terrassa reformada"><div><h3>Espais exteriors</h3><p>Paviments, terrasses i zones de pas preparades per resistir intempèrie.</p></div></article>
-      </div>
-    </div>
-  </section>
+<a class="whatsapp" href="https://wa.me/34671510146?text=Hola%20Proinstal%20Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost" target="_blank">💬 WhatsApp</a>
 
-  <section class="process" id="proces">
-    <div class="wrap">
-      <div class="section-head reveal"><div class="smallcap">Com treballem</div><h2 class="title">Clar, ràpid i <span>sense sorpreses</span></h2></div>
-      <div class="steps">
-        <div class="step reveal"><b>01</b><h3>Contacte</h3><p>Ens expliques què necessites per WhatsApp, telèfon o formulari.</p></div>
-        <div class="step reveal"><b>02</b><h3>Visita</h3><p>Mirem l'espai, mesures, estat real i possibles solucions.</p></div>
-        <div class="step reveal"><b>03</b><h3>Pressupost</h3><p>Et preparem una proposta clara amb materials, treball i terminis.</p></div>
-        <div class="step reveal"><b>04</b><h3>Execució</h3><p>Fem el treball amb ordre, netedat, comunicació i garantia.</p></div>
-      </div>
-    </div>
-  </section>
+<script>
+// BEFORE/AFTER
+var projectes = [
+  {abans:'slide-02-bany-abans.jpg',    despres:'slide-02-bany-despres.jpg',    alt:'Bany'},
+  {abans:'slide-01-terrassa-abans.jpg', despres:'slide-01-terrassa-despres.jpg', alt:'Terrassa'},
+  {abans:'slide-06-solars-abans.jpg',  despres:'slide-06-solars-despres.jpg',  alt:'Plaques solars'},
+  {abans:'slide-04-garatge-abans.jpg', despres:'slide-04-garatge-despres.jpg', alt:'Garatge exterior'},
+  {abans:'slide-05-garage-int-abans.jpg',despres:'slide-05-garage-int-despres.jpg',alt:'Garatge interior'},
+];
 
-  <section class="zones" id="zones">
-    <div class="wrap zones-grid">
-      <div class="reveal"><div class="smallcap">Zona de servei</div><h2 class="title">Alt i Baix <span>Empordà</span></h2><p class="lead" style="margin-top:1rem">Servicio local para reformas, instalaciones y reparaciones en toda la zona de Girona.</p></div>
-      <div class="tags reveal"><span class="tag orange">Figueres</span><span class="tag orange">Roses</span><span class="tag orange">Vilajuïga</span><span class="tag hot">Empuriabrava</span><span class="tag hot">l'Escala</span><span class="tag">Castelló d'Empúries</span><span class="tag">Cadaqués</span><span class="tag">Peralada</span><span class="tag">Sant Pere Pescador</span><span class="tag">Llançà</span><span class="tag">Palafrugell</span><span class="tag">Palamós</span><span class="tag">Girona</span></div>
-    </div>
-  </section>
+var container = document.getElementById('baContainer');
+var after     = document.getElementById('baAfter');
+var handle    = document.getElementById('baHandle');
+var imgAntes  = document.getElementById('baAntes');
+var imgDespres= document.getElementById('baDespres');
+var dragging  = false;
+var pct       = 50;
 
-  <section class="contact" id="contacte">
-    <div class="wrap contact-grid">
-      <div class="reveal"><div class="smallcap">Contacte</div><h2 class="title">Demanar <span>pressupost</span></h2><p class="lead" style="margin-top:1rem">Envia la consulta directament por WhatsApp con los datos del formulario. Más útil que un formulario falso que no envía nada.</p><div class="contact-items"><div class="contact-item"><b>Telèfons</b><a href="tel:+34671510146">671 510 146</a> · <a href="tel:+34635014684">635 014 684</a></div><div class="contact-item"><b>Email</b>info@proinstalemporda.com</div><div class="contact-item"><b>Direcció</b>Carrer Roca de la Balena 4, Vilajuïga 17493</div></div></div>
-      <div class="contact-box reveal">
-        <form id="quoteForm">
-          <div class="twocol"><input id="nom" placeholder="Nom" required><input id="tel" placeholder="Telèfon" required></div>
-          <select id="servei"><option>Reforma integral</option><option>Electricitat</option><option>Fontaneria</option><option>Aire condicionat</option><option>Plaques solars</option><option>Fusteria</option><option>Pèrgoles / exteriors</option><option>Reparació d'humitats</option></select>
-          <input id="zona" placeholder="Població / zona">
-          <textarea id="missatge" placeholder="Explica breument què necessites..."></textarea>
-          <button class="btn btn-primary submit" type="submit">Enviar per WhatsApp</button>
-          <p class="form-note">Al clicar, s'obrirà WhatsApp amb el missatge preparat. Només hauràs de revisar-lo i enviar-lo.</p>
-        </form>
-      </div>
-    </div>
-  </section>
+function canviarProjecte(idx){
+  var p = projectes[idx];
+  imgAntes.src   = p.abans;
+  imgDespres.src = p.despres;
+  pct = 50;
+  after.style.width  = '50%';
+  handle.style.left  = '50%';
+  var tabs = document.querySelectorAll('.ba-tab');
+  tabs.forEach(function(t,i){t.className='ba-tab'+(i===idx?' active':'');});
+}
+window.canviarProjecte = canviarProjecte;
 
-  <footer><div class="wrap foot"><b>PROINSTAL <span>EMPORDÀ</span></b><p>© 2026 Proinstal Empordà · Reformes i instal·lacions a Girona</p><p><a href="https://www.instagram.com/proinstalemporda/" target="_blank">Instagram</a></p></div></footer>
-  <a class="whatsapp" href="https://wa.me/34671510146?text=Hola%20Proinstal%20Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost" target="_blank">💬 WhatsApp</a>
+function setPos(x){
+  var rect = container.getBoundingClientRect();
+  pct = Math.min(Math.max((x - rect.left) / rect.width * 100, 2), 98);
+  after.style.width  = pct + '%';
+  handle.style.left  = pct + '%';
+}
 
-  <script>
-    const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-    document.getElementById('quoteForm').addEventListener('submit',function(e){
-      e.preventDefault();
-      const nom=document.getElementById('nom').value.trim();
-      const tel=document.getElementById('tel').value.trim();
-      const servei=document.getElementById('servei').value;
-      const zona=document.getElementById('zona').value.trim();
-      const msg=document.getElementById('missatge').value.trim();
-      const text=`Hola Proinstal Empordà, vull demanar un pressupost.%0A%0ANom: ${encodeURIComponent(nom)}%0ATelèfon: ${encodeURIComponent(tel)}%0AServei: ${encodeURIComponent(servei)}%0AZona: ${encodeURIComponent(zona)}%0ADetalls: ${encodeURIComponent(msg)}`;
-      window.open(`https://wa.me/34671510146?text=${text}`,'_blank');
-    });
-  </script>
+container.addEventListener('mousedown',  function(e){dragging=true;setPos(e.clientX);e.preventDefault();});
+document.addEventListener('mousemove',   function(e){if(dragging)setPos(e.clientX);});
+document.addEventListener('mouseup',     function(){dragging=false;});
+container.addEventListener('touchstart', function(e){dragging=true;setPos(e.touches[0].clientX);},{passive:true});
+document.addEventListener('touchmove',   function(e){if(dragging)setPos(e.touches[0].clientX);},{passive:true});
+document.addEventListener('touchend',    function(){dragging=false;});
+
+// REVEAL
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('show');});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+
+// FORMULARI
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var nom=document.getElementById('nom').value.trim();
+  var tel=document.getElementById('tel').value.trim();
+  var servei=document.getElementById('servei').value;
+  var zona=document.getElementById('zona').value.trim();
+  var msg=document.getElementById('missatge').value.trim();
+  var text='Hola Proinstal Empordà, vull demanar un pressupost.%0A%0A'
+    +'Nom: '+encodeURIComponent(nom)+'%0A'
+    +'Telèfon: '+encodeURIComponent(tel)+'%0A'
+    +'Servei: '+encodeURIComponent(servei)+'%0A'
+    +'Zona: '+encodeURIComponent(zona)+'%0A'
+    +'Detalls: '+encodeURIComponent(msg);
+  window.open('https://wa.me/34671510146?text='+text,'_blank');
+});
+</script>
 </body>
 </html>
