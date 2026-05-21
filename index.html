@@ -1,1 +1,808 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proinstal Empordà: instal·lacions, reformes integrals, climatització, electricitat, fontaneria, plaques solars, fusteria, pèrgoles i restauracions a l'Alt i Baix Empordà." />
+  <title>Proinstal Empordà | Reformes i Instal·lacions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--orange:#E8620A;--orange-dark:#B84D07;--ink:#111;--paper:#F5F1EC;--white:#fff;--line:#E5DDD4;--shadow:0 24px 70px rgba(0,0,0,.18);--radius:22px;}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Barlow,sans-serif;color:var(--ink);background:var(--white);overflow-x:hidden}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1180px,90vw);margin:auto}
+    .smallcap{font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)}
+    .title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,5vw,5rem);font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:-.03em}
+    .title span{color:var(--orange)}
+    .lead{font-size:1.08rem;line-height:1.75;color:#666;font-weight:300}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:15px 24px;border-radius:999px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;font-size:.84rem;transition:.25s}
+    .btn-primary{background:var(--orange);color:#fff;box-shadow:0 16px 35px rgba(232,98,10,.32)}
+    .btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px)}
+    .btn-ghost{border:1px solid rgba(255,255,255,.28);color:#fff}.btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
 
+    /* NAV */
+    nav{position:fixed;inset:0 0 auto 0;height:74px;background:rgba(17,17,17,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
+    .navin{height:74px;display:flex;align-items:center;justify-content:space-between;width:min(1240px,92vw);margin:auto}
+    .logo{font-family:'Barlow Condensed';font-weight:900;font-size:1.55rem;color:#fff}.logo span{color:var(--orange)}
+    .navlinks{display:flex;align-items:center;gap:1.2rem;color:rgba(255,255,255,.72);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em}
+    .navlinks a:hover{color:var(--orange)}
+    .navphone{background:var(--orange);padding:10px 17px;border-radius:999px;color:#fff!important}
+
+    /* SELECTOR IDIOMA */
+    .lang-sel{position:relative;display:flex;align-items:center}
+    .lang-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:7px 12px;border-radius:8px;font-size:.78rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:6px;transition:.2s;font-family:Barlow,sans-serif;letter-spacing:.05em}
+    .lang-btn:hover{background:rgba(255,255,255,.18)}
+    .lang-dropdown{position:absolute;top:calc(100% + 8px);right:0;background:#1a1a1a;border:1px solid rgba(255,255,255,.15);border-radius:10px;overflow:hidden;display:none;min-width:130px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+    .lang-dropdown.open{display:block}
+    .lang-option{display:flex;align-items:center;gap:8px;padding:10px 14px;color:rgba(255,255,255,.75);font-size:.82rem;font-weight:600;cursor:pointer;transition:.15s}
+    .lang-option:hover{background:rgba(255,255,255,.08);color:#fff}
+    .lang-option.active{color:var(--orange)}
+
+    /* HERO */
+    .hero{min-height:100vh;background:#111;position:relative;display:grid;align-items:center;padding:110px 0 70px;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.95) 0%,rgba(17,17,17,.7) 50%,rgba(17,17,17,.2) 100%),url('equip.jpg') center/cover no-repeat}
+    .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:100px;background:linear-gradient(0deg,#fff,transparent)}
+    .hero-content{position:relative;z-index:2;width:min(1240px,92vw);margin:auto}
+    .hero-card{max-width:680px;color:#fff}
+    .hero-card h1{font-family:'Barlow Condensed';font-size:clamp(3rem,6vw,6.5rem);font-weight:800;text-transform:uppercase;line-height:1.05;letter-spacing:.02em;margin:1rem 0 1.25rem}
+    .hero-card h1 span{color:var(--orange)}
+    .hero-card p{color:rgba(255,255,255,.72);font-size:1.14rem;line-height:1.75;max-width:570px;font-weight:300;margin-bottom:2rem}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+    .trustrow{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2rem;color:rgba(255,255,255,.66);font-size:.9rem}
+    .trustrow b{color:#fff}
+
+    /* INTRO */
+    section{padding:95px 0}
+    .intro{background:#fff}
+    .intro-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:center}
+    .intro-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}
+    .intro-img img{height:570px;width:100%;object-fit:cover}
+    .badge-over{position:absolute;left:22px;bottom:22px;background:#111;color:#fff;border-radius:18px;padding:1.1rem 1.25rem;max-width:300px;border-left:5px solid var(--orange)}
+    .badge-over b{color:var(--orange)}
+    .checks{display:grid;gap:.8rem;margin-top:1.6rem}
+    .check{display:flex;gap:.8rem;align-items:flex-start;color:#555}
+    .check i{display:grid;place-items:center;flex:0 0 24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;font-style:normal;font-size:.8rem;font-weight:800}
+
+    /* SERVEIS */
+    .services{background:var(--paper)}
+    .section-head{text-align:center;max-width:780px;margin:0 auto 3.5rem}
+    .section-head .lead{margin-top:1rem}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .service{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.6rem;min-height:240px;position:relative;overflow:hidden;transition:.25s}
+    .service:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.1)}
+    .service::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--orange)}
+    .service .ico{width:48px;height:48px;background:#fff0e6;border-radius:14px;display:grid;place-items:center;font-size:1.4rem;margin-bottom:1.1rem}
+    .service h3{font-family:'Barlow Condensed';font-size:1.45rem;text-transform:uppercase;margin-bottom:.55rem}
+    .service p{color:#666;line-height:1.62;font-size:.93rem;font-weight:300}
+
+    /* BEFORE/AFTER */
+    .ba-section{background:#111;padding:90px 0}
+    .ba-section .section-head .title{color:#fff}
+    .ba-section .section-head .lead{color:rgba(255,255,255,.5)}
+    .ba-nav{display:flex;justify-content:center;gap:.6rem;margin-bottom:2rem;flex-wrap:wrap}
+    .ba-tab{padding:9px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;cursor:pointer;transition:.2s;background:transparent}
+    .ba-tab.active,.ba-tab:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+    .ba-container{position:relative;width:min(900px,92vw);margin:0 auto;border-radius:20px;overflow:hidden;cursor:col-resize;user-select:none;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+    .ba-container img{display:block;width:100%;height:520px;object-fit:cover;pointer-events:none}
+    .ba-after{position:absolute;inset:0;overflow:hidden}
+    .ba-after img{width:100%;height:520px;object-fit:cover;position:absolute;top:0;left:0}
+    .ba-handle{position:absolute;top:0;bottom:0;width:3px;background:#fff;cursor:col-resize;transform:translateX(-50%)}
+    .ba-handle::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--orange);border:3px solid #fff;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+    .ba-handle::after{content:"◀ ▶";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:.75rem;font-weight:900;white-space:nowrap}
+    .ba-label-antes{position:absolute;top:16px;left:16px;background:rgba(0,0,0,.75);color:#fff;padding:6px 14px;border-radius:6px;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;z-index:5}
+    .ba-label-despres{position:absolute;top:16px;right:16px;background:var(--orange);color:#fff;padding:6px 14px;border-radius:6px;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;z-index:5}
+    .ba-hint{text-align:center;color:rgba(255,255,255,.4);font-size:.85rem;margin-top:1rem}
+    .ba-cta{text-align:center;margin-top:2rem}
+
+    /* PROCÉS */
+    .process{background:#fff}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}
+    .step{background:#111;color:#fff;border-radius:20px;padding:1.7rem;border-bottom:5px solid var(--orange)}
+    .step b{font-family:'Barlow Condensed';font-size:3.2rem;color:var(--orange);line-height:1}
+    .step h3{font-family:'Barlow Condensed';text-transform:uppercase;font-size:1.45rem;margin:.8rem 0 .45rem}
+    .step p{color:rgba(255,255,255,.64);line-height:1.6;font-weight:300}
+
+    /* ZONES */
+    .zones{background:var(--paper)}
+    .zones-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:center}
+    .tags{display:flex;flex-wrap:wrap;gap:.65rem}
+    .tag{padding:9px 15px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:.9rem;font-weight:600}
+    .tag.hot{background:#111;color:#fff;border-color:#111}
+    .tag.orange{background:var(--orange);color:#fff;border-color:var(--orange)}
+
+    /* CONTACTE */
+    .contact{background:#111;color:#fff;position:relative;overflow:hidden}
+    .contact::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.97),rgba(17,17,17,.8)),url('slide-06-solars-despres.jpg') center/cover no-repeat}
+    .contact .wrap{position:relative;z-index:2}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem}
+    .contact .lead{color:rgba(255,255,255,.62)}
+    .contact-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:2rem;backdrop-filter:blur(10px)}
+    .contact-items{display:grid;gap:1rem;margin-top:2rem}
+    .contact-item{padding:1rem;border-radius:16px;background:rgba(255,255,255,.06);color:rgba(255,255,255,.78)}
+    .contact-item b{display:block;color:#fff;margin-bottom:.25rem}
+    .contact-item a{color:var(--orange)}
+    form{display:grid;gap:1rem}
+    .twocol{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    input,select,textarea{width:100%;padding:15px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.08);color:#fff;font:inherit;outline:none}
+    textarea{min-height:135px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:var(--orange)}
+    select option{background:#222}
+    .form-note{font-size:.82rem;color:rgba(255,255,255,.48);line-height:1.5}
+    .submit{border:0;cursor:pointer;width:100%;font-family:Barlow,sans-serif}
+
+    footer{background:#0B0B0B;color:rgba(255,255,255,.46);padding:2rem 0;border-top:1px solid rgba(255,255,255,.08)}
+    .foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+    .foot b{font-family:'Barlow Condensed';font-size:1.35rem;color:#fff}.foot b span{color:var(--orange)}
+    .foot a{color:rgba(255,255,255,.46);transition:.2s}.foot a:hover{color:var(--orange)}
+
+    .whatsapp{position:fixed;right:22px;bottom:22px;z-index:80;background:#25D366;color:#fff;border-radius:999px;padding:15px 20px;font-weight:900;box-shadow:0 18px 45px rgba(37,211,102,.35);display:flex;gap:.55rem;align-items:center;font-size:.9rem;transition:.2s}
+    .whatsapp:hover{transform:translateY(-2px)}
+    .reveal{opacity:0;transform:translateY(18px);transition:.6s}.reveal.show{opacity:1;transform:none}
+
+    @media(max-width:980px){
+      .navlinks{display:none}.lang-sel{display:flex!important}
+      .hero-card h1{font-size:4rem}
+      .intro-grid,.zones-grid,.contact-grid{grid-template-columns:1fr}
+      .services-grid,.steps{grid-template-columns:1fr 1fr}
+      .twocol{grid-template-columns:1fr}
+      .ba-container img,.ba-after img{height:360px}
+    }
+    @media(max-width:620px){
+      .hero-card h1{font-size:3rem}
+      .hero-actions{display:grid}
+      .services-grid,.steps{grid-template-columns:1fr}
+      .ba-container img,.ba-after img{height:240px}
+      .whatsapp{left:16px;right:16px;justify-content:center}
+    }
+
+    .reviews{background:#fff;padding:90px 0}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+    .review-card{background:var(--paper);border-radius:20px;padding:1.8rem;position:relative}
+    .review-stars{color:#E8620A;font-size:1.1rem;margin-bottom:.8rem;letter-spacing:2px}
+    .review-text{color:#555;line-height:1.7;font-size:.95rem;font-weight:300;font-style:italic}
+    .review-author{margin-top:1.2rem;display:flex;align-items:center;gap:.75rem}
+    .review-avatar{width:44px;height:44px;border-radius:50%;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0}
+    .review-name{font-weight:700;font-size:.9rem}
+    .review-loc{font-size:.8rem;color:#999}
+    .review-google{position:absolute;top:1.2rem;right:1.2rem;font-size:.7rem;color:#999}
+    .map-wrap{margin-top:2rem;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
+    .map-wrap iframe{display:block;width:100%;height:260px;border:0}
+    .call-fixed{display:none;position:fixed;left:16px;bottom:22px;z-index:80;background:var(--orange);color:#fff;border-radius:999px;padding:15px 20px;font-weight:900;box-shadow:0 18px 45px rgba(232,98,10,.4);font-size:.9rem;align-items:center;gap:.55rem;transition:.2s;text-decoration:none}
+    .call-fixed:hover{transform:translateY(-2px)}
+    @media(max-width:980px){.reviews-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:620px){.reviews-grid{grid-template-columns:1fr}.call-fixed{display:flex}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="navin">
+    <a href="#" class="logo"><img src="logo.jpg" alt="Proinstal Empordà" style="height:48px;width:48px;border-radius:50%;object-fit:cover;border:2px solid var(--orange);"> <span style="font-family:'Barlow Condensed';font-weight:900;font-size:1.4rem;color:#fff;letter-spacing:.02em;">PROINSTAL <span style="color:var(--orange);">EMPORDÀ</span></span></a>
+    <div class="navlinks">
+      <a href="#serveis" data-t="nav_serveis">Serveis</a>
+      <a href="#projectes" data-t="nav_projectes">Treballs</a>
+      <a href="#proces" data-t="nav_proces">Procés</a>
+      <a href="#zones" data-t="nav_zones">Zones</a>
+      <a class="navphone" href="tel:+34671510146">📞 671 510 146</a>
+      <div class="lang-sel">
+        <button class="lang-btn" id="langBtn">🌐 CA ▾</button>
+        <div class="lang-dropdown" id="langDropdown">
+          <div class="lang-option active" onclick="setLang('ca')">🇪🇸 Català</div>
+          <div class="lang-option" onclick="setLang('es')">🇪🇸 Castellano</div>
+          <div class="lang-option" onclick="setLang('fr')">🇫🇷 Français</div>
+          <div class="lang-option" onclick="setLang('en')">🇬🇧 English</div>
+          <div class="lang-option" onclick="setLang('de')">🇩🇪 Deutsch</div>
+          <div class="lang-option" onclick="setLang('nl')">🇳🇱 Nederlands</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-card">
+      <div class="smallcap" data-t="hero_label">Reformes · Instal·lacions · Restauracions</div>
+      <h1 data-t="hero_title">Professionals<br>a l'<span>Empordà</span></h1>
+      <p data-t="hero_desc">Electricitat, fontaneria, climatització, plaques solars, fusteria, pèrgoles, tancaments i reformes integrals. Un equip únic per coordinar-ho tot amb serietat, netedat i garantia.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/34671510146?text=Hola%20Proinstal%20Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost" target="_blank" data-t="hero_cta1">💬 Demanar pressupost</a>
+        <a class="btn btn-ghost" href="#projectes" data-t="hero_cta2">Veure treballs</a>
+      </div>
+      <div class="trustrow">
+        <span><b>+15</b> <span data-t="trust_years">anys d'experiència</span></span>
+        <span><b>Alt i Baix Empordà</b></span>
+        <span><b data-t="trust_budget">Pressupost gratuït</b></span>
+        <span>🇫🇷 🇩🇪 🇬🇧 🇳🇱 <b>FR · DE · EN · NL</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="intro reveal">
+  <div class="wrap intro-grid">
+    <div class="intro-img">
+      <img src="slide-02-bany-despres.jpg" alt="Reforma de bany professional">
+      <div class="badge-over"><b data-t="badge_title">Un sol equip.</b><br><span data-t="badge_desc">Menys problemes, menys industrials i més control de qualitat.</span></div>
+    </div>
+    <div>
+      <div class="smallcap" data-t="intro_label">Empresa de confiança</div>
+      <h2 class="title" style="margin-top:.5rem" data-t="intro_title">De la petita reparació a la reforma <span>integral</span></h2>
+      <p class="lead" style="margin-top:1.2rem" data-t="intro_desc">Treballem amb particulars, comunitats, locals comercials i segones residències. Ens encarreguem de visitar, valorar, executar i deixar-ho acabat amb comunicació clara durant tot el procés.</p>
+      <div class="checks">
+        <div class="check"><i>✓</i><span data-t="check1">Pressupost detallat abans de començar, sense sorpreses.</span></div>
+        <div class="check"><i>✓</i><span data-t="check2">Coordinació de tots els oficis: electricitat, aigua, clima, fusteria i obra.</span></div>
+        <div class="check"><i>✓</i><span data-t="check3">Treballs pensats per aguantar el clima de costa: humitat, sol, vent i salinitat.</span></div>
+        <div class="check"><i>✓</i><span data-t="check4">Servei local a Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga i Girona.</span></div>
+        <div class="check"><i>✓</i><span data-t="check5">Atenem en català, castellà, francès, alemany, anglès i neerlandès. 🇫🇷 🇩🇪 🇬🇧 🇳🇱</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="serveis">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="smallcap" data-t="serv_label">Serveis principals</div>
+      <h2 class="title" data-t="serv_title">Instal·lacions i reformes <span>360º</span></h2>
+      <p class="lead" data-t="serv_desc">Especialistes en cada ofici, coordinats per un sol equip de confiança.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service reveal"><div class="ico">⚡</div><h3 data-t="s1_title">Electricitat</h3><p data-t="s1_desc">Quadres, punts de llum, avaries, certificats, instal·lacions noves i millora d'eficiència energètica.</p></article>
+      <article class="service reveal"><div class="ico">☀️</div><h3 data-t="s2_title">Plaques solars</h3><p data-t="s2_desc">Autoconsum, bateries, estudis de consum i instal·lacions adaptades a cada habitatge o empresa.</p></article>
+      <article class="service reveal"><div class="ico">❄️</div><h3 data-t="s3_title">Climatització</h3><p data-t="s3_desc">Aire condicionat, splits, conductes, aerotèrmia, manteniment i reparació de totes les marques.</p></article>
+      <article class="service reveal"><div class="ico">💧</div><h3 data-t="s4_title">Fontaneria</h3><p data-t="s4_desc">Fuites, sanitaris, cuines, lavabos, termos, calderes i instal·lacions d'aigua completes.</p></article>
+      <article class="service reveal"><div class="ico">🪵</div><h3 data-t="s5_title">Fusteria</h3><p data-t="s5_desc">Portes, finestres, tancaments, mobles a mida, paviments, tarimes i acabats interiors.</p></article>
+      <article class="service reveal"><div class="ico">🏗️</div><h3 data-t="s6_title">Reformes</h3><p data-t="s6_desc">Banys, cuines, interiors, locals, façanes i reformes integrals clau en mà.</p></article>
+      <article class="service reveal"><div class="ico">🏡</div><h3 data-t="s7_title">Pèrgoles</h3><p data-t="s7_desc">Pèrgoles bioclimàtiques, tendals, terrasses, paviments exteriors i espais d'ombra funcionals.</p></article>
+      <article class="service reveal"><div class="ico">🔧</div><h3 data-t="s8_title">Reparacions</h3><p data-t="s8_desc">Humitats, desperfectes, restauracions, manteniment preventiu i solucions ràpides d'urgència.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="ba-section" id="projectes">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:2rem">
+      <div class="smallcap" data-t="ba_label">Abans i després</div>
+      <h2 class="title" data-t="ba_title">Mou el divisor i descobreix la <span>transformació</span></h2>
+      <p class="lead" data-t="ba_desc">Arrossega per veure el canvi real en cada projecte</p>
+    </div>
+    <div class="ba-nav reveal">
+      <button class="ba-tab active" onclick="canviarProjecte(0)" data-t="tab0">🛁 Bany</button>
+      <button class="ba-tab" onclick="canviarProjecte(1)" data-t="tab1">🏡 Terrassa</button>
+      <button class="ba-tab" onclick="canviarProjecte(2)" data-t="tab2">☀️ Plaques solars</button>
+      <button class="ba-tab" onclick="canviarProjecte(3)" data-t="tab3">🚪 Garatge ext.</button>
+      <button class="ba-tab" onclick="canviarProjecte(4)" data-t="tab4">🔌 Garatge int.</button>
+    </div>
+    <div class="ba-container reveal" id="baContainer">
+      <img id="baAntes" src="slide-02-bany-abans.jpg" alt="Abans">
+      <div class="ba-after" id="baAfter" style="width:50%">
+        <img id="baDespres" src="slide-02-bany-despres.jpg" alt="Després">
+      </div>
+      <div class="ba-handle" id="baHandle" style="left:50%"></div>
+      <div class="ba-label-antes" data-t="ba_before">ABANS</div>
+      <div class="ba-label-despres" data-t="ba_after">DESPRÉS</div>
+    </div>
+    <p class="ba-hint reveal" data-t="ba_hint">← Arrossega el divisor per comparar →</p>
+    <div class="ba-cta reveal"><a class="btn btn-primary" href="#contacte" data-t="ba_cta">Vull una reforma així</a></div>
+  </div>
+</section>
+
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="smallcap" data-t="rev_label">El que diuen els nostres clients</div>
+      <h2 class="title" data-t="rev_title">Opinions <span>reals</span></h2>
+      <p class="lead" data-t="rev_desc">Més de 500 projectes realitzats a l'Empordà amb clients satisfets</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-google">⭐ Google</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-t="rev1_text">"Molt professionals i puntuals. Van fer la instal·lació de plaques solars en dos dies i van deixar-ho tot net. Molt recomanables."</p>
+        <div class="review-author">
+          <div class="review-avatar">JM</div>
+          <div><div class="review-name">Jordi M.</div><div class="review-loc">Roses</div></div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-google">⭐ Google</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-t="rev2_text">"Excellent service, they speak French and English which was very helpful. The bathroom renovation is perfect, exactly what we wanted."</p>
+        <div class="review-author">
+          <div class="review-avatar">SF</div>
+          <div><div class="review-name">Sophie F.</div><div class="review-loc">Empuriabrava</div></div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-google">⭐ Google</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-t="rev3_text">"Super Arbeit! Haben unsere Terrasse komplett renoviert und eine Pergola installiert. Sehr zuverlässig und pünktlich. Sehr empfehlenswert!"</p>
+        <div class="review-author">
+          <div class="review-avatar">KH</div>
+          <div><div class="review-name">Klaus H.</div><div class="review-loc">Cadaqués</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="proces">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="smallcap" data-t="proc_label">Com treballem</div>
+      <h2 class="title" data-t="proc_title">Clar, ràpid i <span>sense sorpreses</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><b>01</b><h3 data-t="step1_t">Contacte</h3><p data-t="step1_d">Ens expliques què necessites per WhatsApp, telèfon o formulari. Resposta en menys de 24h.</p></div>
+      <div class="step reveal"><b>02</b><h3 data-t="step2_t">Visita</h3><p data-t="step2_d">Mirem l'espai, mesures, estat real i possibles solucions sense cap cost.</p></div>
+      <div class="step reveal"><b>03</b><h3 data-t="step3_t">Pressupost</h3><p data-t="step3_d">Et preparem una proposta clara amb materials, treball i terminis. Sense lletra petita.</p></div>
+      <div class="step reveal"><b>04</b><h3 data-t="step4_t">Execució</h3><p data-t="step4_d">Fem el treball amb ordre, netedat, comunicació constant i garantia final.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="zones" id="zones">
+  <div class="wrap zones-grid">
+    <div class="reveal">
+      <div class="smallcap" data-t="zone_label">Zona de servei</div>
+      <h2 class="title" style="margin-top:.5rem" data-t="zone_title">Alt i Baix <span>Empordà</span></h2>
+      <p class="lead" style="margin-top:1rem" data-t="zone_desc">Cobrim tota la zona de Girona per a reformes, instal·lacions i reparacions.</p>
+    </div>
+    <div class="tags reveal">
+      <span class="tag orange">Figueres</span><span class="tag orange">Roses</span><span class="tag orange">Vilajuïga</span>
+      <span class="tag hot">Empuriabrava</span><span class="tag hot">l'Escala</span>
+      <span class="tag">Castelló d'Empúries</span><span class="tag">Cadaqués</span><span class="tag">Peralada</span>
+      <span class="tag">Sant Pere Pescador</span><span class="tag">Llançà</span><span class="tag">el Port de la Selva</span>
+      <span class="tag">Palafrugell</span><span class="tag">Palamós</span><span class="tag">la Bisbal d'Empordà</span><span class="tag">Girona</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacte">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="smallcap" data-t="cont_label">Contacte</div>
+      <h2 class="title" style="color:#fff;margin-top:.5rem" data-t="cont_title">Demanar <span>pressupost</span></h2>
+      <p class="lead" style="margin-top:1rem" data-t="cont_desc">Omple el formulari i t'enviarem la consulta per WhatsApp. Ràpid, directe i sense complicacions.</p>
+      <div class="contact-items">
+        <div class="contact-item"><b data-t="cont_phones">Telèfons</b><a href="tel:+34671510146">671 510 146</a> · <a href="tel:+34635014684">635 014 684</a></div>
+        <div class="contact-item"><b>Email</b><a href="mailto:info@proinstalemporda.com">info@proinstalemporda.com</a></div>
+        <div class="contact-item"><b data-t="cont_addr">Adreça</b>Carrer Roca de la Balena 4, Vilajuïga 17493</div>
+        <div class="contact-item"><b>Instagram</b><a href="https://www.instagram.com/proinstalemporda/" target="_blank">@proinstalemporda</a></div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.5!2d3.092!3d42.348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae7000000001%3A0x0!2sCarrer+Roca+de+la+Balena+4%2C+Vilajuïga!5e0!3m2!1sca!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="contact-box reveal">
+      <form id="quoteForm">
+        <div class="twocol">
+          <input id="nom" data-t-ph="form_name" placeholder="Nom" required>
+          <input id="tel" placeholder="Telèfon" required>
+        </div>
+        <select id="servei">
+          <option data-t="opt1">Reforma integral</option>
+          <option data-t="opt2">Electricitat</option>
+          <option data-t="opt3">Fontaneria</option>
+          <option data-t="opt4">Aire condicionat</option>
+          <option data-t="opt5">Plaques solars</option>
+          <option data-t="opt6">Fusteria</option>
+          <option data-t="opt7">Pèrgoles / exteriors</option>
+          <option data-t="opt8">Reparació d'humitats</option>
+          <option data-t="opt9">Altres</option>
+        </select>
+        <input id="zona" data-t-ph="form_zone" placeholder="Població / zona">
+        <textarea id="missatge" data-t-ph="form_msg" placeholder="Explica breument què necessites..."></textarea>
+        <button class="btn btn-primary submit" type="submit" data-t="form_send">💬 Enviar per WhatsApp</button>
+        <p class="form-note" data-t="form_note">Al clicar, s'obrirà WhatsApp amb el missatge preparat.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <b><img src="logo.jpg" alt="Logo" style="height:36px;width:36px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;border:2px solid var(--orange);">PROINSTAL <span>EMPORDÀ</span></b>
+    <p>© 2026 Proinstal Empordà · Vilajuïga, Girona</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="https://www.instagram.com/proinstalemporda/" target="_blank">📷 Instagram</a>
+      <a href="mailto:info@proinstalemporda.com">Email</a>
+      <a href="tel:+34671510146">📞 Trucar</a>
+    </div>
+  </div>
+</footer>
+
+<a class="call-fixed" href="tel:+34671510146">📞 671 510 146</a>
+<a class="whatsapp" href="https://wa.me/34671510146?text=Hola%20Proinstal%20Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost" target="_blank" id="waBtn">💬 WhatsApp</a>
+
+<script>
+// ── TRADUCCIONS ──
+var T = {
+  ca:{
+    nav_serveis:"Serveis",nav_projectes:"Treballs",nav_proces:"Procés",nav_zones:"Zones",
+    hero_label:"Reformes · Instal·lacions · Restauracions",
+    hero_title:"Professionals<br>a l'<span>Empordà</span>",
+    hero_desc:"Electricitat, fontaneria, climatització, plaques solars, fusteria, pèrgoles, tancaments i reformes integrals. Un equip únic per coordinar-ho tot amb serietat, netedat i garantia.",
+    hero_cta1:"💬 Demanar pressupost",hero_cta2:"Veure treballs",
+    trust_years:"anys d'experiència",trust_budget:"Pressupost gratuït",
+    badge_title:"Un sol equip.",badge_desc:"Menys problemes, menys industrials i més control de qualitat.",
+    intro_label:"Empresa de confiança",
+    intro_title:"De la petita reparació a la reforma <span>integral</span>",
+    intro_desc:"Treballem amb particulars, comunitats, locals comercials i segones residències. Ens encarreguem de visitar, valorar, executar i deixar-ho acabat amb comunicació clara durant tot el procés.",
+    check1:"Pressupost detallat abans de començar, sense sorpreses.",
+    check2:"Coordinació de tots els oficis: electricitat, aigua, clima, fusteria i obra.",
+    check3:"Treballs pensats per aguantar el clima de costa: humitat, sol, vent i salinitat.",
+    check4:"Servei local a Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga i Girona.",
+    check5:"Atenem en català, castellà, francès, alemany, anglès i neerlandès. 🇫🇷 🇩🇪 🇬🇧 🇳🇱",
+    serv_label:"Serveis principals",serv_title:"Instal·lacions i reformes <span>360º</span>",
+    serv_desc:"Especialistes en cada ofici, coordinats per un sol equip de confiança.",
+    s1_title:"Electricitat",s1_desc:"Quadres, punts de llum, avaries, certificats, instal·lacions noves i millora d'eficiència.",
+    s2_title:"Plaques solars",s2_desc:"Autoconsum, bateries, estudis de consum i instal·lacions adaptades a cada habitatge.",
+    s3_title:"Climatització",s3_desc:"Aire condicionat, splits, conductes, aerotèrmia, manteniment i reparació.",
+    s4_title:"Fontaneria",s4_desc:"Fuites, sanitaris, cuines, lavabos, termos, calderes i instal·lacions d'aigua.",
+    s5_title:"Fusteria",s5_desc:"Portes, finestres, tancaments, mobles a mida, paviments i acabats interiors.",
+    s6_title:"Reformes",s6_desc:"Banys, cuines, interiors, locals, façanes i reformes integrals clau en mà.",
+    s7_title:"Pèrgoles",s7_desc:"Pèrgoles bioclimàtiques, tendals, terrasses i espais d'ombra funcionals.",
+    s8_title:"Reparacions",s8_desc:"Humitats, desperfectes, restauracions, manteniment preventiu i urgències.",
+    ba_label:"Abans i després",ba_title:"Mou el divisor i descobreix la <span>transformació</span>",
+    ba_desc:"Arrossega per veure el canvi real en cada projecte",
+    tab0:"🛁 Bany",tab1:"🏡 Terrassa",tab2:"☀️ Plaques solars",tab3:"🚪 Garatge ext.",tab4:"🔌 Garatge int.",
+    ba_before:"ABANS",ba_after:"DESPRÉS",ba_hint:"← Arrossega el divisor per comparar →",
+    ba_cta:"Vull una reforma així",
+    proc_label:"Com treballem",proc_title:"Clar, ràpid i <span>sense sorpreses</span>",
+    step1_t:"Contacte",step1_d:"Ens expliques què necessites per WhatsApp, telèfon o formulari. Resposta en menys de 24h.",
+    step2_t:"Visita",step2_d:"Mirem l'espai, mesures, estat real i possibles solucions sense cap cost.",
+    step3_t:"Pressupost",step3_d:"Et preparem una proposta clara amb materials, treball i terminis. Sense lletra petita.",
+    step4_t:"Execució",step4_d:"Fem el treball amb ordre, netedat, comunicació constant i garantia final.",
+    zone_label:"Zona de servei",zone_title:"Alt i Baix <span>Empordà</span>",
+    zone_desc:"Cobrim tota la zona de Girona per a reformes, instal·lacions i reparacions.",
+    cont_label:"Contacte",cont_title:"Demanar <span>pressupost</span>",
+    cont_desc:"Omple el formulari i t'enviarem la consulta per WhatsApp. Ràpid, directe i sense complicacions.",
+    cont_phones:"Telèfons",cont_addr:"Adreça",
+    opt1:"Reforma integral",opt2:"Electricitat",opt3:"Fontaneria",opt4:"Aire condicionat",
+    opt5:"Plaques solars",opt6:"Fusteria",opt7:"Pèrgoles / exteriors",opt8:"Reparació d'humitats",opt9:"Altres",
+    form_name:"Nom",form_zone:"Població / zona",form_msg:"Explica breument què necessites...",
+    form_send:"💬 Enviar per WhatsApp",form_note:"Al clicar, s'obrirà WhatsApp amb el missatge preparat.",
+    rev_label:"El que diuen els nostres clients",rev_title:"Opinions <span>reals</span>",rev_desc:"Més de 500 projectes realitzats a l'Empordà amb clients satisfets",rev1_text:"\"Molt professionals i puntuals. Van fer la instal·lació de plaques solars en dos dies. Molt recomanables.\"",rev2_text:"\"Excel·lent servei, parlen francès i anglès. La reforma del bany és perfecta, exactament el que volíem.\"",rev3_text:"\"Super feina! Van renovar la terrassa i instal·lar una pèrgola. Molt fiables i puntuals!\"",wa_text:"Hola Proinstal Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost"
+  },
+  es:{
+    nav_serveis:"Servicios",nav_projectes:"Trabajos",nav_proces:"Proceso",nav_zones:"Zonas",
+    hero_label:"Reformas · Instalaciones · Restauraciones",
+    hero_title:"Profesionales<br>en el <span>Empordà</span>",
+    hero_desc:"Electricidad, fontanería, climatización, placas solares, carpintería, pérgolas, cerramientos y reformas integrales. Un único equipo para coordinarlo todo con seriedad y garantía.",
+    hero_cta1:"💬 Pedir presupuesto",hero_cta2:"Ver trabajos",
+    trust_years:"años de experiencia",trust_budget:"Presupuesto gratuito",
+    badge_title:"Un solo equipo.",badge_desc:"Menos problemas, menos industriales y más control de calidad.",
+    intro_label:"Empresa de confianza",
+    intro_title:"De la pequeña reparación a la reforma <span>integral</span>",
+    intro_desc:"Trabajamos con particulares, comunidades, locales comerciales y segundas residencias. Nos encargamos de visitar, valorar, ejecutar y entregar con comunicación clara durante todo el proceso.",
+    check1:"Presupuesto detallado antes de empezar, sin sorpresas.",
+    check2:"Coordinación de todos los oficios: electricidad, agua, clima, carpintería y obra.",
+    check3:"Trabajos pensados para aguantar el clima de costa: humedad, sol, viento y salinidad.",
+    check4:"Servicio local en Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga y Girona.",
+    check5:"Atendemos en catalán, castellano, francés, alemán, inglés y neerlandés. 🇫🇷 🇩🇪 🇬🇧 🇳🇱",
+    serv_label:"Servicios principales",serv_title:"Instalaciones y reformas <span>360º</span>",
+    serv_desc:"Especialistas en cada oficio, coordinados por un solo equipo de confianza.",
+    s1_title:"Electricidad",s1_desc:"Cuadros, puntos de luz, averías, certificados, instalaciones nuevas y eficiencia.",
+    s2_title:"Placas solares",s2_desc:"Autoconsumo, baterías, estudios de consumo e instalaciones adaptadas.",
+    s3_title:"Climatización",s3_desc:"Aire acondicionado, splits, conductos, aerotermia, mantenimiento y reparación.",
+    s4_title:"Fontanería",s4_desc:"Fugas, sanitarios, cocinas, lavabos, termos, calderas e instalaciones de agua.",
+    s5_title:"Carpintería",s5_desc:"Puertas, ventanas, cerramientos, muebles a medida, pavimentos y acabados.",
+    s6_title:"Reformas",s6_desc:"Baños, cocinas, interiores, locales, fachadas y reformas integrales llave en mano.",
+    s7_title:"Pérgolas",s7_desc:"Pérgolas bioclimáticas, toldos, terrazas y espacios de sombra funcionales.",
+    s8_title:"Reparaciones",s8_desc:"Humedades, desperfectos, restauraciones, mantenimiento preventivo y urgencias.",
+    ba_label:"Antes y después",ba_title:"Mueve el divisor y descubre la <span>transformación</span>",
+    ba_desc:"Arrastra para ver el cambio real en cada proyecto",
+    tab0:"🛁 Baño",tab1:"🏡 Terraza",tab2:"☀️ Placas solares",tab3:"🚪 Garaje ext.",tab4:"🔌 Garaje int.",
+    ba_before:"ANTES",ba_after:"DESPUÉS",ba_hint:"← Arrastra el divisor para comparar →",
+    ba_cta:"Quiero una reforma así",
+    proc_label:"Cómo trabajamos",proc_title:"Claro, rápido y <span>sin sorpresas</span>",
+    step1_t:"Contacto",step1_d:"Nos explicas qué necesitas por WhatsApp, teléfono o formulario. Respuesta en menos de 24h.",
+    step2_t:"Visita",step2_d:"Miramos el espacio, medidas, estado real y posibles soluciones sin ningún coste.",
+    step3_t:"Presupuesto",step3_d:"Te preparamos una propuesta clara con materiales, trabajo y plazos. Sin letra pequeña.",
+    step4_t:"Ejecución",step4_d:"Hacemos el trabajo con orden, limpieza, comunicación constante y garantía final.",
+    zone_label:"Zona de servicio",zone_title:"Alt i Baix <span>Empordà</span>",
+    zone_desc:"Cubrimos toda la zona de Girona para reformas, instalaciones y reparaciones.",
+    cont_label:"Contacto",cont_title:"Pedir <span>presupuesto</span>",
+    cont_desc:"Rellena el formulario y te enviaremos la consulta por WhatsApp. Rápido, directo y sin complicaciones.",
+    cont_phones:"Teléfonos",cont_addr:"Dirección",
+    opt1:"Reforma integral",opt2:"Electricidad",opt3:"Fontanería",opt4:"Aire acondicionado",
+    opt5:"Placas solares",opt6:"Carpintería",opt7:"Pérgolas / exteriores",opt8:"Reparación de humedades",opt9:"Otros",
+    form_name:"Nombre",form_zone:"Población / zona",form_msg:"Explica brevemente qué necesitas...",
+    form_send:"💬 Enviar por WhatsApp",form_note:"Al hacer clic, se abrirá WhatsApp con el mensaje preparado.",
+    rev_label:"Lo que dicen nuestros clientes",rev_title:"Opiniones <span>reales</span>",rev_desc:"Más de 500 proyectos realizados en el Empordà",rev1_text:""Muy profesionales y puntuales. Instalación de placas solares en dos días. Muy recomendables."",rev2_text:""Excelente servicio, hablan francés e inglés. La reforma del baño es perfecta."",rev3_text:""¡Super trabajo! Renovaron la terraza e instalaron una pérgola. ¡Muy recomendables!"",wa_text:"Hola%20Proinstal%20Empord%C3%A0%2C%20quiero%20pedir%20un%20presupuesto"
+  },
+  fr:{
+    nav_serveis:"Services",nav_projectes:"Réalisations",nav_proces:"Processus",nav_zones:"Zones",
+    hero_label:"Rénovations · Installations · Restaurations",
+    hero_title:"Professionnels<br>en <span>Empordà</span>",
+    hero_desc:"Électricité, plomberie, climatisation, panneaux solaires, menuiserie, pergolas, clôtures et rénovations complètes. Une seule équipe pour tout coordonner avec sérieux et garantie.",
+    hero_cta1:"💬 Demander un devis",hero_cta2:"Voir les travaux",
+    trust_years:"ans d'expérience",trust_budget:"Devis gratuit",
+    badge_title:"Une seule équipe.",badge_desc:"Moins de problèmes, moins d'intervenants et plus de contrôle qualité.",
+    intro_label:"Entreprise de confiance",
+    intro_title:"De la petite réparation à la rénovation <span>complète</span>",
+    intro_desc:"Nous travaillons avec des particuliers, des communautés, des commerces et des résidences secondaires. Nous nous chargeons de visiter, évaluer, exécuter et livrer avec une communication claire tout au long du processus.",
+    check1:"Devis détaillé avant de commencer, sans surprises.",
+    check2:"Coordination de tous les corps de métier: électricité, eau, climat, menuiserie et gros œuvre.",
+    check3:"Travaux conçus pour résister au climat côtier: humidité, soleil, vent et salinité.",
+    check4:"Service local à Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga et Gérone.",
+    check5:"Nous parlons catalan, espagnol, français, allemand, anglais et néerlandais. 🇫🇷 🇩🇪 🇬🇧 🇳🇱",
+    serv_label:"Services principaux",serv_title:"Installations et rénovations <span>360º</span>",
+    serv_desc:"Spécialistes dans chaque métier, coordonnés par une seule équipe de confiance.",
+    s1_title:"Électricité",s1_desc:"Tableaux, points lumineux, pannes, certificats, nouvelles installations et efficacité énergétique.",
+    s2_title:"Panneaux solaires",s2_desc:"Autoconsommation, batteries, études de consommation et installations adaptées.",
+    s3_title:"Climatisation",s3_desc:"Climatiseurs, splits, gaines, aérothermie, maintenance et réparation.",
+    s4_title:"Plomberie",s4_desc:"Fuites, sanitaires, cuisines, lavabos, chauffe-eau, chaudières et installations d'eau.",
+    s5_title:"Menuiserie",s5_desc:"Portes, fenêtres, clôtures, meubles sur mesure, parquets et finitions intérieures.",
+    s6_title:"Rénovations",s6_desc:"Salles de bain, cuisines, intérieurs, locaux, façades et rénovations complètes clé en main.",
+    s7_title:"Pergolas",s7_desc:"Pergolas bioclimatiques, stores, terrasses et espaces d'ombre fonctionnels.",
+    s8_title:"Réparations",s8_desc:"Humidités, dégâts, restaurations, maintenance préventive et urgences.",
+    ba_label:"Avant et après",ba_title:"Déplacez le curseur et découvrez la <span>transformation</span>",
+    ba_desc:"Faites glisser pour voir le vrai changement de chaque projet",
+    tab0:"🛁 Salle de bain",tab1:"🏡 Terrasse",tab2:"☀️ Panneaux solaires",tab3:"🚪 Garage ext.",tab4:"🔌 Garage int.",
+    ba_before:"AVANT",ba_after:"APRÈS",ba_hint:"← Faites glisser le curseur pour comparer →",
+    ba_cta:"Je veux une rénovation comme ça",
+    proc_label:"Notre méthode",proc_title:"Clair, rapide et <span>sans surprises</span>",
+    step1_t:"Contact",step1_d:"Expliquez-nous ce dont vous avez besoin par WhatsApp, téléphone ou formulaire. Réponse en moins de 24h.",
+    step2_t:"Visite",step2_d:"Nous examinons l'espace, les mesures, l'état réel et les solutions possibles sans frais.",
+    step3_t:"Devis",step3_d:"Nous préparons une proposition claire avec matériaux, travaux et délais. Sans petits caractères.",
+    step4_t:"Exécution",step4_d:"Nous effectuons le travail avec ordre, propreté, communication constante et garantie finale.",
+    zone_label:"Zone de service",zone_title:"Alt i Baix <span>Empordà</span>",
+    zone_desc:"Nous couvrons toute la région de Gérone pour les rénovations, installations et réparations.",
+    cont_label:"Contact",cont_title:"Demander un <span>devis</span>",
+    cont_desc:"Remplissez le formulaire et nous vous enverrons la demande par WhatsApp. Rapide, direct et sans complications.",
+    cont_phones:"Téléphones",cont_addr:"Adresse",
+    opt1:"Rénovation complète",opt2:"Électricité",opt3:"Plomberie",opt4:"Climatisation",
+    opt5:"Panneaux solaires",opt6:"Menuiserie",opt7:"Pergolas / extérieurs",opt8:"Réparation d'humidités",opt9:"Autres",
+    form_name:"Nom",form_zone:"Ville / zone",form_msg:"Expliquez brièvement ce dont vous avez besoin...",
+    form_send:"💬 Envoyer par WhatsApp",form_note:"En cliquant, WhatsApp s'ouvrira avec le message préparé.",
+    rev_label:"Ce que disent nos clients",rev_title:"Avis <span>réels</span>",rev_desc:"Plus de 500 projets réalisés en Empordà",rev1_text:""Très professionnels et ponctuels. Installation des panneaux solaires en deux jours. Très recommandables."",rev2_text:""Excellent service, ils parlent français et anglais. La rénovation de la salle de bain est parfaite."",rev3_text:""Super travail! Ils ont rénové la terrasse et installé une pergola. Très recommandables!"",wa_text:"Bonjour%20Proinstal%20Empord%C3%A0%2C%20je%20voudrais%20un%20devis"
+  },
+  en:{
+    nav_serveis:"Services",nav_projectes:"Projects",nav_proces:"Process",nav_zones:"Areas",
+    hero_label:"Renovations · Installations · Restorations",
+    hero_title:"Professionals<br>in <span>Empordà</span>",
+    hero_desc:"Electrical, plumbing, HVAC, solar panels, carpentry, pergolas, enclosures and full renovations. One team to coordinate everything with professionalism and guarantee.",
+    hero_cta1:"💬 Get a free quote",hero_cta2:"See our work",
+    trust_years:"years of experience",trust_budget:"Free quote",
+    badge_title:"One team.",badge_desc:"Less hassle, fewer contractors and more quality control.",
+    intro_label:"A trusted company",
+    intro_title:"From small repairs to full <span>renovation</span>",
+    intro_desc:"We work with homeowners, communities, businesses and holiday homes. We handle everything from first visit to final delivery with clear communication throughout.",
+    check1:"Detailed quote before starting — no hidden costs.",
+    check2:"Coordination of all trades: electrical, plumbing, climate, carpentry and construction.",
+    check3:"Work built to withstand the coastal climate: humidity, sun, wind and salt.",
+    check4:"Local service in Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga and Girona.",
+    check5:"We speak Catalan, Spanish, French, German, English and Dutch. 🇫🇷 🇩🇪 🇬🇧 🇳🇱",
+    serv_label:"Our services",serv_title:"Installations and renovations <span>360º</span>",
+    serv_desc:"Specialists in every trade, coordinated by a single trusted team.",
+    s1_title:"Electrical",s1_desc:"Panels, lighting, repairs, certificates, new installations and energy efficiency.",
+    s2_title:"Solar panels",s2_desc:"Self-consumption, batteries, energy studies and tailored installations.",
+    s3_title:"HVAC",s3_desc:"Air conditioning, splits, ducted systems, aerothermal, maintenance and repair.",
+    s4_title:"Plumbing",s4_desc:"Leaks, bathrooms, kitchens, water heaters, boilers and full water installations.",
+    s5_title:"Carpentry",s5_desc:"Doors, windows, enclosures, custom furniture, flooring and interior finishes.",
+    s6_title:"Renovations",s6_desc:"Bathrooms, kitchens, interiors, shops, facades and full turnkey renovations.",
+    s7_title:"Pergolas",s7_desc:"Bioclimatic pergolas, awnings, terraces and functional outdoor shade structures.",
+    s8_title:"Repairs",s8_desc:"Damp, damage, restorations, preventive maintenance and emergency repairs.",
+    ba_label:"Before & after",ba_title:"Drag the slider and discover the <span>transformation</span>",
+    ba_desc:"Drag to see the real change in each project",
+    tab0:"🛁 Bathroom",tab1:"🏡 Terrace",tab2:"☀️ Solar panels",tab3:"🚪 Garage ext.",tab4:"🔌 Garage int.",
+    ba_before:"BEFORE",ba_after:"AFTER",ba_hint:"← Drag the slider to compare →",
+    ba_cta:"I want a renovation like this",
+    proc_label:"How we work",proc_title:"Clear, fast and <span>no surprises</span>",
+    step1_t:"Contact",step1_d:"Tell us what you need via WhatsApp, phone or form. Reply within 24 hours.",
+    step2_t:"Visit",step2_d:"We assess the space, take measurements and explore solutions — completely free.",
+    step3_t:"Quote",step3_d:"We send a clear proposal with materials, work and timeline. No small print.",
+    step4_t:"Execution",step4_d:"We work with order, cleanliness, constant communication and a final guarantee.",
+    zone_label:"Service area",zone_title:"Alt i Baix <span>Empordà</span>",
+    zone_desc:"We cover the entire Girona region for renovations, installations and repairs.",
+    cont_label:"Contact",cont_title:"Request a <span>quote</span>",
+    cont_desc:"Fill in the form and we'll send your enquiry via WhatsApp. Fast, direct and hassle-free.",
+    cont_phones:"Phone",cont_addr:"Address",
+    opt1:"Full renovation",opt2:"Electrical",opt3:"Plumbing",opt4:"Air conditioning",
+    opt5:"Solar panels",opt6:"Carpentry",opt7:"Pergolas / outdoors",opt8:"Damp repair",opt9:"Other",
+    form_name:"Name",form_zone:"Town / area",form_msg:"Briefly describe what you need...",
+    form_send:"💬 Send via WhatsApp",form_note:"Clicking will open WhatsApp with the message ready to send.",
+    rev_label:"What our clients say",rev_title:"<span>Real</span> reviews",rev_desc:"Over 500 projects completed in Empordà",rev1_text:""Very professional and punctual. Solar panels installed in two days. Highly recommended."",rev2_text:""Excellent service, they speak French and English. The bathroom renovation is perfect."",rev3_text:""Super work! Completely renovated the terrace and installed a pergola. Highly recommended!"",wa_text:"Hello%20Proinstal%20Empord%C3%A0%2C%20I%20would%20like%20a%20quote"
+  },
+  de:{
+    nav_serveis:"Leistungen",nav_projectes:"Projekte",nav_proces:"Ablauf",nav_zones:"Gebiete",
+    hero_label:"Renovierungen · Installationen · Restaurierungen",
+    hero_title:"Profis<br>im <span>Empordà</span>",
+    hero_desc:"Elektrik, Sanitär, Klimaanlage, Solaranlagen, Tischlerei, Pergolen, Einfriedungen und Komplettsanierungen. Ein Team für alles — zuverlässig und mit Garantie.",
+    hero_cta1:"💬 Angebot anfragen",hero_cta2:"Projekte ansehen",
+    trust_years:"Jahre Erfahrung",trust_budget:"Kostenloses Angebot",
+    badge_title:"Ein einziges Team.",badge_desc:"Weniger Aufwand, weniger Gewerke und mehr Qualitätskontrolle.",
+    intro_label:"Ihr vertrauenswürdiger Partner",
+    intro_title:"Von der kleinen Reparatur zur <span>Komplettsanierung</span>",
+    intro_desc:"Wir arbeiten mit Privatpersonen, Gemeinschaften, Geschäften und Ferienimmobilien. Von der ersten Besichtigung bis zur Übergabe — mit klarer Kommunikation.",
+    check1:"Detailliertes Angebot vor Beginn — keine versteckten Kosten.",
+    check2:"Koordination aller Gewerke: Elektrik, Wasser, Klima, Tischlerei und Bau.",
+    check3:"Arbeiten für das Küstenklima ausgelegt: Feuchtigkeit, Sonne, Wind und Salzluft.",
+    check4:"Lokaler Service in Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga und Girona.",
+    check5:"Wir sprechen Katalanisch, Spanisch, Französisch, Deutsch, Englisch und Niederländisch. 🇫🇷 🇩🇪 🇬🇧 🇳🇱",
+    serv_label:"Unsere Leistungen",serv_title:"Installationen und Renovierungen <span>360º</span>",
+    serv_desc:"Spezialisten in jedem Fachbereich — koordiniert von einem einzigen Team.",
+    s1_title:"Elektrik",s1_desc:"Schaltanlagen, Beleuchtung, Reparaturen, Zertifikate und Neuinstallationen.",
+    s2_title:"Solaranlagen",s2_desc:"Eigenverbrauch, Batterien, Verbrauchsstudien und maßgeschneiderte Installationen.",
+    s3_title:"Klimaanlage",s3_desc:"Klimaanlagen, Splits, Kanäle, Aerothermie, Wartung und Reparatur.",
+    s4_title:"Sanitär",s4_desc:"Leckagen, Sanitär, Küchen, Warmwasserbereiter, Heizkessel und Wasserinstallationen.",
+    s5_title:"Tischlerei",s5_desc:"Türen, Fenster, Verkleidungen, Maßmöbel, Böden und Innenausbau.",
+    s6_title:"Renovierungen",s6_desc:"Bäder, Küchen, Innenräume, Läden, Fassaden und schlüsselfertige Komplettsanierungen.",
+    s7_title:"Pergolen",s7_desc:"Bioklimatische Pergolen, Markisen, Terrassen und funktionale Schattenbereiche.",
+    s8_title:"Reparaturen",s8_desc:"Feuchtigkeitsschäden, Restaurierungen, Wartung und Notfallreparaturen.",
+    ba_label:"Vorher & nachher",ba_title:"Schiebe den Regler und entdecke die <span>Verwandlung</span>",
+    ba_desc:"Ziehen Sie, um die echte Veränderung zu sehen",
+    tab0:"🛁 Badezimmer",tab1:"🏡 Terrasse",tab2:"☀️ Solaranlage",tab3:"🚪 Garage außen",tab4:"🔌 Garage innen",
+    ba_before:"VORHER",ba_after:"NACHHER",ba_hint:"← Regler ziehen zum Vergleichen →",
+    ba_cta:"Ich möchte so eine Renovierung",
+    proc_label:"Unser Ablauf",proc_title:"Klar, schnell und <span>ohne Überraschungen</span>",
+    step1_t:"Kontakt",step1_d:"Sagen Sie uns, was Sie brauchen — per WhatsApp, Telefon oder Formular. Antwort innerhalb von 24h.",
+    step2_t:"Besichtigung",step2_d:"Wir begutachten den Raum, nehmen Maße und erarbeiten Lösungen — kostenlos.",
+    step3_t:"Angebot",step3_d:"Klares Angebot mit Materialien, Arbeiten und Zeitplan. Kein Kleingedrucktes.",
+    step4_t:"Ausführung",step4_d:"Ordentliche, saubere Arbeit mit ständiger Kommunikation und abschließender Garantie.",
+    zone_label:"Servicegebiet",zone_title:"Alt i Baix <span>Empordà</span>",
+    zone_desc:"Wir decken die gesamte Region Girona ab — Renovierungen, Installationen und Reparaturen.",
+    cont_label:"Kontakt",cont_title:"Angebot <span>anfragen</span>",
+    cont_desc:"Füllen Sie das Formular aus und wir senden Ihre Anfrage per WhatsApp. Schnell und unkompliziert.",
+    cont_phones:"Telefon",cont_addr:"Adresse",
+    opt1:"Komplettsanierung",opt2:"Elektrik",opt3:"Sanitär",opt4:"Klimaanlage",
+    opt5:"Solaranlage",opt6:"Tischlerei",opt7:"Pergolen / Außenbereich",opt8:"Feuchtigkeitsreparatur",opt9:"Sonstiges",
+    form_name:"Name",form_zone:"Ort / Gebiet",form_msg:"Beschreiben Sie kurz, was Sie benötigen...",
+    form_send:"💬 Per WhatsApp senden",form_note:"Mit dem Klick öffnet sich WhatsApp mit der vorbereiteten Nachricht.",
+    rev_label:"Was unsere Kunden sagen",rev_title:"Echte <span>Bewertungen</span>",rev_desc:"Über 500 abgeschlossene Projekte im Empordà",rev1_text:""Sehr professionell und pünktlich. Solaranlage in zwei Tagen installiert. Sehr empfehlenswert."",rev2_text:""Ausgezeichneter Service, sie sprechen Französisch und Englisch. Die Badsanierung ist perfekt."",rev3_text:""Super Arbeit! Terrasse renoviert und Pergola installiert. Sehr empfehlenswert!"",wa_text:"Hallo%20Proinstal%20Empord%C3%A0%2C%20ich%20m%C3%B6chte%20ein%20Angebot"
+  },
+  nl:{
+    nav_serveis:"Diensten",nav_projectes:"Projecten",nav_proces:"Werkwijze",nav_zones:"Gebieden",
+    hero_label:"Renovaties · Installaties · Restauraties",
+    hero_title:"Professionals<br>in de <span>Empordà</span>",
+    hero_desc:"Elektra, loodgieterij, klimaatbeheersing, zonnepanelen, timmerwerkzaamheden, pergola's, afscheidingen en complete renovaties. Één team voor alles — betrouwbaar en met garantie.",
+    hero_cta1:"💬 Offerte aanvragen",hero_cta2:"Onze projecten",
+    trust_years:"jaar ervaring",trust_budget:"Gratis offerte",
+    badge_title:"Één team.",badge_desc:"Minder gedoe, minder aannemers en meer kwaliteitscontrole.",
+    intro_label:"Een betrouwbaar bedrijf",
+    intro_title:"Van kleine reparatie tot complete <span>renovatie</span>",
+    intro_desc:"We werken voor particulieren, gemeenschappen, bedrijven en vakantiewoningen. Van eerste bezoek tot oplevering — met heldere communicatie gedurende het hele traject.",
+    check1:"Gedetailleerde offerte vooraf — geen verborgen kosten.",
+    check2:"Coördinatie van alle vakgebieden: elektra, water, klimaat, timmerwerk en bouw.",
+    check3:"Werkzaamheden afgestemd op het kustklimaat: vochtigheid, zon, wind en zout.",
+    check4:"Lokale service in Figueres, Roses, Empuriabrava, l'Escala, Vilajuïga en Girona.",
+    check5:"Wij spreken Catalaans, Spaans, Frans, Duits, Engels en Nederlands. 🇫🇷 🇩🇪 🇬🇧 🇳🇱",
+    serv_label:"Onze diensten",serv_title:"Installaties en renovaties <span>360º</span>",
+    serv_desc:"Specialisten in elk vakgebied, gecoördineerd door één betrouwbaar team.",
+    s1_title:"Elektra",s1_desc:"Schakelkasten, verlichting, storingen, certificaten en nieuwe installaties.",
+    s2_title:"Zonnepanelen",s2_desc:"Zelfverbruik, batterijen, verbruiksonderzoek en op maat gemaakte installaties.",
+    s3_title:"Klimaatbeheersing",s3_desc:"Airconditioning, splits, kanalen, warmtepompen, onderhoud en reparatie.",
+    s4_title:"Loodgieterij",s4_desc:"Lekkages, sanitair, keukens, boilers, geysers en complete waterinstallaties.",
+    s5_title:"Timmerwerk",s5_desc:"Deuren, ramen, afscheidingen, maatwerk meubels, vloeren en interieurafdwerking.",
+    s6_title:"Renovaties",s6_desc:"Badkamers, keukens, interieurs, winkels, gevels en complete sleutel-op-de-deur renovaties.",
+    s7_title:"Pergola's",s7_desc:"Bioklimatische pergola's, zonneschermen, terrassen en functionele buitenruimtes.",
+    s8_title:"Reparaties",s8_desc:"Vocht, schade, restauraties, preventief onderhoud en spoedreparaties.",
+    ba_label:"Voor & na",ba_title:"Beweeg de schuifregelaar en ontdek de <span>transformatie</span>",
+    ba_desc:"Sleep om de echte verandering per project te zien",
+    tab0:"🛁 Badkamer",tab1:"🏡 Terras",tab2:"☀️ Zonnepanelen",tab3:"🚪 Garage buiten",tab4:"🔌 Garage binnen",
+    ba_before:"VOOR",ba_after:"NA",ba_hint:"← Sleep de schuifregelaar om te vergelijken →",
+    ba_cta:"Ik wil zo'n renovatie",
+    proc_label:"Onze werkwijze",proc_title:"Duidelijk, snel en <span>zonder verrassingen</span>",
+    step1_t:"Contact",step1_d:"Vertel ons wat u nodig heeft via WhatsApp, telefoon of formulier. Reactie binnen 24 uur.",
+    step2_t:"Bezoek",step2_d:"We bekijken de ruimte, nemen maten op en bespreken mogelijke oplossingen — gratis.",
+    step3_t:"Offerte",step3_d:"Duidelijk voorstel met materialen, werkzaamheden en tijdlijn. Geen kleine lettertjes.",
+    step4_t:"Uitvoering",step4_d:"Netjes, geordend werk met constante communicatie en eindgarantie.",
+    zone_label:"Servicegebied",zone_title:"Alt i Baix <span>Empordà</span>",
+    zone_desc:"We bedienen de gehele regio Girona voor renovaties, installaties en reparaties.",
+    cont_label:"Contact",cont_title:"Offerte <span>aanvragen</span>",
+    cont_desc:"Vul het formulier in en we sturen uw aanvraag via WhatsApp. Snel, direct en zonder gedoe.",
+    cont_phones:"Telefoon",cont_addr:"Adres",
+    opt1:"Complete renovatie",opt2:"Elektra",opt3:"Loodgieterij",opt4:"Airconditioning",
+    opt5:"Zonnepanelen",opt6:"Timmerwerk",opt7:"Pergola's / buiten",opt8:"Vochtreparatie",opt9:"Overig",
+    form_name:"Naam",form_zone:"Plaats / gebied",form_msg:"Beschrijf kort wat u nodig heeft...",
+    form_send:"💬 Verzenden via WhatsApp",form_note:"Na het klikken opent WhatsApp met het voorbereide bericht.",
+    rev_label:"Wat onze klanten zeggen",rev_title:"Echte <span>beoordelingen</span>",rev_desc:"Meer dan 500 projecten voltooid in de Empordà",rev1_text:""Zeer professioneel en punctueel. Zonnepanelen in twee dagen geïnstalleerd. Zeer aanbevolen."",rev2_text:""Uitstekende service, ze spreken Frans en Engels. De badkamerrenovatie is perfect."",rev3_text:""Super werk! Terras gerenoveerd en pergola geïnstalleerd. Zeer aanbevolen!"",wa_text:"Hallo%20Proinstal%20Empord%C3%A0%2C%20ik%20wil%20graag%20een%20offerte"
+  }
+};
+
+var langNames = {ca:"🌐 CA",es:"🌐 ES",fr:"🌐 FR",en:"🌐 EN",de:"🌐 DE",nl:"🌐 NL"};
+var curLang = "ca";
+
+function setLang(l){
+  curLang = l;
+  var t = T[l];
+  document.getElementById('langBtn').textContent = langNames[l] + ' ▾';
+  document.getElementById('langDropdown').classList.remove('open');
+
+  // Actualitza tots els elements amb data-t
+  document.querySelectorAll('[data-t]').forEach(function(el){
+    var key = el.getAttribute('data-t');
+    if(t[key] !== undefined) el.innerHTML = t[key];
+  });
+
+  // Placeholders
+  document.querySelectorAll('[data-t-ph]').forEach(function(el){
+    var key = el.getAttribute('data-t-ph');
+    if(t[key] !== undefined) el.placeholder = t[key];
+  });
+
+  // Actualitza lang actiu al dropdown
+  document.querySelectorAll('.lang-option').forEach(function(o){
+    o.className = 'lang-option' + (o.getAttribute('onclick').includes("'"+l+"'") ? ' active' : '');
+  });
+
+  // Actualitza link WhatsApp flotant
+  document.getElementById('waBtn').href = 'https://wa.me/34671510146?text=' + t.wa_text;
+}
+
+// Selector idioma toggle
+document.getElementById('langBtn').addEventListener('click', function(e){
+  e.stopPropagation();
+  document.getElementById('langDropdown').classList.toggle('open');
+});
+document.addEventListener('click', function(){
+  document.getElementById('langDropdown').classList.remove('open');
+});
+
+// ── BEFORE/AFTER ──
+var projectes = [
+  {abans:'slide-02-bany-abans.jpg',    despres:'slide-02-bany-despres.jpg'},
+  {abans:'slide-01-terrassa-abans.jpg', despres:'slide-01-terrassa-despres.jpg'},
+  {abans:'slide-06-solars-abans.jpg',  despres:'slide-06-solars-despres.jpg'},
+  {abans:'slide-04-garatge-abans.jpg', despres:'slide-04-garatge-despres.jpg'},
+  {abans:'slide-05-garage-int-abans.jpg',despres:'slide-05-garage-int-despres.jpg'},
+];
+var container=document.getElementById('baContainer');
+var after=document.getElementById('baAfter');
+var handle=document.getElementById('baHandle');
+var imgAntes=document.getElementById('baAntes');
+var imgDespres=document.getElementById('baDespres');
+var dragging=false;
+
+function canviarProjecte(idx){
+  imgAntes.src=projectes[idx].abans;
+  imgDespres.src=projectes[idx].despres;
+  after.style.width='50%';handle.style.left='50%';
+  document.querySelectorAll('.ba-tab').forEach(function(t,i){t.className='ba-tab'+(i===idx?' active':'');});
+}
+window.canviarProjecte=canviarProjecte;
+
+function setPos(x){
+  var r=container.getBoundingClientRect();
+  var p=Math.min(Math.max((x-r.left)/r.width*100,2),98);
+  after.style.width=p+'%';handle.style.left=p+'%';
+}
+container.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault();});
+document.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX);});
+document.addEventListener('mouseup',function(){dragging=false;});
+container.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX);},{passive:true});
+document.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX);},{passive:true});
+document.addEventListener('touchend',function(){dragging=false;});
+
+// ── REVEAL ──
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('show');});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+
+// ── FORMULARI WHATSAPP ──
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var nom=document.getElementById('nom').value.trim();
+  var tel=document.getElementById('tel').value.trim();
+  var servei=document.getElementById('servei').value;
+  var zona=document.getElementById('zona').value.trim();
+  var msg=document.getElementById('missatge').value.trim();
+  var text=T[curLang].wa_text+'%0A%0A'
+    +'Nom%2FName: '+encodeURIComponent(nom)+'%0A'
+    +'Tel: '+encodeURIComponent(tel)+'%0A'
+    +'Servei: '+encodeURIComponent(servei)+'%0A'
+    +'Zona: '+encodeURIComponent(zona)+'%0A'
+    +'Info: '+encodeURIComponent(msg);
+  window.open('https://wa.me/34671510146?text='+text,'_blank');
+});
+</script>
+</body>
+</html>
