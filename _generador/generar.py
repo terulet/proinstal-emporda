@@ -32,6 +32,13 @@ SERVEIS = carrega("serveis").SERVEIS
 _p = carrega("pobles")
 POBLES, ZONES = _p.POBLES, _p.ZONES
 PER_ID = {p["id"]: p for p in POBLES}
+_i = carrega("imatges")
+PARELLES, FOTOS, ALTS = _i.PARELLES, _i.FOTOS, _i.ALTS
+for _it in SERVEIS + POBLES + ZONES:
+    _it["hero"], _it["img"], _it["parelles"] = FOTOS[_it["id"]]
+    for _n, _l in enumerate(("ca", "es")):
+        if _it["id"] in ALTS:
+            _it[_l]["alt"] = ALTS[_it["id"]][_n]
 
 UI = {
     "ca": {
@@ -47,6 +54,7 @@ UI = {
         "serveis_peu": "Serveis", "zones_peu": "Zones", "privacitat": "Privacitat",
         "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona) · 671 510 146 · info@proinstalemporda.com",
         "tipus_poble": "Reformes i instal·lacions",
+        "ad_e": "Feina feta", "ad_h": "Abans i després", "abans": "Abans", "despres": "Després",
     },
     "es": {
         "inici": "Inicio", "serveis": "Servicios", "zones": "Zonas", "contactar": "Contactar",
@@ -61,6 +69,7 @@ UI = {
         "serveis_peu": "Servicios", "zones_peu": "Zonas", "privacitat": "Privacidad",
         "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona) · 671 510 146 · info@proinstalemporda.com",
         "tipus_poble": "Reformas e instalaciones",
+        "ad_e": "Trabajo hecho", "ad_h": "Antes y después", "abans": "Antes", "despres": "Después",
     },
 }
 
@@ -103,6 +112,21 @@ def peu(lang):
             f'<div class="wrap fnote">© {date.today().year} {e(u["empresa"])}</div></footer>')
 
 
+def abans_despres(lang, claus):
+    if not claus:
+        return ""
+    u = UI[lang]
+    fitxes = []
+    for c in claus:
+        a, b, ca, es = PARELLES[c]
+        peu = ca if lang == "ca" else es
+        fitxes.append(f'<figure class="ad"><div class="ad2"><div><img src="{a}" alt="{e(u["abans"] + ": " + peu)}" loading="lazy"><span>{u["abans"]}</span></div>'
+                      f'<div><img src="{b}" alt="{e(u["despres"] + ": " + peu)}" loading="lazy"><span class="d">{u["despres"]}</span></div></div>'
+                      f'<figcaption>{e(peu)}</figcaption></figure>')
+    return (f'<section class="abdes"><div class="wrap"><div class="eyebrow">{u["ad_e"]}</div><h2>{u["ad_h"]}</h2>'
+            f'<div class="adg">{"".join(fitxes)}</div></div></section>')
+
+
 def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     """d: textos de la pàgina en aquest idioma; comu: dades comunes (hero, img, ca/es)."""
     u = UI[lang]
@@ -135,7 +159,8 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
 <script type="application/ld+json">{ld}</script>
 </head><body><header class="topbar"><div class="wrap"><a class="brand" href="{u["home"]}"><img src="/logo.jpg" alt="Proinstal Empordà">PROINSTAL <em>EMPORDÀ</em></a><nav class="nav"><a href="{u["home"]}#serveis">{u["serveis"]}</a><a href="{u["home"]}#zones">{u["zones"]}</a><a class="lang" href="/{altre}" hreflang="{u["altre"]}" lang="{u["altre"]}">{u["altre"].upper()}</a><a class="cta" href="{wa(d.get("wa", ""))}">{u["contactar"]}</a></nav></div></header>
 <section class="hero" style="--hero:url('{comu["hero"]}')"><div class="wrap"><nav class="crumbs" aria-label="breadcrumb">{crumbs}</nav><div class="eyebrow">{e(d["eyebrow"])}</div><h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p><div class="actions"><a class="button" href="{wa(d.get("wa", ""))}">{u["wa_btn"]}</a><a class="button secondary" href="tel:+34671510146">{u["trucar"]}</a></div></div></section>
-<main><section><div class="wrap split"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p><ul class="checklist">{llista}</ul></div><img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy"></div></section>
+<main><section><div class="wrap{" split" if comu["img"] else ""}"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p><ul class="checklist">{llista}</ul></div>{f'<img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy">' if comu["img"] else ""}</div></section>
+{abans_despres(lang, comu["parelles"])}
 <section class="areas"><div class="wrap"><h2>{e(d["h2b"])}</h2><div class="grid">{fitxes}</div></div></section>
 <section class="faq"><div class="wrap"><div class="eyebrow">{u["faq_e"]}</div><h2>{u["faq"]}</h2>{faq_html}</div></section>
 {cos_extra}</main>
