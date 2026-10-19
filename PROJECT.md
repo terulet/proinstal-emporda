@@ -18,3 +18,14 @@
 5. Submit `https://proinstalemporda.com/sitemap.xml`.
 
 Events prepared: `generate_lead` for WhatsApp, phone and email; `outbound_click` for Instagram; `language_change` for the homepage selector. Personal form fields are not sent to GA4.
+
+## Generated pages
+
+Service, town and zone pages (CA and ES), `es/index.html`, `sitemap.xml` and `llms.txt` are generated:
+
+    python3 _generador/generar.py
+
+- Texts live in `_generador/serveis.py` and `_generador/pobles.py`. Edit them there, not in the HTML.
+- `es/index.html` is built from `index.html` with the `es` strings of its translation dictionary. Edit the Catalan homepage, then regenerate.
+- The footer links of the homepage are filled between `<!--enllacos-->` markers.
+- `_generador/` is not published: GitHub Pages skips folders starting with `_`.

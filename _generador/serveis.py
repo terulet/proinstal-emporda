@@ -1,0 +1,516 @@
+# Contingut de les pàgines de servei, en català (ca) i castellà (es).
+# Cada servei és una fitxa: afegir un servei és afegir una fitxa aquí.
+# Els preus no hi són a propòsit: falta que l'empresa doni xifres reals.
+
+SERVEIS = [
+{
+ "id": "reformes", "hero": "/interiores-reformas/reforma-interior-01.jpg", "img": "/interiores-reformas/reforma-interior-08.jpg",
+ "tipus": "Reformes integrals",
+ "ca": {
+  "slug": "serveis/reformes-integrals-emporda.html", "nom": "Reformes integrals",
+  "title": "Reformes integrals a l’Empordà | Proinstal Empordà",
+  "desc": "Reformes integrals de cases, pisos, locals, cuines i banys a l’Alt i Baix Empordà. Un sol equip coordina instal·lacions, fusteria i acabats. Pressupost gratuït.",
+  "eyebrow": "Reformes · Coordinació d’oficis", "h1": "Reformes integrals a l’Empordà",
+  "intro": "Proinstal Empordà fa reformes integrals de cases, pisos, locals, cuines i banys a l’Alt i Baix Empordà, amb un sol equip que coordina electricitat, fontaneria, climatització, fusteria i acabats.",
+  "alt": "Reforma interior d’un habitatge a l’Empordà",
+  "e2": "Un únic interlocutor", "h2": "De la idea a l’entrega",
+  "lead": "Una reforma funciona millor quan les decisions, els oficis i els terminis estan coordinats. Visitem l’espai, definim l’abast, preparem un pressupost detallat i organitzem l’execució.",
+  "llista": ["Reformes completes i parcials d’habitatges i locals.", "Renovació de cuines, banys, terres i revestiments.", "Actualització d’instal·lacions d’aigua, llum i climatització.", "Fusteria, tancaments, pintura i acabats.", "Solucions adaptades a humitat, vent, sol i salinitat de costa."],
+  "h2b": "Reformes pensades per al teu espai",
+  "fitxes": [["Habitatges", "Redistribució, renovació d’instal·lacions, confort, eficiència i acabats per a cases i pisos habituals."], ["Segones residències", "Materials i solucions adequades a l’ambient costaner, amb comunicació clara durant tota l’obra encara que no siguis aquí."], ["Locals i comunitats", "Intervencions coordinades per reduir imprevistos i mantenir un únic punt de contacte."]],
+  "faq": [
+   ["Quant costa una reforma integral a l’Empordà?", "Depèn dels metres, de l’estat de les instal·lacions i dels acabats que triïs. Fem una visita sense cost i et donem un pressupost detallat per partides, amb materials, mà d’obra i terminis."],
+   ["Quant dura una reforma integral?", "Un bany o una cuina sols acostuma a ser qüestió de setmanes; un pis o una casa sencera, de mesos. Al pressupost hi posem el calendari de cada fase perquè sàpigues què passarà cada setmana."],
+   ["Qui s’encarrega dels permisos?", "T’indiquem quin tràmit demana l’ajuntament per a la teva obra, comunicació prèvia o llicència, i t’ajudem a preparar-lo abans de començar."],
+   ["Puc fer la reforma si no visc a l’Empordà?", "Sí. Treballem amb segones residències: t’enviem fotos i informes de l’avanç i un sol responsable et respon en català, castellà, francès, anglès o alemany."],
+   ["Feu també reformes parcials?", "Sí. Podem fer només el bany, la cuina, el terra o la instal·lació elèctrica, o una reforma per fases si prefereixes repartir l’obra."]],
+  "cta_h": "Parlem de la teva reforma?", "cta_p": "Indica’ns el municipi, el tipus d’espai i què vols canviar. Et respondrem per valorar una visita.", "wa": "Hola Proinstal Empordà, vull demanar pressupost per a una reforma"
+ },
+ "es": {
+  "slug": "es/servicios/reformas-integrales-emporda.html", "nom": "Reformas integrales",
+  "title": "Reformas integrales en el Empordà | Proinstal Empordà",
+  "desc": "Reformas integrales de casas, pisos, locales, cocinas y baños en el Alt y Baix Empordà. Un solo equipo coordina instalaciones, carpintería y acabados. Presupuesto gratis.",
+  "eyebrow": "Reformas · Coordinación de oficios", "h1": "Reformas integrales en el Empordà",
+  "intro": "Proinstal Empordà hace reformas integrales de casas, pisos, locales, cocinas y baños en el Alt y Baix Empordà, con un solo equipo que coordina electricidad, fontanería, climatización, carpintería y acabados.",
+  "alt": "Reforma interior de una vivienda en el Empordà",
+  "e2": "Un único interlocutor", "h2": "De la idea a la entrega",
+  "lead": "Una reforma sale mejor cuando las decisiones, los oficios y los plazos están coordinados. Visitamos el espacio, definimos el alcance, preparamos un presupuesto detallado y organizamos la obra.",
+  "llista": ["Reformas completas y parciales de viviendas y locales.", "Renovación de cocinas, baños, suelos y revestimientos.", "Actualización de instalaciones de agua, luz y climatización.", "Carpintería, cerramientos, pintura y acabados.", "Soluciones para la humedad, el viento, el sol y la salinidad de la costa."],
+  "h2b": "Reformas pensadas para tu espacio",
+  "fitxes": [["Viviendas", "Redistribución, renovación de instalaciones, confort, eficiencia y acabados para casas y pisos."], ["Segundas residencias", "Materiales y soluciones adecuados al ambiente de costa, con comunicación clara durante toda la obra aunque no estés aquí."], ["Locales y comunidades", "Intervenciones coordinadas para reducir imprevistos con un único punto de contacto."]],
+  "faq": [
+   ["¿Cuánto cuesta una reforma integral en el Empordà?", "Depende de los metros, del estado de las instalaciones y de los acabados que elijas. Hacemos una visita sin coste y te damos un presupuesto detallado por partidas, con materiales, mano de obra y plazos."],
+   ["¿Cuánto dura una reforma integral?", "Un baño o una cocina sueltos suelen ser cuestión de semanas; un piso o una casa entera, de meses. En el presupuesto ponemos el calendario de cada fase para que sepas qué pasará cada semana."],
+   ["¿Quién se encarga de los permisos?", "Te indicamos qué trámite pide el ayuntamiento para tu obra, comunicación previa o licencia, y te ayudamos a prepararlo antes de empezar."],
+   ["¿Puedo hacer la reforma si no vivo en el Empordà?", "Sí. Trabajamos con segundas residencias: te enviamos fotos e informes del avance y un solo responsable te atiende en castellano, catalán, francés, inglés o alemán."],
+   ["¿Hacéis también reformas parciales?", "Sí. Podemos hacer solo el baño, la cocina, el suelo o la instalación eléctrica, o una reforma por fases si prefieres repartir la obra."]],
+  "cta_h": "¿Hablamos de tu reforma?", "cta_p": "Dinos el municipio, el tipo de espacio y qué quieres cambiar. Te responderemos para valorar una visita.", "wa": "Hola Proinstal Empordà, quiero pedir presupuesto para una reforma"
+ }
+},
+{
+ "id": "banys", "hero": "/banos-lavaderos-fontaneria/bano-fontaneria-04.jpg", "img": "/interiores-reformas/reforma-interior-21.jpg",
+ "tipus": "Reforma de banys",
+ "ca": {
+  "slug": "serveis/reforma-banys-emporda.html", "nom": "Reforma de banys",
+  "title": "Reforma de banys a l’Empordà | Proinstal Empordà",
+  "desc": "Reforma de banys a Figueres, Roses, Empuriabrava i tot l’Empordà: canvi de banyera per plat de dutxa, fontaneria, electricitat, rajola i mobles. Pressupost gratuït.",
+  "eyebrow": "Banys · Dutxes · Fontaneria", "h1": "Reforma de banys a l’Empordà",
+  "intro": "Reformem banys sencers o per parts a l’Alt i Baix Empordà: canvi de banyera per plat de dutxa, nova fontaneria, llum, ventilació, revestiments i mobles, tot amb el mateix equip.",
+  "alt": "Bany reformat amb dutxa i moble nou",
+  "e2": "Tot el bany, un sol equip", "h2": "Fontaneria, llum i acabats coordinats",
+  "lead": "En un bany coincideixen el lampista, l’electricista, el paleta i el fuster. Els coordinem nosaltres perquè l’obra sigui curta i no hagis de perseguir ningú.",
+  "llista": ["Canvi de banyera per plat de dutxa i mampares.", "Renovació de canonades, desguassos i aixetes.", "Rajola, revestiments i terres resistents a la humitat.", "Mobles de bany, miralls, il·luminació i extractors.", "Adaptació de banys per a gent gran i mobilitat reduïda."],
+  "h2b": "Tipus de reforma de bany",
+  "fitxes": [["Reforma completa", "Es renova tot: instal·lacions, revestiments, sanitaris i mobles."], ["Canvi de banyera", "Plat de dutxa a ras de terra, mampara i reparació de la paret afectada."], ["Banys de lloguer i segones residències", "Acabats resistents i fàcils de mantenir, pensats per a un ús intens a l’estiu."]],
+  "faq": [
+   ["Quant es triga a reformar un bany?", "Depèn de la mida i de si cal canviar les instal·lacions. Abans de començar et donem el calendari per escrit, perquè sàpigues quants dies no podràs fer servir el bany."],
+   ["Es pot canviar la banyera per un plat de dutxa sense fer obra a tot el bany?", "Sí. Retirem la banyera, adaptem el desguàs, col·loquem el plat i la mampara i reparem el revestiment de la zona."],
+   ["Quant costa reformar un bany?", "Depèn dels metres, dels materials i de l’estat de les canonades. Fem una visita gratuïta i et donem un pressupost tancat per partides."],
+   ["Us encarregueu dels materials?", "Sí, si vols. Et proposem opcions de sanitaris, rajola i mobles, o fem servir els que triïs tu."]],
+  "cta_h": "Vols renovar el bany?", "cta_p": "Envia’ns fotos del bany actual i una idea del que vols. Et proposarem una visita.", "wa": "Hola Proinstal Empordà, vull reformar un bany"
+ },
+ "es": {
+  "slug": "es/servicios/reforma-banos-emporda.html", "nom": "Reforma de baños",
+  "title": "Reforma de baños en el Empordà | Proinstal Empordà",
+  "desc": "Reforma de baños en Figueres, Roses, Empuriabrava y todo el Empordà: cambio de bañera por plato de ducha, fontanería, electricidad, azulejo y muebles. Presupuesto gratis.",
+  "eyebrow": "Baños · Duchas · Fontanería", "h1": "Reforma de baños en el Empordà",
+  "intro": "Reformamos baños enteros o por partes en el Alt y Baix Empordà: cambio de bañera por plato de ducha, fontanería nueva, luz, ventilación, revestimientos y muebles, todo con el mismo equipo.",
+  "alt": "Baño reformado con ducha y mueble nuevo",
+  "e2": "Todo el baño, un solo equipo", "h2": "Fontanería, luz y acabados coordinados",
+  "lead": "En un baño coinciden el fontanero, el electricista, el albañil y el carpintero. Los coordinamos nosotros para que la obra sea corta y no tengas que perseguir a nadie.",
+  "llista": ["Cambio de bañera por plato de ducha y mamparas.", "Renovación de tuberías, desagües y grifería.", "Azulejo, revestimientos y suelos resistentes a la humedad.", "Muebles de baño, espejos, iluminación y extractores.", "Adaptación de baños para personas mayores y movilidad reducida."],
+  "h2b": "Tipos de reforma de baño",
+  "fitxes": [["Reforma completa", "Se renueva todo: instalaciones, revestimientos, sanitarios y muebles."], ["Cambio de bañera", "Plato de ducha a ras de suelo, mampara y reparación de la pared afectada."], ["Baños de alquiler y segundas residencias", "Acabados resistentes y fáciles de mantener, pensados para un uso intenso en verano."]],
+  "faq": [
+   ["¿Cuánto se tarda en reformar un baño?", "Depende del tamaño y de si hay que cambiar las instalaciones. Antes de empezar te damos el calendario por escrito, para que sepas cuántos días no podrás usar el baño."],
+   ["¿Se puede cambiar la bañera por un plato de ducha sin reformar todo el baño?", "Sí. Retiramos la bañera, adaptamos el desagüe, colocamos el plato y la mampara y reparamos el revestimiento de la zona."],
+   ["¿Cuánto cuesta reformar un baño?", "Depende de los metros, de los materiales y del estado de las tuberías. Hacemos una visita gratuita y te damos un presupuesto cerrado por partidas."],
+   ["¿Os encargáis de los materiales?", "Sí, si quieres. Te proponemos opciones de sanitarios, azulejo y muebles, o usamos los que elijas tú."]],
+  "cta_h": "¿Quieres renovar el baño?", "cta_p": "Envíanos fotos del baño actual y una idea de lo que quieres. Te propondremos una visita.", "wa": "Hola Proinstal Empordà, quiero reformar un baño"
+ }
+},
+{
+ "id": "cuines", "hero": "/interiores-reformas/reforma-interior-15.jpg", "img": "/terrazas-suelos-exteriores/terraza-suelo-exterior-01.jpg",
+ "tipus": "Reforma de cuines",
+ "ca": {
+  "slug": "serveis/reforma-cuines-emporda.html", "nom": "Reforma de cuines",
+  "title": "Reforma de cuines a l’Empordà | Proinstal Empordà",
+  "desc": "Reforma de cuines a l’Alt i Baix Empordà: distribució, mobles, fontaneria, electricitat, extracció i acabats amb un sol equip. Cuines interiors i d’exterior. Pressupost gratuït.",
+  "eyebrow": "Cuines · Instal·lacions · Mobles", "h1": "Reforma de cuines a l’Empordà",
+  "intro": "Renovem cuines a l’Alt i Baix Empordà: nova distribució, preses d’aigua i desguassos, circuits elèctrics per als electrodomèstics, extracció de fums, mobles i acabats, tot coordinat per un sol equip.",
+  "alt": "Cuina d’exterior amb mobles foscos",
+  "e2": "Cuina nova sense sorpreses", "h2": "Instal·lacions al dia abans dels mobles",
+  "lead": "Una cuina nova sobre instal·lacions velles dura poc. Revisem l’aigua, el desguàs i la potència elèctrica abans de muntar res, i després ho deixem tot acabat.",
+  "llista": ["Nova distribució i obertura a la sala.", "Preses d’aigua, desguassos i connexions de rentaplats i rentadora.", "Circuits elèctrics per a placa d’inducció i forn.", "Campanes i sortida de fums.", "Mobles a mida, taulells, revestiments i il·luminació."],
+  "h2b": "Cuines per a cada casa",
+  "fitxes": [["Cuina completa", "De l’enderroc a l’entrega: instal·lacions, paleta, mobles i acabats."], ["Renovació parcial", "Canvi de mobles, taulell o electrodomèstics aprofitant les instal·lacions bones."], ["Cuines d’exterior", "Barbacoes i zones de cuina a la terrassa, amb materials per al clima de costa."]],
+  "faq": [
+   ["Quant costa reformar una cuina?", "Depèn de la mida, de si canvia la distribució i dels mobles i taulells que triïs. Després de la visita et donem un pressupost per partides."],
+   ["Cal canviar la instal·lació elèctrica per posar inducció?", "Moltes vegades sí: una placa d’inducció necessita un circuit propi. Ho revisem a la visita i t’ho diem abans del pressupost."],
+   ["Feu cuines a mida?", "Sí. Fem mobles a mida i també muntem mobles de fàbrica si ja els tens triats."],
+   ["Podeu fer una cuina a la terrassa?", "Sí. Fem cuines d’exterior amb presa d’aigua, llum i materials que aguanten el sol i la salinitat."]],
+  "cta_h": "Vols una cuina nova?", "cta_p": "Envia’ns fotos i mides aproximades de la cuina actual i t’explicarem com ho faríem.", "wa": "Hola Proinstal Empordà, vull reformar la cuina"
+ },
+ "es": {
+  "slug": "es/servicios/reforma-cocinas-emporda.html", "nom": "Reforma de cocinas",
+  "title": "Reforma de cocinas en el Empordà | Proinstal Empordà",
+  "desc": "Reforma de cocinas en el Alt y Baix Empordà: distribución, muebles, fontanería, electricidad, extracción y acabados con un solo equipo. Cocinas interiores y de exterior.",
+  "eyebrow": "Cocinas · Instalaciones · Muebles", "h1": "Reforma de cocinas en el Empordà",
+  "intro": "Renovamos cocinas en el Alt y Baix Empordà: nueva distribución, tomas de agua y desagües, circuitos eléctricos para los electrodomésticos, extracción de humos, muebles y acabados, todo coordinado por un solo equipo.",
+  "alt": "Cocina de exterior con muebles oscuros",
+  "e2": "Cocina nueva sin sorpresas", "h2": "Instalaciones al día antes que los muebles",
+  "lead": "Una cocina nueva sobre instalaciones viejas dura poco. Revisamos el agua, el desagüe y la potencia eléctrica antes de montar nada, y después lo dejamos todo terminado.",
+  "llista": ["Nueva distribución y apertura al salón.", "Tomas de agua, desagües y conexiones de lavavajillas y lavadora.", "Circuitos eléctricos para placa de inducción y horno.", "Campanas y salida de humos.", "Muebles a medida, encimeras, revestimientos e iluminación."],
+  "h2b": "Cocinas para cada casa",
+  "fitxes": [["Cocina completa", "Del derribo a la entrega: instalaciones, albañilería, muebles y acabados."], ["Renovación parcial", "Cambio de muebles, encimera o electrodomésticos aprovechando las instalaciones buenas."], ["Cocinas de exterior", "Barbacoas y zonas de cocina en la terraza, con materiales para el clima de costa."]],
+  "faq": [
+   ["¿Cuánto cuesta reformar una cocina?", "Depende del tamaño, de si cambia la distribución y de los muebles y encimeras que elijas. Tras la visita te damos un presupuesto por partidas."],
+   ["¿Hay que cambiar la instalación eléctrica para poner inducción?", "Muchas veces sí: una placa de inducción necesita un circuito propio. Lo revisamos en la visita y te lo decimos antes del presupuesto."],
+   ["¿Hacéis cocinas a medida?", "Sí. Hacemos muebles a medida y también montamos muebles de fábrica si ya los tienes elegidos."],
+   ["¿Podéis hacer una cocina en la terraza?", "Sí. Hacemos cocinas de exterior con toma de agua, luz y materiales que aguantan el sol y la salinidad."]],
+  "cta_h": "¿Quieres una cocina nueva?", "cta_p": "Envíanos fotos y medidas aproximadas de la cocina actual y te explicaremos cómo lo haríamos.", "wa": "Hola Proinstal Empordà, quiero reformar la cocina"
+ }
+},
+{
+ "id": "fontaneria", "hero": "/banos-lavaderos-fontaneria/bano-fontaneria-02.jpg", "img": "/banos-lavaderos-fontaneria/bano-fontaneria-05.jpg",
+ "tipus": "Lampisteria i fontaneria",
+ "ca": {
+  "slug": "serveis/fontaneria-emporda.html", "nom": "Lampisteria i fontaneria",
+  "title": "Lampista i fontaner a l’Empordà | Proinstal Empordà",
+  "desc": "Lampista i fontaner a Figueres, Roses, Empuriabrava, Vilajuïga i tot l’Empordà: fuites, canonades, termos, calderes, sanitaris i instal·lacions d’aigua noves.",
+  "eyebrow": "Lampisteria · Aigua · Banys · Cuines", "h1": "Lampista i fontaneria a l’Empordà",
+  "intro": "Som lampistes a l’Alt i Baix Empordà: reparem fuites i avaries, canviem termos i calderes, muntem sanitaris i renovem instal·lacions d’aigua de cases, pisos, locals i comunitats.",
+  "alt": "Instal·lació d’aigua i fontaneria en un habitatge",
+  "e2": "Diagnòstic i solució", "h2": "Treballs petits i renovacions completes",
+  "lead": "Valorem l’origen del problema i proposem una solució proporcionada, tant per a una reparació concreta com per renovar tota la instal·lació durant una reforma.",
+  "llista": ["Fuites, claus de pas, canonades i desguassos.", "Sanitaris, aixetes, dutxes i mobles de bany.", "Connexions de cuina, rentadora i rentaplats.", "Termos, calderes i producció d’aigua calenta.", "Coordinació amb paleta, electricista i fuster quan cal."],
+  "h2b": "Què fem com a lampistes",
+  "fitxes": [["Reparacions", "Localització i correcció d’avaries, fuites i elements deteriorats."], ["Banys i cuines", "Renovació d’instal·lacions i muntatge coordinat amb la resta d’oficis."], ["Manteniment", "Revisió de punts d’aigua i actuacions preventives en habitatges, segones residències i comunitats."]],
+  "faq": [
+   ["Teniu servei de lampista a Figueres, Roses i Empuriabrava?", "Sí. Sortim de Vilajuïga i treballem a tot l’Alt Empordà i bona part del Baix Empordà. Digues-nos el municipi i et confirmem quan hi podem anar."],
+   ["Què faig si tinc una fuita d’aigua?", "Tanca la clau de pas general i envia’ns una foto per WhatsApp amb el lloc de la fuita. Et direm com seguir i quan podem venir."],
+   ["Canvieu termos elèctrics i calderes?", "Sí. Retirem l’aparell vell, adaptem les connexions i deixem el nou funcionant. També et podem proposar aerotèrmia per a l’aigua calenta."],
+   ["Renoveu canonades velles de plom o ferro?", "Sí. En cases antigues és habitual trobar trams vells que perden pressió o tenen fuites; els substituïm per material actual, sovint aprofitant una reforma."]],
+  "cta_h": "Necessites un lampista a l’Empordà?", "cta_p": "Envia’ns una foto o explica’ns el problema, el municipi i la urgència de la intervenció.", "wa": "Hola Proinstal Empordà, necessito un lampista"
+ },
+ "es": {
+  "slug": "es/servicios/fontaneria-emporda.html", "nom": "Fontanería",
+  "title": "Fontanero en el Empordà | Proinstal Empordà",
+  "desc": "Fontanero en Figueres, Roses, Empuriabrava, Vilajuïga y todo el Empordà: fugas, tuberías, termos, calderas, sanitarios e instalaciones de agua nuevas.",
+  "eyebrow": "Fontanería · Agua · Baños · Cocinas", "h1": "Fontanero en el Empordà",
+  "intro": "Somos fontaneros en el Alt y Baix Empordà: reparamos fugas y averías, cambiamos termos y calderas, montamos sanitarios y renovamos instalaciones de agua de casas, pisos, locales y comunidades.",
+  "alt": "Instalación de agua y fontanería en una vivienda",
+  "e2": "Diagnóstico y solución", "h2": "Trabajos pequeños y renovaciones completas",
+  "lead": "Valoramos el origen del problema y proponemos una solución proporcionada, tanto para una reparación concreta como para renovar toda la instalación durante una reforma.",
+  "llista": ["Fugas, llaves de paso, tuberías y desagües.", "Sanitarios, grifos, duchas y muebles de baño.", "Conexiones de cocina, lavadora y lavavajillas.", "Termos, calderas y agua caliente.", "Coordinación con albañil, electricista y carpintero cuando hace falta."],
+  "h2b": "Qué hacemos como fontaneros",
+  "fitxes": [["Reparaciones", "Localización y corrección de averías, fugas y elementos deteriorados."], ["Baños y cocinas", "Renovación de instalaciones y montaje coordinado con el resto de oficios."], ["Mantenimiento", "Revisión de puntos de agua y actuaciones preventivas en viviendas, segundas residencias y comunidades."]],
+  "faq": [
+   ["¿Tenéis fontanero en Figueres, Roses y Empuriabrava?", "Sí. Salimos de Vilajuïga y trabajamos en todo el Alt Empordà y buena parte del Baix Empordà. Dinos el municipio y te confirmamos cuándo podemos ir."],
+   ["¿Qué hago si tengo una fuga de agua?", "Cierra la llave de paso general y envíanos una foto por WhatsApp con el sitio de la fuga. Te diremos cómo seguir y cuándo podemos venir."],
+   ["¿Cambiáis termos eléctricos y calderas?", "Sí. Retiramos el aparato viejo, adaptamos las conexiones y dejamos el nuevo funcionando. También te podemos proponer aerotermia para el agua caliente."],
+   ["¿Renováis tuberías viejas de plomo o hierro?", "Sí. En casas antiguas es habitual encontrar tramos viejos que pierden presión o tienen fugas; los sustituimos por material actual, a menudo aprovechando una reforma."]],
+  "cta_h": "¿Necesitas un fontanero en el Empordà?", "cta_p": "Envíanos una foto o cuéntanos el problema, el municipio y la urgencia.", "wa": "Hola Proinstal Empordà, necesito un fontanero"
+ }
+},
+{
+ "id": "electricitat", "hero": "/slide-05-garage-int-despres.jpg", "img": "/equipos-materiales/equipo-material-04.jpg",
+ "tipus": "Electricista",
+ "ca": {
+  "slug": "serveis/electricitat-climatitzacio-emporda.html", "nom": "Electricista",
+  "title": "Electricista a l’Empordà | Proinstal Empordà",
+  "desc": "Electricista a Figueres, Roses, Empuriabrava i tot l’Empordà: quadres, avaries, nous circuits, il·luminació, punts de càrrega i renovació d’instal·lacions antigues.",
+  "eyebrow": "Electricitat · Seguretat · Eficiència", "h1": "Electricista a l’Empordà",
+  "intro": "Fem instal·lacions elèctriques noves, reparem avaries i renovem quadres i circuits d’habitatges, locals i comunitats a l’Alt i Baix Empordà, sols o dins d’una reforma.",
+  "alt": "Instal·lació elèctrica en un garatge reformat",
+  "e2": "Instal·lacions elèctriques", "h2": "Seguretat i capacitat per a l’ús actual",
+  "lead": "Moltes cases de l’Empordà tenen instal·lacions pensades per a menys aparells dels que tenen avui. Revisem el quadre, les proteccions i els circuits i t’expliquem què cal canviar i què no.",
+  "llista": ["Quadres elèctrics i proteccions.", "Avaries, salts del diferencial i curtcircuits.", "Nous circuits, endolls i punts de llum.", "Il·luminació interior i exterior.", "Circuits per a climatització, inducció, plaques solars i càrrega de cotxe elèctric."],
+  "h2b": "Feines d’electricista",
+  "fitxes": [["Quadres i proteccions", "Revisió i actualització d’elements de protecció i distribució."], ["Il·luminació i punts", "Nous circuits, endolls, punts de llum i adaptació dels espais."], ["Avaries i renovacions", "Diagnòstic de problemes i substitució de trams o instal·lacions antigues."]],
+  "faq": [
+   ["Per què salta el diferencial?", "Pot ser un aparell amb fuita, humitat en un endoll exterior o un circuit en mal estat. Venim, ho localitzem circuit per circuit i ho reparem."],
+   ["Cal renovar la instal·lació d’una casa antiga?", "Si té cables sense terra, un quadre antic o pocs circuits, sí que és recomanable. Primer la revisem i et diem què és urgent i què pot esperar."],
+   ["Instal·leu punts de càrrega per a cotxe elèctric?", "Sí. Revisem la potència contractada i el quadre, i fem el circuit fins al garatge o la plaça d’aparcament."],
+   ["Feu també l’aire condicionat i les plaques solars?", "Sí, amb el mateix equip. Tenim pàgines pròpies per a l’aire condicionat, l’aerotèrmia i les plaques solars."]],
+  "cta_h": "Necessites un electricista?", "cta_p": "Explica’ns l’avaria o la instal·lació que vols fer i el municipi. Et respondrem de seguida.", "wa": "Hola Proinstal Empordà, necessito un electricista"
+ },
+ "es": {
+  "slug": "es/servicios/electricista-emporda.html", "nom": "Electricista",
+  "title": "Electricista en el Empordà | Proinstal Empordà",
+  "desc": "Electricista en Figueres, Roses, Empuriabrava y todo el Empordà: cuadros, averías, circuitos nuevos, iluminación, puntos de carga y renovación de instalaciones antiguas.",
+  "eyebrow": "Electricidad · Seguridad · Eficiencia", "h1": "Electricista en el Empordà",
+  "intro": "Hacemos instalaciones eléctricas nuevas, reparamos averías y renovamos cuadros y circuitos de viviendas, locales y comunidades en el Alt y Baix Empordà, sueltos o dentro de una reforma.",
+  "alt": "Instalación eléctrica en un garaje reformado",
+  "e2": "Instalaciones eléctricas", "h2": "Seguridad y capacidad para el uso actual",
+  "lead": "Muchas casas del Empordà tienen instalaciones pensadas para menos aparatos de los que tienen hoy. Revisamos el cuadro, las protecciones y los circuitos y te explicamos qué hay que cambiar y qué no.",
+  "llista": ["Cuadros eléctricos y protecciones.", "Averías, saltos del diferencial y cortocircuitos.", "Circuitos nuevos, enchufes y puntos de luz.", "Iluminación interior y exterior.", "Circuitos para climatización, inducción, placas solares y carga de coche eléctrico."],
+  "h2b": "Trabajos de electricista",
+  "fitxes": [["Cuadros y protecciones", "Revisión y actualización de elementos de protección y distribución."], ["Iluminación y puntos", "Circuitos nuevos, enchufes, puntos de luz y adaptación de los espacios."], ["Averías y renovaciones", "Diagnóstico de problemas y sustitución de tramos o instalaciones antiguas."]],
+  "faq": [
+   ["¿Por qué salta el diferencial?", "Puede ser un aparato con fuga, humedad en un enchufe exterior o un circuito en mal estado. Venimos, lo localizamos circuito a circuito y lo reparamos."],
+   ["¿Hay que renovar la instalación de una casa antigua?", "Si tiene cables sin toma de tierra, un cuadro antiguo o pocos circuitos, es recomendable. Primero la revisamos y te decimos qué es urgente y qué puede esperar."],
+   ["¿Instaláis puntos de carga para coche eléctrico?", "Sí. Revisamos la potencia contratada y el cuadro, y hacemos el circuito hasta el garaje o la plaza de aparcamiento."],
+   ["¿Hacéis también el aire acondicionado y las placas solares?", "Sí, con el mismo equipo. Tenemos páginas propias para el aire acondicionado, la aerotermia y las placas solares."]],
+  "cta_h": "¿Necesitas un electricista?", "cta_p": "Cuéntanos la avería o la instalación que quieres hacer y el municipio. Te responderemos enseguida.", "wa": "Hola Proinstal Empordà, necesito un electricista"
+ }
+},
+{
+ "id": "aire", "hero": "/interiores-reformas/reforma-interior-22.jpg", "img": "/interiores-reformas/reforma-interior-17.jpg",
+ "tipus": "Instal·lació d’aire condicionat",
+ "ca": {
+  "slug": "serveis/aire-condicionat-emporda.html", "nom": "Aire condicionat",
+  "title": "Aire condicionat a l’Empordà: instal·lació i reparació | Proinstal",
+  "desc": "Instal·lació, reparació i manteniment d’aire condicionat a Figueres, Roses, Empuriabrava i tot l’Empordà. Splits, conductes i bombes de calor per a cases i locals.",
+  "eyebrow": "Climatització · Splits · Conductes", "h1": "Aire condicionat a l’Empordà",
+  "intro": "Instal·lem, reparem i mantenim aire condicionat a l’Alt i Baix Empordà: splits, multisplits, conductes i bombes de calor que també escalfen a l’hivern, per a cases, apartaments i locals.",
+  "alt": "Habitació climatitzada en un habitatge de l’Empordà",
+  "e2": "Confort tot l’any", "h2": "L’equip adequat per a cada espai",
+  "lead": "Mirem la mida i l’orientació de cada estança abans de proposar un aparell. Un equip massa petit no arriba i un de massa gran gasta de més. També resolem on va la màquina exterior i per on passa la línia.",
+  "llista": ["Splits i multisplits per a habitacions i salons.", "Aire condicionat per conductes amb reixes a cada estança.", "Bombes de calor que fan fred i calor.", "Manteniment, neteja de filtres i revisió abans de l’estiu.", "Reparació d’avaries i substitució d’equips antics."],
+  "h2b": "Instal·lació, reparació i manteniment",
+  "fitxes": [["Instal·lació nova", "Estudi de l’espai, ubicació de les màquines, línies frigorífiques, desguàs i circuit elèctric."], ["Reparació", "Equips que no refreden, gotegen, fan soroll o donen error."], ["Manteniment", "Neteja i revisió per arribar a l’estiu amb l’equip a punt, també en segones residències."]],
+  "faq": [
+   ["Quant costa instal·lar aire condicionat?", "Depèn del nombre d’estances, del tipus d’equip i de la distància entre la màquina interior i l’exterior. Després de veure-ho et donem un pressupost tancat amb l’equip inclòs."],
+   ["Split o conductes?", "Els splits són la solució més directa per a una o poques estances. Els conductes reparteixen l’aire per tota la casa amb una sola màquina i queden amagats al fals sostre. A la visita et diem què encaixa amb la teva casa."],
+   ["L’aire condicionat també serveix per escalfar?", "Sí. Les bombes de calor fan fred a l’estiu i calor a l’hivern, i a la costa de l’Empordà són una manera eficient d’escalfar la casa."],
+   ["Com afecta la tramuntana i la salinitat a la màquina exterior?", "La màquina ha d’anar ben fixada i, a primera línia de mar, convé protegir-la i netejar-la més sovint. Ho tenim en compte a l’hora d’ubicar-la."],
+   ["Quan s’ha de fer el manteniment?", "Una vegada l’any, idealment a la primavera, abans que comenci la calor i que tothom en necessiti."]],
+  "cta_h": "Vols instal·lar o reparar l’aire condicionat?", "cta_p": "Digues-nos quantes estances vols climatitzar, el municipi i si tens un equip antic.", "wa": "Hola Proinstal Empordà, vull informació sobre aire condicionat"
+ },
+ "es": {
+  "slug": "es/servicios/aire-acondicionado-emporda.html", "nom": "Aire acondicionado",
+  "title": "Aire acondicionado en el Empordà: instalación y reparación | Proinstal",
+  "desc": "Instalación, reparación y mantenimiento de aire acondicionado en Figueres, Roses, Empuriabrava y todo el Empordà. Splits, conductos y bombas de calor para casas y locales.",
+  "eyebrow": "Climatización · Splits · Conductos", "h1": "Aire acondicionado en el Empordà",
+  "intro": "Instalamos, reparamos y mantenemos aire acondicionado en el Alt y Baix Empordà: splits, multisplits, conductos y bombas de calor que también calientan en invierno, para casas, apartamentos y locales.",
+  "alt": "Habitación climatizada en una vivienda del Empordà",
+  "e2": "Confort todo el año", "h2": "El equipo adecuado para cada espacio",
+  "lead": "Miramos el tamaño y la orientación de cada estancia antes de proponer un aparato. Un equipo demasiado pequeño no llega y uno demasiado grande gasta de más. También resolvemos dónde va la máquina exterior y por dónde pasa la línea.",
+  "llista": ["Splits y multisplits para dormitorios y salones.", "Aire acondicionado por conductos con rejillas en cada estancia.", "Bombas de calor que dan frío y calor.", "Mantenimiento, limpieza de filtros y revisión antes del verano.", "Reparación de averías y sustitución de equipos antiguos."],
+  "h2b": "Instalación, reparación y mantenimiento",
+  "fitxes": [["Instalación nueva", "Estudio del espacio, ubicación de las máquinas, líneas frigoríficas, desagüe y circuito eléctrico."], ["Reparación", "Equipos que no enfrían, gotean, hacen ruido o dan error."], ["Mantenimiento", "Limpieza y revisión para llegar al verano con el equipo a punto, también en segundas residencias."]],
+  "faq": [
+   ["¿Cuánto cuesta instalar aire acondicionado?", "Depende del número de estancias, del tipo de equipo y de la distancia entre la máquina interior y la exterior. Después de verlo te damos un presupuesto cerrado con el equipo incluido."],
+   ["¿Split o conductos?", "Los splits son la solución más directa para una o pocas estancias. Los conductos reparten el aire por toda la casa con una sola máquina y quedan ocultos en el falso techo. En la visita te decimos qué encaja con tu casa."],
+   ["¿El aire acondicionado también sirve para calentar?", "Sí. Las bombas de calor dan frío en verano y calor en invierno, y en la costa del Empordà son una forma eficiente de calentar la casa."],
+   ["¿Cómo afectan la tramontana y la salinidad a la máquina exterior?", "La máquina debe ir bien fijada y, en primera línea de mar, conviene protegerla y limpiarla más a menudo. Lo tenemos en cuenta al ubicarla."],
+   ["¿Cuándo hay que hacer el mantenimiento?", "Una vez al año, idealmente en primavera, antes de que empiece el calor y lo necesite todo el mundo."]],
+  "cta_h": "¿Quieres instalar o reparar el aire acondicionado?", "cta_p": "Dinos cuántas estancias quieres climatizar, el municipio y si tienes un equipo antiguo.", "wa": "Hola Proinstal Empordà, quiero información sobre aire acondicionado"
+ }
+},
+{
+ "id": "aerotermia", "hero": "/exteriores-fachadas-cerramientos/cerramiento-fachada-16.jpg", "img": "/banos-lavaderos-fontaneria/bano-fontaneria-05.jpg",
+ "tipus": "Instal·lació d’aerotèrmia",
+ "ca": {
+  "slug": "serveis/aerotermia-emporda.html", "nom": "Aerotèrmia",
+  "title": "Aerotèrmia a l’Empordà: calefacció i aigua calenta | Proinstal",
+  "desc": "Instal·lació d’aerotèrmia a l’Alt i Baix Empordà per a calefacció, aigua calenta i refrigeració. Substitució de calderes de gasoil, gas o termos elèctrics.",
+  "eyebrow": "Aerotèrmia · Calefacció · Aigua calenta", "h1": "Aerotèrmia a l’Empordà",
+  "intro": "Instal·lem aerotèrmia a l’Alt i Baix Empordà per escalfar la casa, produir aigua calenta i refrescar a l’estiu amb un sol equip, substituint calderes de gasoil, gas o termos elèctrics.",
+  "alt": "Instal·lació tècnica d’aigua calenta en un habitatge",
+  "e2": "Menys consum, un sol sistema", "h2": "Calefacció, aigua calenta i fred",
+  "lead": "L’aerotèrmia agafa l’energia de l’aire exterior. Al clima suau de l’Empordà funciona bé tot l’any, i encara més si es combina amb plaques solars.",
+  "llista": ["Substitució de calderes de gasoil o gas.", "Aerotèrmia per a aigua calenta sanitària.", "Connexió a terra radiant, radiadors o fan-coils.", "Combinació amb plaques solars per reduir la factura.", "Coordinació de fontaneria, electricitat i obra."],
+  "h2b": "Com ho plantegem",
+  "fitxes": [["Estudi de la casa", "Superfície, aïllament, emissors actuals i consum d’aigua calenta."], ["Proposta", "Equip, dipòsit, ubicació de la màquina exterior i treballs necessaris."], ["Instal·lació", "Muntatge, connexions, posada en marxa i explicació de l’ús."]],
+  "faq": [
+   ["L’aerotèrmia funciona amb els radiadors que ja tinc?", "Depèn dels radiadors i de la temperatura que necessiten. Funciona millor amb terra radiant o fan-coils, però en moltes cases es pot aprofitar part de la instal·lació. Ho valorem a la visita."],
+   ["Hi ha ajudes per instal·lar aerotèrmia?", "De vegades hi ha subvencions o deduccions fiscals vigents. T’informem de les que hi hagi en el moment de fer el pressupost."],
+   ["Quant espai necessita?", "Una màquina exterior, semblant a la d’un aire condicionat, i normalment un dipòsit d’aigua calenta a l’interior. Busquem la ubicació que menys molesti."],
+   ["Es pot combinar amb plaques solars?", "Sí, i és la combinació que més rendeix: les plaques produeixen l’electricitat que fa servir l’aerotèrmia durant el dia."]],
+  "cta_h": "Vols passar a l’aerotèrmia?", "cta_p": "Explica’ns quin sistema tens ara, els metres de la casa i el municipi.", "wa": "Hola Proinstal Empordà, vull informació sobre aerotèrmia"
+ },
+ "es": {
+  "slug": "es/servicios/aerotermia-emporda.html", "nom": "Aerotermia",
+  "title": "Aerotermia en el Empordà: calefacción y agua caliente | Proinstal",
+  "desc": "Instalación de aerotermia en el Alt y Baix Empordà para calefacción, agua caliente y refrigeración. Sustitución de calderas de gasoil, gas o termos eléctricos.",
+  "eyebrow": "Aerotermia · Calefacción · Agua caliente", "h1": "Aerotermia en el Empordà",
+  "intro": "Instalamos aerotermia en el Alt y Baix Empordà para calentar la casa, producir agua caliente y refrescar en verano con un solo equipo, sustituyendo calderas de gasoil, gas o termos eléctricos.",
+  "alt": "Instalación técnica de agua caliente en una vivienda",
+  "e2": "Menos consumo, un solo sistema", "h2": "Calefacción, agua caliente y frío",
+  "lead": "La aerotermia toma la energía del aire exterior. Con el clima suave del Empordà funciona bien todo el año, y aún más si se combina con placas solares.",
+  "llista": ["Sustitución de calderas de gasoil o gas.", "Aerotermia para agua caliente sanitaria.", "Conexión a suelo radiante, radiadores o fan-coils.", "Combinación con placas solares para bajar la factura.", "Coordinación de fontanería, electricidad y obra."],
+  "h2b": "Cómo lo planteamos",
+  "fitxes": [["Estudio de la casa", "Superficie, aislamiento, emisores actuales y consumo de agua caliente."], ["Propuesta", "Equipo, depósito, ubicación de la máquina exterior y trabajos necesarios."], ["Instalación", "Montaje, conexiones, puesta en marcha y explicación del uso."]],
+  "faq": [
+   ["¿La aerotermia funciona con los radiadores que ya tengo?", "Depende de los radiadores y de la temperatura que necesitan. Funciona mejor con suelo radiante o fan-coils, pero en muchas casas se puede aprovechar parte de la instalación. Lo valoramos en la visita."],
+   ["¿Hay ayudas para instalar aerotermia?", "A veces hay subvenciones o deducciones fiscales vigentes. Te informamos de las que haya en el momento de hacer el presupuesto."],
+   ["¿Cuánto espacio necesita?", "Una máquina exterior, parecida a la de un aire acondicionado, y normalmente un depósito de agua caliente en el interior. Buscamos la ubicación que menos moleste."],
+   ["¿Se puede combinar con placas solares?", "Sí, y es la combinación que más rinde: las placas producen la electricidad que usa la aerotermia durante el día."]],
+  "cta_h": "¿Quieres pasarte a la aerotermia?", "cta_p": "Cuéntanos qué sistema tienes ahora, los metros de la casa y el municipio.", "wa": "Hola Proinstal Empordà, quiero información sobre aerotermia"
+ }
+},
+{
+ "id": "plaques", "hero": "/slide-06-solars-despres.jpg", "img": "/slide-06-solars-abans.jpg",
+ "tipus": "Instal·lació de plaques solars",
+ "ca": {
+  "slug": "serveis/plaques-solars-emporda.html", "nom": "Plaques solars",
+  "title": "Plaques solars a l’Empordà | Proinstal Empordà",
+  "desc": "Instal·lació de plaques solars, autoconsum i bateries a l’Alt i Baix Empordà. Estudi adaptat a l’habitatge, al consum i a la coberta. Integració amb aerotèrmia.",
+  "eyebrow": "Autoconsum · Energia solar", "h1": "Plaques solars a l’Empordà",
+  "intro": "Estudiem, instal·lem i integrem sistemes de plaques solars i bateries a l’Alt i Baix Empordà, dimensionats segons el consum, l’orientació i la coberta de cada casa o negoci.",
+  "alt": "Coberta amb plaques solars instal·lades",
+  "e2": "Una proposta dimensionada", "h2": "Produir energia sense sobredimensionar",
+  "lead": "L’objectiu és adaptar la instal·lació als hàbits de consum i a l’espai disponible. Valorem la coberta, la instal·lació elèctrica i les necessitats actuals i futures.",
+  "llista": ["Autoconsum per a habitatges i petits negocis.", "Opcions amb bateries i preparació per ampliar.", "Integració amb climatització i aerotèrmia.", "Coordinació de treballs elèctrics i de coberta.", "Revisió i manteniment de la instal·lació."],
+  "h2b": "Com treballem",
+  "fitxes": [["1. Consum i coberta", "Revisem factures, orientació, ombres i superfície disponible."], ["2. Proposta", "Definim potència, components, ubicació i treballs necessaris."], ["3. Instal·lació", "Coordinem muntatge, connexions i comprovació final del sistema."]],
+  "faq": [
+   ["Quantes plaques necessito?", "Depèn del que gastes i de quan ho gastes. Amb les factures de l’últim any calculem la potència que té sentit per a la teva casa, sense sobredimensionar."],
+   ["Val la pena posar bateries?", "Si a casa hi ha poca gent durant el dia, una bateria aprofita més l’energia produïda. A les segones residències sovint no compensa. T’ho calculem amb el teu consum."],
+   ["Les plaques aguanten la tramuntana?", "Sí, si l’estructura i els ancoratges estan pensats per al vent de la zona. És una de les coses que revisem a la coberta."],
+   ["Hi ha ajudes o bonificacions?", "Hi pot haver subvencions, deduccions a l’IRPF o bonificacions municipals a l’IBI segons el moment i l’ajuntament. T’informem de les vigents."]],
+  "cta_h": "Vols valorar l’autoconsum?", "cta_p": "Indica’ns el municipi i el tipus d’immoble. Prepararem les preguntes necessàries per estudiar el projecte.", "wa": "Hola Proinstal Empordà, vull un estudi de plaques solars"
+ },
+ "es": {
+  "slug": "es/servicios/placas-solares-emporda.html", "nom": "Placas solares",
+  "title": "Placas solares en el Empordà | Proinstal Empordà",
+  "desc": "Instalación de placas solares, autoconsumo y baterías en el Alt y Baix Empordà. Estudio adaptado a la vivienda, al consumo y a la cubierta. Integración con aerotermia.",
+  "eyebrow": "Autoconsumo · Energía solar", "h1": "Placas solares en el Empordà",
+  "intro": "Estudiamos, instalamos e integramos sistemas de placas solares y baterías en el Alt y Baix Empordà, dimensionados según el consumo, la orientación y la cubierta de cada casa o negocio.",
+  "alt": "Cubierta con placas solares instaladas",
+  "e2": "Una propuesta dimensionada", "h2": "Producir energía sin sobredimensionar",
+  "lead": "El objetivo es adaptar la instalación a los hábitos de consumo y al espacio disponible. Valoramos la cubierta, la instalación eléctrica y las necesidades actuales y futuras.",
+  "llista": ["Autoconsumo para viviendas y pequeños negocios.", "Opciones con baterías y preparación para ampliar.", "Integración con climatización y aerotermia.", "Coordinación de trabajos eléctricos y de cubierta.", "Revisión y mantenimiento de la instalación."],
+  "h2b": "Cómo trabajamos",
+  "fitxes": [["1. Consumo y cubierta", "Revisamos facturas, orientación, sombras y superficie disponible."], ["2. Propuesta", "Definimos potencia, componentes, ubicación y trabajos necesarios."], ["3. Instalación", "Coordinamos montaje, conexiones y comprobación final del sistema."]],
+  "faq": [
+   ["¿Cuántas placas necesito?", "Depende de lo que gastas y de cuándo lo gastas. Con las facturas del último año calculamos la potencia que tiene sentido para tu casa, sin sobredimensionar."],
+   ["¿Vale la pena poner baterías?", "Si en casa hay poca gente durante el día, una batería aprovecha más la energía producida. En segundas residencias a menudo no compensa. Te lo calculamos con tu consumo."],
+   ["¿Las placas aguantan la tramontana?", "Sí, si la estructura y los anclajes están pensados para el viento de la zona. Es una de las cosas que revisamos en la cubierta."],
+   ["¿Hay ayudas o bonificaciones?", "Puede haber subvenciones, deducciones en el IRPF o bonificaciones municipales en el IBI según el momento y el ayuntamiento. Te informamos de las vigentes."]],
+  "cta_h": "¿Quieres valorar el autoconsumo?", "cta_p": "Dinos el municipio y el tipo de inmueble. Prepararemos las preguntas necesarias para estudiar el proyecto.", "wa": "Hola Proinstal Empordà, quiero un estudio de placas solares"
+ }
+},
+{
+ "id": "pergoles", "hero": "/hero-portada/hero-reformas-instalaciones-01.jpg", "img": "/exteriores-fachadas-cerramientos/cerramiento-fachada-19.jpg",
+ "tipus": "Pèrgoles i exteriors",
+ "ca": {
+  "slug": "serveis/pergoles-exteriors-emporda.html", "nom": "Pèrgoles i exteriors",
+  "title": "Pèrgoles bioclimàtiques i terrasses a l’Empordà | Proinstal",
+  "desc": "Pèrgoles bioclimàtiques, d’alumini i de fusta, tendals, terrasses, paviments i tancaments a l’Alt i Baix Empordà. Solucions pensades per a la tramuntana i el clima de costa.",
+  "eyebrow": "Pèrgoles · Terrasses · Tancaments", "h1": "Pèrgoles i exteriors a l’Empordà",
+  "intro": "Instal·lem pèrgoles bioclimàtiques, d’alumini i de fusta, tendals, terrasses, paviments i tancaments a l’Alt i Baix Empordà, pensats per al sol, la tramuntana i la salinitat de la costa.",
+  "alt": "Pèrgola bioclimàtica de lames orientables",
+  "e2": "Disseny i durabilitat", "h2": "Espais preparats per al clima de costa",
+  "lead": "A l’Empordà, els materials exteriors han de suportar sol, humitat, vent i salinitat. Valorem l’ús, l’orientació i el manteniment abans de proposar una solució.",
+  "llista": ["Pèrgoles bioclimàtiques de lames orientables.", "Pèrgoles d’alumini i de fusta, tendals i veles.", "Reforma de terrasses, paviments i tarimes.", "Tancaments, portes, persianes i reixes.", "Reparació de façanes i elements degradats."],
+  "h2b": "Una solució per a cada exterior",
+  "fitxes": [["Ombra i protecció", "Pèrgoles i tendals per regular sol, pluja i ventilació."], ["Terrasses", "Paviments, drenatge, acabats i renovació de zones d’estada."], ["Tancaments", "Solucions per millorar confort, privacitat i protecció de l’habitatge."]],
+  "faq": [
+   ["Què és una pèrgola bioclimàtica?", "És una pèrgola d’alumini amb lames que s’obren i es tanquen. Deixa passar l’aire i la llum quan vols, fa ombra quan tanques, i tancada evacua l’aigua de pluja pels pilars."],
+   ["Una pèrgola aguanta la tramuntana?", "Sí, si l’estructura i els ancoratges estan calculats per al vent. Fixem bé els pilars i, en zones molt exposades, triem models i tancaments adequats."],
+   ["Cal permís de l’ajuntament per posar una pèrgola?", "Depèn del municipi i de la mida. Sovint n’hi ha prou amb una comunicació prèvia, però en alguns casos cal llicència. Ho comprovem amb l’ajuntament abans de començar."],
+   ["Quant costa una pèrgola bioclimàtica?", "Depèn de les mides, de si és adossada o autoportant i dels extres: llums, motor, tancaments laterals. Després de prendre mides et donem el pressupost tancat."],
+   ["Feu també tarimes de fusta per a la terrassa?", "Sí. Fem tarimes de fusta tropical o composite, i paviments ceràmics per a exterior."]],
+  "cta_h": "Vols transformar la terrassa?", "cta_p": "Envia’ns fotos, mides aproximades i el municipi. T’ajudarem a definir el següent pas.", "wa": "Hola Proinstal Empordà, vull informació sobre una pèrgola"
+ },
+ "es": {
+  "slug": "es/servicios/pergolas-exteriores-emporda.html", "nom": "Pérgolas y exteriores",
+  "title": "Pérgolas bioclimáticas y terrazas en el Empordà | Proinstal",
+  "desc": "Pérgolas bioclimáticas, de aluminio y de madera, toldos, terrazas, pavimentos y cerramientos en el Alt y Baix Empordà. Soluciones pensadas para la tramontana y el clima de costa.",
+  "eyebrow": "Pérgolas · Terrazas · Cerramientos", "h1": "Pérgolas y exteriores en el Empordà",
+  "intro": "Instalamos pérgolas bioclimáticas, de aluminio y de madera, toldos, terrazas, pavimentos y cerramientos en el Alt y Baix Empordà, pensados para el sol, la tramontana y la salinidad de la costa.",
+  "alt": "Pérgola bioclimática de lamas orientables",
+  "e2": "Diseño y durabilidad", "h2": "Espacios preparados para el clima de costa",
+  "lead": "En el Empordà, los materiales exteriores tienen que soportar sol, humedad, viento y salinidad. Valoramos el uso, la orientación y el mantenimiento antes de proponer una solución.",
+  "llista": ["Pérgolas bioclimáticas de lamas orientables.", "Pérgolas de aluminio y de madera, toldos y velas.", "Reforma de terrazas, pavimentos y tarimas.", "Cerramientos, puertas, persianas y rejas.", "Reparación de fachadas y elementos degradados."],
+  "h2b": "Una solución para cada exterior",
+  "fitxes": [["Sombra y protección", "Pérgolas y toldos para regular sol, lluvia y ventilación."], ["Terrazas", "Pavimentos, drenaje, acabados y renovación de zonas de estar."], ["Cerramientos", "Soluciones para mejorar confort, privacidad y protección de la vivienda."]],
+  "faq": [
+   ["¿Qué es una pérgola bioclimática?", "Es una pérgola de aluminio con lamas que se abren y se cierran. Deja pasar el aire y la luz cuando quieres, da sombra cuando cierras, y cerrada evacúa el agua de lluvia por los pilares."],
+   ["¿Una pérgola aguanta la tramontana?", "Sí, si la estructura y los anclajes están calculados para el viento. Fijamos bien los pilares y, en zonas muy expuestas, elegimos modelos y cerramientos adecuados."],
+   ["¿Hace falta permiso del ayuntamiento para poner una pérgola?", "Depende del municipio y del tamaño. A menudo basta con una comunicación previa, pero en algunos casos hace falta licencia. Lo comprobamos con el ayuntamiento antes de empezar."],
+   ["¿Cuánto cuesta una pérgola bioclimática?", "Depende de las medidas, de si es adosada o autoportante y de los extras: luces, motor, cerramientos laterales. Tras tomar medidas te damos el presupuesto cerrado."],
+   ["¿Hacéis también tarimas de madera para la terraza?", "Sí. Hacemos tarimas de madera tropical o composite, y pavimentos cerámicos para exterior."]],
+  "cta_h": "¿Quieres transformar la terraza?", "cta_p": "Envíanos fotos, medidas aproximadas y el municipio. Te ayudaremos a definir el siguiente paso.", "wa": "Hola Proinstal Empordà, quiero información sobre una pérgola"
+ }
+},
+{
+ "id": "fusteria", "hero": "/terrazas-suelos-exteriores/terraza-suelo-exterior-04.jpg", "img": "/interiores-reformas/reforma-interior-20.jpg",
+ "tipus": "Fusteria",
+ "ca": {
+  "slug": "serveis/fusteria-emporda.html", "nom": "Fusteria",
+  "title": "Fusteria a l’Empordà: portes, finestres i mobles a mida | Proinstal",
+  "desc": "Fusteria a l’Alt i Baix Empordà: portes, finestres, armaris i mobles a mida, parquet, tarimes de terrassa i restauració de fusta per a cases i segones residències.",
+  "eyebrow": "Fusteria · Mobles a mida · Tarimes", "h1": "Fusteria a l’Empordà",
+  "intro": "Fem fusteria interior i exterior a l’Alt i Baix Empordà: portes, finestres, armaris i mobles a mida, parquet, tarimes de terrassa i restauració d’elements de fusta.",
+  "alt": "Moble de fusta fet a mida",
+  "e2": "Fusta interior i exterior", "h2": "Fet a mida per a cada casa",
+  "lead": "Les mides de les cases antigues i de les segones residències rarament encaixen amb els mobles de catàleg. Prenem mides, proposem el material i ho muntem nosaltres.",
+  "llista": ["Portes interiors i d’entrada.", "Finestres, porticons i persianes.", "Armaris encastats i mobles a mida.", "Parquet, tarimes i escales.", "Tarimes de terrassa i revestiments exteriors."],
+  "h2b": "Treballs de fusteria",
+  "fitxes": [["Interiors", "Portes, armaris, mobles, escales i revestiments de paret."], ["Exteriors", "Tarimes, pèrgoles de fusta, porticons i tanques."], ["Restauració", "Reparació i acabat de fusta antiga castigada pel sol i la humitat."]],
+  "faq": [
+   ["Feu mobles a mida?", "Sí. Prenem mides, et proposem disseny i materials i el muntem al lloc, tant si és un armari com una cuina o un moble de bany."],
+   ["Quina fusta va millor per a una terrassa a prop del mar?", "Fustes tropicals tractades o composite. Necessiten menys manteniment i aguanten millor el sol i la salinitat que les fustes toves."],
+   ["Restaureu porticons i portes antigues?", "Sí. Si la fusta és sana, reparar i tornar a envernissar o pintar sovint és millor opció que substituir."],
+   ["Canvieu finestres per millorar l’aïllament?", "Sí. Substituïm finestres antigues per d’altres amb millor tancament i vidre aïllant, en fusta o en altres materials."]],
+  "cta_h": "Necessites un fuster?", "cta_p": "Envia’ns fotos i mides aproximades del que vols fer o reparar.", "wa": "Hola Proinstal Empordà, necessito un treball de fusteria"
+ },
+ "es": {
+  "slug": "es/servicios/carpinteria-emporda.html", "nom": "Carpintería",
+  "title": "Carpintería en el Empordà: puertas, ventanas y muebles a medida | Proinstal",
+  "desc": "Carpintería en el Alt y Baix Empordà: puertas, ventanas, armarios y muebles a medida, parquet, tarimas de terraza y restauración de madera para casas y segundas residencias.",
+  "eyebrow": "Carpintería · Muebles a medida · Tarimas", "h1": "Carpintería en el Empordà",
+  "intro": "Hacemos carpintería interior y exterior en el Alt y Baix Empordà: puertas, ventanas, armarios y muebles a medida, parquet, tarimas de terraza y restauración de elementos de madera.",
+  "alt": "Mueble de madera hecho a medida",
+  "e2": "Madera interior y exterior", "h2": "Hecho a medida para cada casa",
+  "lead": "Las medidas de las casas antiguas y de las segundas residencias rara vez encajan con los muebles de catálogo. Tomamos medidas, proponemos el material y lo montamos nosotros.",
+  "llista": ["Puertas interiores y de entrada.", "Ventanas, contraventanas y persianas.", "Armarios empotrados y muebles a medida.", "Parquet, tarimas y escaleras.", "Tarimas de terraza y revestimientos exteriores."],
+  "h2b": "Trabajos de carpintería",
+  "fitxes": [["Interiores", "Puertas, armarios, muebles, escaleras y revestimientos de pared."], ["Exteriores", "Tarimas, pérgolas de madera, contraventanas y vallas."], ["Restauración", "Reparación y acabado de madera antigua castigada por el sol y la humedad."]],
+  "faq": [
+   ["¿Hacéis muebles a medida?", "Sí. Tomamos medidas, te proponemos diseño y materiales y lo montamos en el sitio, sea un armario, una cocina o un mueble de baño."],
+   ["¿Qué madera va mejor para una terraza cerca del mar?", "Maderas tropicales tratadas o composite. Necesitan menos mantenimiento y aguantan mejor el sol y la salinidad que las maderas blandas."],
+   ["¿Restauráis contraventanas y puertas antiguas?", "Sí. Si la madera está sana, reparar y volver a barnizar o pintar suele ser mejor opción que sustituir."],
+   ["¿Cambiáis ventanas para mejorar el aislamiento?", "Sí. Sustituimos ventanas antiguas por otras con mejor cierre y vidrio aislante, en madera o en otros materiales."]],
+  "cta_h": "¿Necesitas un carpintero?", "cta_p": "Envíanos fotos y medidas aproximadas de lo que quieres hacer o reparar.", "wa": "Hola Proinstal Empordà, necesito un trabajo de carpintería"
+ }
+},
+{
+ "id": "humitats", "hero": "/humedades-reparaciones/reparacion-humedad-01.jpg", "img": "/humedades-reparaciones/reparacion-humedad-05.jpg",
+ "tipus": "Reparació d’humitats",
+ "ca": {
+  "slug": "serveis/reparacions-humitats-emporda.html", "nom": "Humitats i reparacions",
+  "title": "Reparació d’humitats a l’Empordà | Proinstal Empordà",
+  "desc": "Diagnòstic i reparació d’humitats, filtracions, condensació i capil·laritat a l’Alt i Baix Empordà. Actuacions en interiors, façanes, terrasses, cobertes i instal·lacions.",
+  "eyebrow": "Humitats · Filtracions · Restauració", "h1": "Reparació d’humitats a l’Empordà",
+  "intro": "Diagnostiquem i reparem humitats a l’Alt i Baix Empordà: filtracions de terrasses, cobertes i façanes, fuites d’instal·lacions, capil·laritat i condensació, i després refem els acabats.",
+  "alt": "Paret amb humitat abans de la reparació",
+  "e2": "Primer, trobar la causa", "h2": "No n’hi ha prou amb tapar la taca",
+  "lead": "Una humitat pot venir d’una fuita, una filtració exterior, condensació o un problema de drenatge. Revisem el context abans de reparar la zona visible.",
+  "llista": ["Filtracions en terrasses, cobertes i façanes.", "Fuites d’aigua i afectacions d’instal·lacions.", "Humitat per capil·laritat a la part baixa de les parets.", "Condensació i floridura en habitacions poc ventilades.", "Reparació de revestiments, pintura i elements afectats."],
+  "h2b": "Informació útil abans de la visita",
+  "fitxes": [["On apareix?", "Paret, sostre, terra, façana, terrassa o prop d’un punt d’aigua."], ["Quan empitjora?", "Després de ploure, en encendre la calefacció o amb un ús concret."], ["Quines fotos enviar?", "Una vista general, un detall i, si és possible, la zona exterior relacionada."]],
+  "faq": [
+   ["Com sé d’on ve una humitat?", "La forma i el lloc de la taca en donen pistes: a baix de la paret sol ser capil·laritat, al sostre sota una terrassa sol ser filtració, i a les cantonades fredes sol ser condensació. A la visita ho comprovem abans de proposar res."],
+   ["Per què les cases de costa tenen tantes humitats?", "La proximitat del mar, el nivell freàtic alt en zones com Empuriabrava i els temporals de llevant afavoreixen filtracions i capil·laritat. També hi influeix que moltes cases estiguin tancades i sense ventilar mesos."],
+   ["N’hi ha prou amb pintura antihumitat?", "Només si el problema és lleu i de condensació. Si la causa és una filtració o una fuita, la taca torna a sortir. Primer cal tallar l’origen."],
+   ["Treballeu amb assegurances?", "Podem preparar l’informe i el pressupost que et demani l’assegurança i fer la reparació un cop aprovada."]],
+  "cta_h": "Vols que valorem la humitat?", "cta_p": "Envia’ns fotos i explica’ns quan va començar i si canvia amb la pluja o l’ús de l’aigua.", "wa": "Hola Proinstal Empordà, tinc un problema d’humitat"
+ },
+ "es": {
+  "slug": "es/servicios/reparacion-humedades-emporda.html", "nom": "Humedades y reparaciones",
+  "title": "Reparación de humedades en el Empordà | Proinstal Empordà",
+  "desc": "Diagnóstico y reparación de humedades, filtraciones, condensación y capilaridad en el Alt y Baix Empordà. Actuaciones en interiores, fachadas, terrazas, cubiertas e instalaciones.",
+  "eyebrow": "Humedades · Filtraciones · Restauración", "h1": "Reparación de humedades en el Empordà",
+  "intro": "Diagnosticamos y reparamos humedades en el Alt y Baix Empordà: filtraciones de terrazas, cubiertas y fachadas, fugas de instalaciones, capilaridad y condensación, y después rehacemos los acabados.",
+  "alt": "Pared con humedad antes de la reparación",
+  "e2": "Primero, encontrar la causa", "h2": "No basta con tapar la mancha",
+  "lead": "Una humedad puede venir de una fuga, una filtración exterior, condensación o un problema de drenaje. Revisamos el contexto antes de reparar la zona visible.",
+  "llista": ["Filtraciones en terrazas, cubiertas y fachadas.", "Fugas de agua y daños en instalaciones.", "Humedad por capilaridad en la parte baja de las paredes.", "Condensación y moho en habitaciones poco ventiladas.", "Reparación de revestimientos, pintura y elementos afectados."],
+  "h2b": "Información útil antes de la visita",
+  "fitxes": [["¿Dónde aparece?", "Pared, techo, suelo, fachada, terraza o cerca de un punto de agua."], ["¿Cuándo empeora?", "Después de llover, al encender la calefacción o con un uso concreto."], ["¿Qué fotos enviar?", "Una vista general, un detalle y, si es posible, la zona exterior relacionada."]],
+  "faq": [
+   ["¿Cómo sé de dónde viene una humedad?", "La forma y el sitio de la mancha dan pistas: abajo en la pared suele ser capilaridad, en el techo bajo una terraza suele ser filtración, y en las esquinas frías suele ser condensación. En la visita lo comprobamos antes de proponer nada."],
+   ["¿Por qué las casas de costa tienen tantas humedades?", "La cercanía del mar, el nivel freático alto en zonas como Empuriabrava y los temporales de levante favorecen filtraciones y capilaridad. También influye que muchas casas estén cerradas y sin ventilar durante meses."],
+   ["¿Basta con pintura antihumedad?", "Solo si el problema es leve y de condensación. Si la causa es una filtración o una fuga, la mancha vuelve a salir. Primero hay que cortar el origen."],
+   ["¿Trabajáis con seguros?", "Podemos preparar el informe y el presupuesto que te pida el seguro y hacer la reparación una vez aprobada."]],
+  "cta_h": "¿Quieres que valoremos la humedad?", "cta_p": "Envíanos fotos y cuéntanos cuándo empezó y si cambia con la lluvia o el uso del agua.", "wa": "Hola Proinstal Empordà, tengo un problema de humedad"
+ }
+},
+{
+ "id": "manteniment", "hero": "/hero-portada/hero-reformas-instalaciones-03.jpg", "img": "/exteriores-fachadas-cerramientos/cerramiento-fachada-17.jpg",
+ "tipus": "Manteniment d’habitatges",
+ "ca": {
+  "slug": "serveis/manteniment-segones-residencies-emporda.html", "nom": "Manteniment de segones residències",
+  "title": "Manteniment de cases i segones residències a l’Empordà | Proinstal",
+  "desc": "Manteniment de cases i segones residències a Roses, Empuriabrava, Cadaqués, Llançà i tot l’Empordà: revisions, reparacions, posada a punt abans de l’estiu i avisos d’urgència.",
+  "eyebrow": "Manteniment · Segones residències", "h1": "Manteniment de segones residències a l’Empordà",
+  "intro": "Ens ocupem de cases i apartaments de l’Empordà quan els propietaris no hi són: revisions periòdiques, reparacions, posada a punt abans de la temporada i actuació ràpida si hi ha una avaria.",
+  "alt": "Casa de segona residència a l’Empordà",
+  "e2": "Tranquil·litat a distància", "h2": "La casa a punt quan arribes",
+  "lead": "Una casa tancada mesos a la costa acumula humitat, avaries petites i desgast pel sol i el vent. Com que fem tots els oficis, una sola trucada resol la fontaneria, l’electricitat, el clima o la fusteria.",
+  "llista": ["Revisions periòdiques d’aigua, llum, clima i tancaments.", "Posada a punt abans de l’estiu i tancament a la tardor.", "Reparacions d’avaries amb fotos de l’abans i el després.", "Manteniment d’aire condicionat, termos i plaques solars.", "Atenció en català, castellà, francès, anglès i alemany."],
+  "h2b": "Què inclou",
+  "fitxes": [["Revisió", "Recorregut per la casa i informe amb fotos del que cal fer."], ["Reparació", "Arreglem el que surt a la revisió, amb pressupost previ."], ["Urgències", "Si hi ha una fuita o una avaria, t’avisem i hi anem."]],
+  "faq": [
+   ["Feu manteniment si el propietari viu fora?", "Sí. És el cas més habitual: et comuniquem per WhatsApp o correu, en el teu idioma, què hem trobat i què proposem, amb fotos."],
+   ["Cada quant s’ha de revisar una segona residència?", "Com a mínim abans de l’estiu i després de l’hivern. Si la casa està a primera línia o té piscina i jardí, convé fer-ho més sovint."],
+   ["Ens podeu posar a punt la casa abans d’arribar?", "Sí. Revisem aigua, electricitat, aire condicionat i tancaments perquè tot funcioni el dia que arribes."],
+   ["Atenen en francès, anglès i alemany?", "Sí. A Roses, Empuriabrava i Cadaqués hi ha molts propietaris de fora, i els atenem en francès, anglès o alemany a més de català i castellà."]],
+  "cta_h": "Vols que ens ocupem de la teva casa?", "cta_p": "Digues-nos on és la casa, quan hi vas i què et preocupa. T’explicarem com ho fem.", "wa": "Hola Proinstal Empordà, vull informació sobre el manteniment d’una casa"
+ },
+ "es": {
+  "slug": "es/servicios/mantenimiento-segundas-residencias-emporda.html", "nom": "Mantenimiento de segundas residencias",
+  "title": "Mantenimiento de casas y segundas residencias en el Empordà | Proinstal",
+  "desc": "Mantenimiento de casas y segundas residencias en Roses, Empuriabrava, Cadaqués, Llançà y todo el Empordà: revisiones, reparaciones, puesta a punto antes del verano y urgencias.",
+  "eyebrow": "Mantenimiento · Segundas residencias", "h1": "Mantenimiento de segundas residencias en el Empordà",
+  "intro": "Nos ocupamos de casas y apartamentos del Empordà cuando los propietarios no están: revisiones periódicas, reparaciones, puesta a punto antes de la temporada y actuación rápida si hay una avería.",
+  "alt": "Casa de segunda residencia en el Empordà",
+  "e2": "Tranquilidad a distancia", "h2": "La casa a punto cuando llegas",
+  "lead": "Una casa cerrada meses en la costa acumula humedad, pequeñas averías y desgaste por el sol y el viento. Como hacemos todos los oficios, una sola llamada resuelve la fontanería, la electricidad, el clima o la carpintería.",
+  "llista": ["Revisiones periódicas de agua, luz, clima y cerramientos.", "Puesta a punto antes del verano y cierre en otoño.", "Reparación de averías con fotos del antes y el después.", "Mantenimiento de aire acondicionado, termos y placas solares.", "Atención en castellano, catalán, francés, inglés y alemán."],
+  "h2b": "Qué incluye",
+  "fitxes": [["Revisión", "Recorrido por la casa e informe con fotos de lo que hay que hacer."], ["Reparación", "Arreglamos lo que sale en la revisión, con presupuesto previo."], ["Urgencias", "Si hay una fuga o una avería, te avisamos y vamos."]],
+  "faq": [
+   ["¿Hacéis mantenimiento si el propietario vive fuera?", "Sí. Es el caso más habitual: te contamos por WhatsApp o correo, en tu idioma, qué hemos encontrado y qué proponemos, con fotos."],
+   ["¿Cada cuánto hay que revisar una segunda residencia?", "Como mínimo antes del verano y después del invierno. Si la casa está en primera línea o tiene piscina y jardín, conviene hacerlo más a menudo."],
+   ["¿Podéis poner a punto la casa antes de que lleguemos?", "Sí. Revisamos agua, electricidad, aire acondicionado y cerramientos para que todo funcione el día que llegas."],
+   ["¿Atendéis en francés, inglés y alemán?", "Sí. En Roses, Empuriabrava y Cadaqués hay muchos propietarios de fuera, y los atendemos en francés, inglés o alemán además de castellano y catalán."]],
+  "cta_h": "¿Quieres que nos ocupemos de tu casa?", "cta_p": "Dinos dónde está la casa, cuándo vienes y qué te preocupa. Te explicaremos cómo lo hacemos.", "wa": "Hola Proinstal Empordà, quiero información sobre el mantenimiento de una casa"
+ }
+},
+]

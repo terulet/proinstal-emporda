@@ -8,6 +8,9 @@
 <meta name="theme-color" content="#111111"/>
 <title>Proinstal Empordà | Reformes i Instal·lacions</title>
 <link rel="canonical" href="https://proinstalemporda.com/"/>
+<link rel="alternate" hreflang="ca" href="https://proinstalemporda.com/"/>
+<link rel="alternate" hreflang="es" href="https://proinstalemporda.com/es/"/>
+<link rel="alternate" hreflang="x-default" href="https://proinstalemporda.com/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:locale" content="ca_ES"/>
 <meta property="og:site_name" content="Proinstal Empordà"/>
@@ -27,7 +30,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["GeneralContractor", "Electrician", "Plumber"],
+  "@type": ["GeneralContractor", "Electrician", "Plumber", "HVACBusiness"],
   "@id": "https://proinstalemporda.com/#business",
   "name": "Proinstal Empordà",
   "url": "https://proinstalemporda.com/",
@@ -43,7 +46,8 @@
     "addressRegion": "Girona",
     "addressCountry": "ES"
   },
-  "areaServed": ["Alt Empordà", "Baix Empordà", "Girona", "Figueres", "Roses", "Empuriabrava", "Cadaqués", "Llançà", "L'Escala", "Palafrugell", "Palamós"],
+  "areaServed": ["Alt Empordà", "Baix Empordà", "Girona", "Figueres", "Roses", "Empuriabrava", "Castelló d'Empúries", "Vilajuïga", "Cadaqués", "Llançà", "L'Escala", "El Port de la Selva", "Peralada", "Palafrugell", "Palamós"],
+  "knowsLanguage": ["ca", "es", "fr", "en", "de"],
   "sameAs": ["https://www.instagram.com/proinstalemporda/"],
   "priceRange": "€€"
 }
@@ -155,6 +159,10 @@ section{padding:85px 0}
 .tg{display:flex;flex-wrap:wrap;gap:.55rem}
 .tg span{padding:7px 13px;background:var(--paper);border:1px solid var(--ln);border-radius:999px;font-size:.86rem;font-weight:600}
 .tg span.ht{background:#111;color:#fff;border-color:#111}
+.tg a{text-decoration:none;color:inherit}
+.tg a:hover span{border-color:var(--o)}
+.fx{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:1.2rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.08);font-size:.85rem}
+.fx b{color:rgba(255,255,255,.75);width:100%}
 .tg span.ot{background:var(--o);color:#fff;border-color:var(--o)}
 .ct{background:#111;color:#fff;position:relative;overflow:hidden}
 .ctbg{position:absolute;inset:0;background-size:cover;background-position:center}
@@ -231,7 +239,7 @@ footer a:hover{color:var(--o)}
 <button class="lb" id="lBtn">🌐 CA ▾</button>
 <div class="ld2" id="lDrop">
 <div class="lo ac" onclick="sL('ca')">🇪🇸 Català</div>
-<div class="lo" onclick="sL('es')">🇪🇸 Castellano</div>
+<div class="lo" onclick="location.href='/es/'">🇪🇸 Castellano</div>
 <div class="lo" onclick="sL('fr')">🇫🇷 Français</div>
 <div class="lo" onclick="sL('en')">🇬🇧 English</div>
 <div class="lo" onclick="sL('de')">🇩🇪 Deutsch</div>
@@ -292,9 +300,9 @@ footer a:hover{color:var(--o)}
 <div class="sg">
 <a class="sc2" href="/serveis/electricitat-climatitzacio-emporda.html"><div class="ic">⚡</div><h3 data-t="s1t">Electricitat</h3><p data-t="s1d">Quadres, llum, avaries, certificats i noves instal·lacions.</p></a>
 <a class="sc2" href="/serveis/plaques-solars-emporda.html"><div class="ic">☀️</div><h3 data-t="s2t">Plaques solars</h3><p data-t="s2d">Autoconsum, bateries, estudis i instal·lacions adaptades.</p></a>
-<a class="sc2" href="/serveis/electricitat-climatitzacio-emporda.html#climatitzacio"><div class="ic">❄️</div><h3 data-t="s3t">Climatització</h3><p data-t="s3d">Aire condicionat, splits, aerotèrmia, manteniment i reparació.</p></a>
+<a class="sc2" href="/serveis/aire-condicionat-emporda.html"><div class="ic">❄️</div><h3 data-t="s3t">Climatització</h3><p data-t="s3d">Aire condicionat, splits, aerotèrmia, manteniment i reparació.</p></a>
 <a class="sc2" href="/serveis/fontaneria-emporda.html"><div class="ic">💧</div><h3 data-t="s4t">Fontaneria</h3><p data-t="s4d">Fuites, sanitaris, cuines, termos, calderes i instal·lacions.</p></a>
-<a class="sc2" href="/serveis/pergoles-exteriors-emporda.html"><div class="ic">🪵</div><h3 data-t="s5t">Fusteria</h3><p data-t="s5d">Portes, finestres, mobles a mida, paviments i acabats.</p></a>
+<a class="sc2" href="/serveis/fusteria-emporda.html"><div class="ic">🪵</div><h3 data-t="s5t">Fusteria</h3><p data-t="s5d">Portes, finestres, mobles a mida, paviments i acabats.</p></a>
 <a class="sc2" href="/serveis/reformes-integrals-emporda.html"><div class="ic">🏗️</div><h3 data-t="s6t">Reformes</h3><p data-t="s6d">Banys, cuines, interiors, locals i reformes integrals.</p></a>
 <a class="sc2" href="/serveis/pergoles-exteriors-emporda.html"><div class="ic">🏡</div><h3 data-t="s7t">Pèrgoles</h3><p data-t="s7d">Pèrgoles bioclimàtiques, tendals, terrasses i exteriors.</p></a>
 <a class="sc2" href="/serveis/reparacions-humitats-emporda.html"><div class="ic">🔧</div><h3 data-t="s8t">Reparacions</h3><p data-t="s8d">Humitats, desperfectes, restauracions i manteniment.</p></a>
@@ -362,10 +370,10 @@ footer a:hover{color:var(--o)}
 <p class="ld" style="margin-top:.85rem" data-t="zd">Cobrim tota la zona de Girona per a reformes i instal·lacions.</p>
 </div>
 <div class="tg">
-<span class="ot">Figueres</span><span class="ot">Roses</span><span class="ot">Vilajuïga</span>
-<span class="ht">Empuriabrava</span><span class="ht">l'Escala</span>
-<span>Castelló d'Empúries</span><span>Cadaqués</span><span>Peralada</span>
-<span>Sant Pere Pescador</span><span>Llançà</span><span>el Port de la Selva</span>
+<a href="/zones/reformes-figueres.html"><span class="ot">Figueres</span></a><a href="/zones/reformes-roses.html"><span class="ot">Roses</span></a><a href="/zones/reformes-vilajuiga.html"><span class="ot">Vilajuïga</span></a>
+<a href="/zones/reformes-empuriabrava.html"><span class="ht">Empuriabrava</span></a><a href="/zones/reformes-lescala.html"><span class="ht">l'Escala</span></a>
+<a href="/zones/reformes-castello-empuries.html"><span>Castelló d'Empúries</span></a><a href="/zones/reformes-cadaques.html"><span>Cadaqués</span></a><span>Peralada</span>
+<span>Sant Pere Pescador</span><a href="/zones/reformes-llanca.html"><span>Llançà</span></a><span>el Port de la Selva</span>
 <span>Palafrugell</span><span>Palamós</span><span>la Bisbal</span><span>Girona</span>
 </div>
 </div>
@@ -418,6 +426,7 @@ footer a:hover{color:var(--o)}
 <a href="/privacitat.html">Privacitat</a>
 </div>
 </div>
+<!--enllacos--><div class="wrap fx"><b>Serveis</b><a href="/serveis/reformes-integrals-emporda.html">Reformes integrals</a><a href="/serveis/reforma-banys-emporda.html">Reforma de banys</a><a href="/serveis/reforma-cuines-emporda.html">Reforma de cuines</a><a href="/serveis/fontaneria-emporda.html">Lampisteria i fontaneria</a><a href="/serveis/electricitat-climatitzacio-emporda.html">Electricista</a><a href="/serveis/aire-condicionat-emporda.html">Aire condicionat</a><a href="/serveis/aerotermia-emporda.html">Aerotèrmia</a><a href="/serveis/plaques-solars-emporda.html">Plaques solars</a><a href="/serveis/pergoles-exteriors-emporda.html">Pèrgoles i exteriors</a><a href="/serveis/fusteria-emporda.html">Fusteria</a><a href="/serveis/reparacions-humitats-emporda.html">Humitats i reparacions</a><a href="/serveis/manteniment-segones-residencies-emporda.html">Manteniment de segones residències</a></div><div class="wrap fx"><b>Zones</b><a href="/zones/reformes-figueres.html">Figueres</a><a href="/zones/reformes-roses.html">Roses</a><a href="/zones/reformes-empuriabrava.html">Empuriabrava</a><a href="/zones/reformes-cadaques.html">Cadaqués</a><a href="/zones/reformes-llanca.html">Llançà</a><a href="/zones/reformes-lescala.html">L’Escala</a><a href="/zones/reformes-castello-empuries.html">Castelló d’Empúries</a><a href="/zones/reformes-vilajuiga.html">Vilajuïga</a></div><!--/enllacos-->
 </footer>
 <a class="wa" href="https://wa.me/34671510146?text=Hola%20Proinstal%20Empord%C3%A0%2C%20vull%20demanar%20un%20pressupost" target="_blank" id="waB">💬 WhatsApp</a>
 <a class="ca" href="tel:+34671510146">📞 671 510 146</a>
