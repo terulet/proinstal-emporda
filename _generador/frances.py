@@ -1,0 +1,182 @@
+# Pàgines en francès. Només els serveis i pobles on hi ha cerques reals en francès
+# (vegeu la pestanya «Palabras clave» de l'auditoria): s'hi afegeix «Espagne»
+# perquè és com ho busquen.
+
+FR = {
+"fontaneria": {
+ "slug": "fr/services/plombier-roses-empuriabrava-espagne.html", "nom": "Plombier",
+ "title": "Plombier à Roses, Empuriabrava et L’Escala (Espagne) | Proinstal",
+ "desc": "Plombier francophone dans l’Empordà, Espagne : fuites, canalisations, chauffe-eau, sanitaires et rénovation de salle de bain à Roses, Empuriabrava, L’Escala et Figueres.",
+ "eyebrow": "Plomberie · On parle français", "h1": "Plombier à Roses, Empuriabrava et L’Escala",
+ "intro": "Proinstal Empordà est une entreprise de plomberie et de rénovation basée à Vilajuïga, sur la Costa Brava. Nous réparons les fuites, remplaçons chauffe-eau et sanitaires et rénovons les installations d’eau, et nous vous répondons en français.",
+ "alt": "Salle de bain rénovée avec douche et meuble suspendu",
+ "e2": "Diagnostic et solution", "h2": "Petites réparations et rénovations complètes",
+ "lead": "Nous cherchons d’abord l’origine du problème, puis nous proposons une solution adaptée, qu’il s’agisse d’une réparation ponctuelle ou de refaire toute l’installation pendant une rénovation.",
+ "llista": ["Fuites, robinets d’arrêt, canalisations et évacuations.", "Sanitaires, robinetterie, douches et meubles de salle de bain.", "Raccordements de cuisine, lave-linge et lave-vaisselle.", "Chauffe-eau, chaudières et eau chaude.", "Coordination avec maçon, électricien et menuisier si besoin."],
+ "h2b": "Ce que nous faisons",
+ "fitxes": [["Réparations", "Recherche et réparation de pannes, de fuites et d’éléments abîmés."], ["Salles de bain et cuisines", "Installations neuves coordonnées avec les autres corps de métier."], ["Entretien", "Contrôle des points d’eau et prévention dans les maisons, résidences secondaires et copropriétés."]],
+ "faq": [
+  ["Intervenez-vous à Roses, Empuriabrava et L’Escala ?", "Oui. Nous partons de Vilajuïga et travaillons dans tout l’Alt Empordà et une bonne partie du Baix Empordà. Indiquez-nous la commune et nous vous disons quand nous pouvons venir."],
+  ["Que faire en cas de fuite d’eau ?", "Fermez le robinet d’arrêt général et envoyez-nous une photo par WhatsApp en montrant l’endroit de la fuite. Nous vous dirons comment procéder et quand nous pouvons passer."],
+  ["Je n’habite pas en Espagne. Pouvez-vous intervenir en mon absence ?", "Oui. Beaucoup de propriétaires de la côte vivent en France. Nous vous envoyons des photos avant et après l’intervention et nous vous parlons en français."],
+  ["Remplacez-vous les chauffe-eau électriques ?", "Oui. Nous retirons l’ancien appareil, adaptons les raccordements et mettons le nouveau en service. Nous pouvons aussi vous proposer une pompe à chaleur pour l’eau chaude."]],
+ "cta_h": "Besoin d’un plombier sur la Costa Brava ?", "cta_p": "Envoyez-nous une photo ou décrivez le problème, la commune et l’urgence.", "wa": "Bonjour Proinstal Empordà, j’ai besoin d’un plombier"
+},
+"aire": {
+ "slug": "fr/services/climatisation-roses-empuriabrava-espagne.html", "nom": "Climatisation",
+ "title": "Climatisation à Roses et Empuriabrava (Espagne) : installation | Proinstal",
+ "desc": "Installation, réparation et entretien de climatisation à Roses, Empuriabrava, L’Escala et Figueres, Espagne : splits, gainable et pompes à chaleur réversibles. On parle français.",
+ "eyebrow": "Climatisation · Splits · Gainable", "h1": "Climatisation à Roses et Empuriabrava",
+ "intro": "Nous installons, réparons et entretenons la climatisation dans l’Alt et le Baix Empordà : splits, multisplits, gainable et pompes à chaleur réversibles qui chauffent aussi en hiver, pour maisons, appartements et commerces.",
+ "alt": "Chambre rénovée",
+ "e2": "Confort toute l’année", "h2": "Le bon appareil pour chaque pièce",
+ "lead": "Nous regardons la taille et l’orientation de chaque pièce avant de proposer un appareil. Trop petit, il ne suffit pas ; trop grand, il consomme pour rien. Nous choisissons aussi l’emplacement du groupe extérieur et le passage des liaisons.",
+ "llista": ["Splits et multisplits pour chambres et séjours.", "Climatisation gainable avec bouches dans chaque pièce.", "Pompes à chaleur réversibles, froid et chaud.", "Entretien, nettoyage des filtres et contrôle avant l’été.", "Réparation de pannes et remplacement d’appareils anciens."],
+ "h2b": "Installation, réparation et entretien",
+ "fitxes": [["Installation", "Étude de la pièce, emplacement des unités, liaisons frigorifiques, évacuation et circuit électrique."], ["Réparation", "Appareils qui ne refroidissent plus, qui fuient, font du bruit ou affichent une erreur."], ["Entretien", "Nettoyage et contrôle pour arriver à l’été avec un appareil prêt, y compris en votre absence."]],
+ "faq": [
+  ["Combien coûte l’installation d’une climatisation ?", "Cela dépend du nombre de pièces, du type d’appareil et de la distance entre l’unité intérieure et le groupe extérieur. Après la visite, nous vous remettons un devis fermé, appareil compris."],
+  ["Split ou gainable ?", "Le split est la solution la plus directe pour une ou deux pièces. Le gainable répartit l’air dans toute la maison avec un seul appareil caché dans le faux plafond. Nous vous conseillons lors de la visite."],
+  ["La tramontane et le sel abîment-ils le groupe extérieur ?", "Le groupe doit être bien fixé et, en bord de mer, mieux protégé et nettoyé plus souvent. Nous en tenons compte au moment de choisir son emplacement."],
+  ["Pouvez-vous préparer la climatisation avant notre arrivée ?", "Oui. Nous faisons l’entretien au printemps pour que tout fonctionne le jour où vous arrivez."]],
+ "cta_h": "Installer ou réparer votre climatisation ?", "cta_p": "Dites-nous combien de pièces vous voulez climatiser, la commune et si vous avez déjà un appareil.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur la climatisation"
+},
+"electricitat": {
+ "slug": "fr/services/electricien-roses-empuriabrava-espagne.html", "nom": "Électricien",
+ "title": "Électricien à Roses, Empuriabrava et L’Escala (Espagne) | Proinstal",
+ "desc": "Électricien francophone sur la Costa Brava : tableaux électriques, pannes, nouveaux circuits, éclairage et bornes de recharge à Roses, Empuriabrava, L’Escala et Figueres.",
+ "eyebrow": "Électricité · Sécurité · On parle français", "h1": "Électricien à Roses, Empuriabrava et L’Escala",
+ "intro": "Nous réalisons des installations électriques neuves, réparons les pannes et rénovons tableaux et circuits dans les maisons, appartements et commerces de l’Empordà, seuls ou dans le cadre d’une rénovation.",
+ "alt": "Escalier rénové avec nouvelle applique",
+ "e2": "Installations électriques", "h2": "Une installation à la hauteur de l’usage actuel",
+ "lead": "Beaucoup de maisons de la côte ont des installations prévues pour moins d’appareils qu’aujourd’hui. Nous vérifions le tableau, les protections et les circuits, et nous vous expliquons ce qu’il faut changer et ce qui peut attendre.",
+ "llista": ["Tableaux électriques et protections.", "Pannes, disjonctions et courts-circuits.", "Nouveaux circuits, prises et points lumineux.", "Éclairage intérieur et extérieur.", "Circuits pour climatisation, plaque à induction, panneaux solaires et recharge de voiture électrique."],
+ "h2b": "Interventions d’électricien",
+ "fitxes": [["Tableaux et protections", "Contrôle et mise à jour des éléments de protection et de distribution."], ["Éclairage et prises", "Nouveaux circuits, prises, points lumineux et adaptation des pièces."], ["Pannes et rénovations", "Diagnostic et remplacement de tronçons ou d’installations anciennes."]],
+ "faq": [
+  ["Pourquoi le disjoncteur différentiel saute-t-il ?", "Un appareil défectueux, de l’humidité dans une prise extérieure ou un circuit abîmé. Nous venons, cherchons la cause circuit par circuit et réparons."],
+  ["Faut-il refaire l’installation d’une vieille maison ?", "Si elle n’a pas de terre, un tableau ancien ou trop peu de circuits, c’est conseillé. Nous la contrôlons d’abord et vous disons ce qui est urgent."],
+  ["Installez-vous des bornes de recharge ?", "Oui. Nous vérifions la puissance souscrite et le tableau, puis nous tirons le circuit jusqu’au garage ou à la place de parking."]],
+ "cta_h": "Besoin d’un électricien ?", "cta_p": "Décrivez la panne ou l’installation souhaitée et la commune. Nous vous répondons rapidement.", "wa": "Bonjour Proinstal Empordà, j’ai besoin d’un électricien"
+},
+"reformes": {
+ "slug": "fr/services/renovation-maison-costa-brava-espagne.html", "nom": "Rénovation",
+ "title": "Entreprise de rénovation à Empuriabrava et Roses (Espagne) | Proinstal",
+ "desc": "Rénovation complète de maisons et appartements à Empuriabrava, Roses, L’Escala et Cadaqués : salle de bain, cuisine, électricité, plomberie et finitions. Une seule équipe, on parle français.",
+ "eyebrow": "Rénovation · Un seul interlocuteur", "h1": "Rénovation de maisons sur la Costa Brava",
+ "intro": "Proinstal Empordà rénove maisons, appartements, cuisines et salles de bain dans l’Alt et le Baix Empordà, avec une seule équipe qui coordonne électricité, plomberie, climatisation, menuiserie et finitions.",
+ "alt": "Salle de bain rénovée avec douche et meuble suspendu",
+ "e2": "Un seul interlocuteur", "h2": "De l’idée à la remise des clés",
+ "lead": "Une rénovation se passe mieux quand les décisions, les corps de métier et les délais sont coordonnés. Nous visitons, définissons les travaux, établissons un devis détaillé et organisons le chantier.",
+ "llista": ["Rénovations complètes et partielles de logements et commerces.", "Cuisines, salles de bain, sols et revêtements.", "Mise à jour de l’eau, de l’électricité et de la climatisation.", "Menuiserie, fermetures, peinture et finitions.", "Matériaux adaptés à l’humidité, au vent, au soleil et au sel."],
+ "h2b": "Des rénovations pensées pour votre logement",
+ "fitxes": [["Résidences secondaires", "Suivi à distance, photos de l’avancement et un seul responsable qui parle français."], ["Appartements", "Cuisine, salle de bain ou rénovation complète, en accord avec la copropriété."], ["Maisons sur les canaux", "Extérieurs, terrasses et installations pensés pour l’air marin d’Empuriabrava."]],
+ "faq": [
+  ["Peut-on rénover sans habiter en Espagne ?", "Oui. Nous travaillons avec des résidences secondaires : vous recevez des photos et des comptes rendus, et un seul responsable vous parle en français."],
+  ["Combien coûte une rénovation complète ?", "Cela dépend de la surface, de l’état des installations et des finitions choisies. La visite est gratuite et le devis est détaillé poste par poste, avec matériaux, main-d’œuvre et délais."],
+  ["Qui s’occupe des autorisations de travaux ?", "Nous vous indiquons la démarche demandée par la mairie, déclaration préalable ou permis, et nous vous aidons à la préparer avant de commencer."],
+  ["Faites-vous aussi des rénovations partielles ?", "Oui : seulement la salle de bain, la cuisine, les sols ou l’électricité, ou une rénovation par étapes."]],
+ "cta_h": "Parlons de votre rénovation", "cta_p": "Indiquez la commune, le type de logement et ce que vous voulez changer. Nous vous répondons pour organiser une visite.", "wa": "Bonjour Proinstal Empordà, je voudrais un devis de rénovation"
+},
+"manteniment": {
+ "slug": "fr/services/entretien-residence-secondaire-costa-brava.html", "nom": "Entretien de résidences secondaires",
+ "title": "Entretien de résidence secondaire sur la Costa Brava | Proinstal",
+ "desc": "Entretien de maisons et résidences secondaires à Roses, Empuriabrava, Cadaqués et L’Escala : contrôles, réparations, mise en route avant l’été et urgences. On parle français.",
+ "eyebrow": "Entretien · Résidences secondaires", "h1": "Entretien de résidences secondaires sur la Costa Brava",
+ "intro": "Nous nous occupons des maisons et appartements de l’Empordà quand les propriétaires ne sont pas là : contrôles réguliers, réparations, mise en route avant la saison et intervention rapide en cas de panne.",
+ "alt": "Maison de vacances sur la Costa Brava",
+ "e2": "La tranquillité à distance", "h2": "Une maison prête quand vous arrivez",
+ "lead": "Une maison fermée des mois sur la côte accumule humidité, petites pannes et usure due au soleil et au vent. Comme nous faisons tous les corps de métier, un seul appel suffit pour la plomberie, l’électricité, la climatisation ou la menuiserie.",
+ "llista": ["Contrôles réguliers de l’eau, de l’électricité, de la climatisation et des fermetures.", "Mise en route avant l’été et fermeture à l’automne.", "Réparations avec photos avant et après.", "Entretien de la climatisation, du chauffe-eau et des panneaux solaires.", "Contact en français, anglais, allemand, espagnol et catalan."],
+ "h2b": "Ce qui est compris",
+ "fitxes": [["Contrôle", "Tour de la maison et rapport avec photos de ce qu’il faut faire."], ["Réparation", "Nous réparons ce que le contrôle révèle, avec devis préalable."], ["Urgences", "En cas de fuite ou de panne, nous vous prévenons et nous intervenons."]],
+ "faq": [
+  ["Faites-vous l’entretien si le propriétaire vit en France ?", "Oui, c’est le cas le plus fréquent. Nous vous écrivons par WhatsApp ou par e-mail, en français, avec des photos de ce que nous avons trouvé et ce que nous proposons."],
+  ["À quelle fréquence faut-il contrôler une résidence secondaire ?", "Au minimum avant l’été et après l’hiver. En bord de mer, ou avec piscine et jardin, il vaut mieux le faire plus souvent."],
+  ["Pouvez-vous préparer la maison avant notre arrivée ?", "Oui. Nous contrôlons l’eau, l’électricité, la climatisation et les fermetures pour que tout fonctionne le jour de votre arrivée."]],
+ "cta_h": "Voulez-vous que nous nous occupions de votre maison ?", "cta_p": "Dites-nous où elle se trouve, quand vous venez et ce qui vous préoccupe.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur l’entretien d’une maison"
+},
+"pergoles": {
+ "slug": "fr/services/pergola-bioclimatique-costa-brava.html", "nom": "Pergolas et terrasses",
+ "title": "Pergola bioclimatique sur la Costa Brava (Espagne) | Proinstal",
+ "desc": "Pergolas bioclimatiques, en aluminium et en bois, stores, terrasses et lames de terrasse à Roses, Empuriabrava, L’Escala et Cadaqués. Pensées pour la tramontane et l’air marin.",
+ "eyebrow": "Pergolas · Terrasses · Fermetures", "h1": "Pergolas et terrasses sur la Costa Brava",
+ "intro": "Nous installons des pergolas bioclimatiques, en aluminium et en bois, des stores, des terrasses et des fermetures dans l’Alt et le Baix Empordà, pensés pour le soleil, la tramontane et le sel.",
+ "alt": "Pergola bioclimatique à lames orientables",
+ "e2": "Conception et durabilité", "h2": "Des extérieurs prêts pour le climat de la côte",
+ "lead": "Dans l’Empordà, les matériaux extérieurs doivent résister au soleil, à l’humidité, au vent et au sel. Nous regardons l’usage, l’orientation et l’entretien avant de proposer une solution.",
+ "llista": ["Pergolas bioclimatiques à lames orientables.", "Pergolas en aluminium et en bois, stores et voiles.", "Rénovation de terrasses, sols et lames de terrasse.", "Fermetures, portes, volets et grilles.", "Réparation de façades et d’éléments abîmés."],
+ "h2b": "Une solution pour chaque extérieur",
+ "fitxes": [["Ombre et protection", "Pergolas et stores pour gérer le soleil, la pluie et la ventilation."], ["Terrasses", "Sols, évacuation de l’eau, finitions et rénovation des espaces de vie."], ["Fermetures", "Confort, intimité et protection du logement."]],
+ "faq": [
+  ["Qu’est-ce qu’une pergola bioclimatique ?", "Une pergola en aluminium avec des lames qui s’ouvrent et se ferment. Elle laisse passer l’air et la lumière quand vous le souhaitez, fait de l’ombre fermée, et évacue l’eau de pluie par les poteaux."],
+  ["Une pergola résiste-t-elle à la tramontane ?", "Oui, si la structure et les ancrages sont calculés pour le vent. Nous fixons solidement les poteaux et choisissons le modèle selon l’exposition de la terrasse."],
+  ["Faut-il une autorisation de la mairie ?", "Cela dépend de la commune et de la taille. Souvent une déclaration préalable suffit, parfois il faut un permis. Nous le vérifions avant de commencer."],
+  ["Combien coûte une pergola bioclimatique ?", "Cela dépend des dimensions, du type (adossée ou autoportante) et des options : éclairage, moteur, fermetures latérales. Après la prise de mesures, nous vous remettons un devis fermé."]],
+ "cta_h": "Envie de transformer votre terrasse ?", "cta_p": "Envoyez-nous des photos, des mesures approximatives et la commune.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur une pergola"
+},
+"roses": {
+ "slug": "fr/villes/renovation-roses-espagne.html",
+ "title": "Rénovation, climatisation et plombier à Roses (Espagne) | Proinstal",
+ "desc": "Rénovation d’appartements et de maisons, pergolas, climatisation, plombier et électricien à Roses, Santa Margarida, Canyelles et l’Almadrava. On parle français.",
+ "eyebrow": "Roses · Golfe de Roses", "h1": "Rénovation et installations à Roses",
+ "intro": "Proinstal Empordà rénove appartements et maisons, installe pergolas, terrasses et climatisation, et intervient en plomberie et en électricité à Roses et dans ses quartiers, pour les résidents comme pour les résidences secondaires.",
+ "alt": "Pergola bioclimatique dans une maison en bord de mer",
+ "e2": "Logements en bord de mer", "h2": "Appartements, maisons et terrasses",
+ "lead": "À Roses, beaucoup de logements sont des appartements et des maisons de vacances, près de la mer et exposés à la tramontane. Nous choisissons des matériaux qui résistent au sel, au soleil et au vent, et qui vieillissent bien même si la maison reste fermée des mois.",
+ "llista": ["Rénovation d’appartements pour soi ou pour la location saisonnière.", "Pergolas bioclimatiques et stores adaptés à la tramontane.", "Climatisation et pompes à chaleur.", "Menuiserie extérieure et fermetures résistantes au sel.", "Entretien de résidences secondaires toute l’année."],
+ "fitxes": [["Appartements", "Rénovations rapides entre deux saisons, avec un calendrier convenu."], ["Terrasses", "Pergolas, lames de terrasse, sols et fermetures."], ["Entretien", "Contrôles et réparations en l’absence du propriétaire."]],
+ "faq": [
+  ["Intervenez-vous dans les quartiers de Roses ?", "Oui : Santa Margarida, Canyelles, l’Almadrava, Mas Fumats, Mas Oliva et le reste de la commune."],
+  ["Pouvez-vous faire les travaux hors saison ?", "Oui, et c’est ce que nous conseillons pour les locations. Nous planifions le chantier pour qu’il soit fini avant l’été."],
+  ["Parlez-vous français ?", "Oui. Nous vous répondons en français par téléphone, WhatsApp et e-mail."]]
+},
+"empuriabrava": {
+ "slug": "fr/villes/renovation-empuriabrava.html",
+ "title": "Entreprise de rénovation à Empuriabrava (Espagne) | Proinstal",
+ "desc": "Rénovation, humidité, pergolas, climatisation, plombier et électricien à Empuriabrava. Maisons avec amarrage et appartements sur les canaux. Entreprise locale, on parle français.",
+ "eyebrow": "Empuriabrava · Castelló d’Empúries", "h1": "Rénovation et entretien à Empuriabrava",
+ "intro": "Proinstal Empordà rénove, traite l’humidité, installe pergolas et climatisation et entretient les maisons et appartements d’Empuriabrava, en parlant français avec les propriétaires.",
+ "alt": "Volet et terrasse au bord d’un canal",
+ "e2": "Maisons sur les canaux", "h2": "Eau, sel et soleil",
+ "lead": "Empuriabrava est une marina résidentielle construite sur d’anciennes zones humides, avec maisons et appartements au bord des canaux. L’humidité du sol, le sel et le soleil usent les installations et les extérieurs plus vite qu’à l’intérieur des terres.",
+ "llista": ["Traitement de l’humidité par remontées capillaires et infiltrations.", "Terrasses, pergolas et lames de terrasse au bord des canaux.", "Climatisation avec groupes protégés de l’air marin.", "Rénovation de la plomberie et de l’électricité des maisons des années 70 et 80.", "Entretien des maisons de propriétaires qui vivent à l’étranger."],
+ "fitxes": [["Maisons avec amarrage", "Extérieurs, terrasses et installations pensés pour l’air marin."], ["Appartements", "Cuisine, salle de bain et climatisation, pour vous ou pour la location."], ["Propriétaires à l’étranger", "Contact en français et comptes rendus avec photos."]],
+ "faq": [
+  ["Pourquoi y a-t-il autant d’humidité à Empuriabrava ?", "La nappe est très proche de la surface et beaucoup de maisons restent fermées des mois, ce qui favorise les remontées capillaires et la condensation. Nous cherchons d’abord la cause, puis nous réparons."],
+  ["Parlez-vous français ?", "Oui. Beaucoup de propriétaires d’Empuriabrava sont français, et nous leur répondons dans leur langue."],
+  ["Pouvez-vous contrôler la maison pendant notre absence ?", "Oui. Nous faisons des contrôles réguliers et vous tenons informés par WhatsApp ou e-mail, avec photos."]]
+},
+"lescala": {
+ "slug": "fr/villes/renovation-l-escala-espagne.html",
+ "title": "Rénovation, plombier et climatisation à L’Escala (Espagne) | Proinstal",
+ "desc": "Rénovation, plomberie, électricité, climatisation, panneaux solaires et terrasses à L’Escala, Empúries, Riells et Montgó. Devis gratuit, on parle français.",
+ "eyebrow": "L’Escala · Golfe de Roses", "h1": "Rénovation et installations à L’Escala",
+ "intro": "Proinstal Empordà réalise rénovations, plomberie, électricité, climatisation, panneaux solaires et terrasses à L’Escala et dans ses lotissements, pour les maisons principales comme pour les résidences secondaires.",
+ "alt": "Escalier extérieur en chantier",
+ "e2": "Centre, Empúries et lotissements", "h2": "Maisons avec jardin et appartements",
+ "lead": "À L’Escala, on trouve du vieux centre aux lotissements de maisons avec jardin comme Riells ou le Montgó. Beaucoup ont terrasse, piscine et installations qu’il vaut mieux remettre en état chaque saison.",
+ "llista": ["Rénovation complète de maisons et d’appartements.", "Panneaux solaires sur maisons individuelles.", "Climatisation et pompes à chaleur.", "Terrasses, pergolas et sols extérieurs.", "Entretien et réparations de résidences secondaires."],
+ "fitxes": [["Maisons individuelles", "Rénovation, climatisation et panneaux solaires."], ["Appartements", "Cuisine, salle de bain et installations, pour vous ou pour la location."], ["Extérieurs", "Terrasses, pergolas et abords de piscine."]],
+ "faq": [
+  ["Intervenez-vous dans les lotissements de L’Escala ?", "Oui : Riells, le Montgó, Empúries et le reste de la commune."],
+  ["Installez-vous des panneaux solaires à L’Escala ?", "Oui. Nous étudions la toiture et la consommation de la maison et vous faisons une proposition dimensionnée."],
+  ["Parlez-vous français ?", "Oui, ainsi qu’anglais, allemand, espagnol et catalan."]]
+},
+}
+
+PEUS_FR = {
+    "bany": "Salle de bain : de la baignoire ancienne à la douche à l’italienne",
+    "terrassa": "Terrasse avec pergola et éclairage",
+    "solars": "Toiture avec panneaux solaires",
+    "garatge": "Porte de garage et éclairage extérieur",
+    "garatge_int": "Garage : électricité, éclairage et finitions",
+    "hum_terra": "Humidité en bas de mur, réparée",
+    "hum_habitacio": "Chambre avec humidité, réparée et repeinte",
+    "hum_escala": "Escalier : humidité sur le mur et marches neuves",
+    "hum_volta": "Plafond voûté avec infiltration, réparé",
+    "hum_escaleta": "Marche avec humidité, réparée",
+    "hum_rebedor": "Mur et plafond de l’escalier, réparés, avec nouvel éclairage",
+    "hum_safareig": "Buanderie avec humidité, réparée",
+    "furgo": "Aménagement intérieur d’un fourgon sur mesure",
+}

@@ -21,11 +21,13 @@ Events prepared: `generate_lead` for WhatsApp, phone and email; `outbound_click`
 
 ## Generated pages
 
-Service, town and zone pages (CA and ES), `es/index.html`, `sitemap.xml` and `llms.txt` are generated:
+Service, town and zone pages (CA, ES and FR), `es/index.html`, `fr/index.html`, `sitemap.xml` and `llms.txt` are generated:
 
     python3 _generador/generar.py
 
 - Texts live in `_generador/serveis.py` and `_generador/pobles.py`. Edit them there, not in the HTML.
-- `es/index.html` is built from `index.html` with the `es` strings of its translation dictionary. Edit the Catalan homepage, then regenerate.
+- French pages live in `_generador/frances.py`; only the services and towns with real French searches have one.
+- Photos and before/after pairs live in `_generador/imatges.py`.
+- `es/index.html` and `fr/index.html` are built from `index.html` with the `es` and `fr` strings of its translation dictionary. Edit the Catalan homepage, then regenerate.
 - The footer links of the homepage are filled between `<!--enllacos-->` markers.
 - `_generador/` is not published: GitHub Pages skips folders starting with `_`.
