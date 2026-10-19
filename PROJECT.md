@@ -14,6 +14,7 @@
 Done on 2026-10-19 with the Google account borraseloi@gmail.com:
 
 1. GA4: account and property «Proinstal Empordà» (Spain time zone, EUR, optional data sharing off), web stream `https://proinstalemporda.com`, measurement ID `G-LRQ46SCY62` in `assets/analytics-config.js`.
+   `generate_lead` is a key event (no monetary value, counted once per session) and event data retention is 14 months.
 2. Checked on the live site: before a choice and after «Rebutjar» no Google script loads; after «Acceptar» gtag loads with `G-LRQ46SCY62`.
 3. Search Console: URL-prefix property `https://proinstalemporda.com/`, verified with the HTML file `google7174c917ed822f9c.html` at the root. Do not delete that file, or the property loses its verification.
 4. `sitemap.xml` submitted to Search Console: accepted, 57 pages found.
