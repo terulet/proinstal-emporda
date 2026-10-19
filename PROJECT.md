@@ -20,7 +20,15 @@ Done on 2026-10-19 with the Google account borraseloi@gmail.com:
 4. `sitemap.xml` submitted to Search Console: accepted, 57 pages found.
 5. Bing Webmaster Tools: signed in with Google, site imported from Search Console (only this site), with `sitemap.xml` imported.
 
-IndexNow (Bing, Yandex and others): key file `68598d9a27efd07aea416b8d0d08ea5a.txt` at the root. All 57 sitemap URLs were submitted to `https://api.indexnow.org/indexnow` on 2026-10-19; it answered `202 Accepted`. Resubmit changed URLs with the same key after each regeneration.
+6. GA4 is linked to the Search Console property, so search queries show up in Analytics.
+
+IndexNow (Bing, Yandex and others): key file `68598d9a27efd07aea416b8d0d08ea5a.txt` at the root. All 57 sitemap URLs were submitted to `https://api.indexnow.org/indexnow` on 2026-10-19; it answered `202 Accepted`. After regenerating, committing and pushing, and once GitHub Pages serves the new pages, notify the changed pages:
+
+    python3 _generador/indexnow.py            # pages changed in the last commit
+    python3 _generador/indexnow.py <commit>   # pages changed since that commit
+    python3 _generador/indexnow.py --totes    # every sitemap URL
+
+It only sends URLs that are in `sitemap.xml`.
 
 Events prepared: `generate_lead` for WhatsApp, phone and email; `outbound_click` for Instagram; `language_change` for the homepage selector. Personal form fields are not sent to GA4.
 
