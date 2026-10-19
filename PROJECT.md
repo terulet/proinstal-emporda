@@ -11,11 +11,13 @@
 
 ## Measurement setup
 
-1. Create the GA4 web stream for `https://proinstalemporda.com/`.
-2. Put its `G-...` measurement ID in `assets/analytics-config.js`.
-3. Verify that analytics does not load until consent is accepted.
-4. Create a Search Console Domain property for `proinstalemporda.com` and verify it by DNS.
-5. Submit `https://proinstalemporda.com/sitemap.xml`.
+Done on 2026-10-19 with the Google account borraseloi@gmail.com:
+
+1. GA4: account and property «Proinstal Empordà» (Spain time zone, EUR, optional data sharing off), web stream `https://proinstalemporda.com`, measurement ID `G-LRQ46SCY62` in `assets/analytics-config.js`.
+2. Checked on the live site: before a choice and after «Rebutjar» no Google script loads; after «Acceptar» gtag loads with `G-LRQ46SCY62`.
+3. Search Console: URL-prefix property `https://proinstalemporda.com/`, verified with the HTML file `google7174c917ed822f9c.html` at the root. Do not delete that file, or the property loses its verification.
+4. `sitemap.xml` submitted to Search Console: accepted, 57 pages found.
+5. Bing Webmaster Tools: signed in with Google, site imported from Search Console (only this site), with `sitemap.xml` imported.
 
 IndexNow (Bing, Yandex and others): key file `68598d9a27efd07aea416b8d0d08ea5a.txt` at the root. All 57 sitemap URLs were submitted to `https://api.indexnow.org/indexnow` on 2026-10-19; it answered `202 Accepted`. Resubmit changed URLs with the same key after each regeneration.
 
