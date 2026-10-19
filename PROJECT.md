@@ -17,6 +17,8 @@
 4. Create a Search Console Domain property for `proinstalemporda.com` and verify it by DNS.
 5. Submit `https://proinstalemporda.com/sitemap.xml`.
 
+IndexNow (Bing, Yandex and others): key file `68598d9a27efd07aea416b8d0d08ea5a.txt` at the root. All 57 sitemap URLs were submitted to `https://api.indexnow.org/indexnow` on 2026-10-19; it answered `202 Accepted`. Resubmit changed URLs with the same key after each regeneration.
+
 Events prepared: `generate_lead` for WhatsApp, phone and email; `outbound_click` for Instagram; `language_change` for the homepage selector. Personal form fields are not sent to GA4.
 
 ## Generated pages
