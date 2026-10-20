@@ -54,6 +54,9 @@ FOTOS = {
     "lescala": ("/terrazas-suelos-exteriores/terraza-suelo-exterior-03.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-07.jpg", []),
     "castello": ("/hero-portada/hero-reformas-instalaciones-04.jpg", "/interiores-reformas/reforma-interior-14.jpg", []),
     "vilajuiga": ("/exteriores-fachadas-cerramientos/cerramiento-fachada-16.jpg", "/interiores-reformas/reforma-interior-23.jpg", []),
+    "construccio": ("/hero-portada/hero-reformas-instalaciones-04.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-07.jpg", ["garatge", "terrassa"]),
+    "rehabilitacio": ("/hero-portada/hero-reformas-instalaciones-03.jpg", None, ["hum_rebedor", "hum_volta", "hum_escala", "hum_terra"]),
+    "zona-costa-brava": ("/hero-portada/hero-reformas-instalaciones-01.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-13.jpg", ["terrassa", "bany", "solars"]),
     "zona-nord": ("/hero-portada/hero-reformas-instalaciones-03.jpg", "/interiores-reformas/reforma-interior-15.jpg", ["bany", "terrassa"]),
     "zona-costa": ("/exteriores-fachadas-cerramientos/cerramiento-fachada-01.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-22.jpg", ["terrassa", "hum_terra"]),
 }

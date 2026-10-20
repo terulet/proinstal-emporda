@@ -11,6 +11,8 @@
 ## Serveis (català)
 
 - [Reformes integrals a l’Empordà](https://proinstalemporda.com/serveis/reformes-integrals-emporda.html): Proinstal Empordà fa reformes integrals de cases, pisos, locals, cuines i banys a l’Alt i Baix Empordà, amb un sol equip que coordina electricitat, fontaneria, climatització, fusteria i acabats.
+- [Construcció i obra a l’Empordà](https://proinstalemporda.com/serveis/construccio-emporda.html): Proinstal Empordà fa obres de construcció a l’Alt i Baix Empordà: ampliacions, garatges, porxos, murs i tanques, obra de paleta i estructura, i les deixa acabades amb les instal·lacions i els acabats del mateix equip.
+- [Rehabilitació de cases i façanes a l’Empordà](https://proinstalemporda.com/serveis/rehabilitacio-cases-facanes-emporda.html): Rehabilitem cases antigues, masies i façanes a l’Alt i Baix Empordà: reparem cobertes, humitats i elements degradats, posem instal·lacions noves i refem els acabats respectant l’edifici original.
 - [Reforma de banys a l’Empordà](https://proinstalemporda.com/serveis/reforma-banys-emporda.html): Reformem banys sencers o per parts a l’Alt i Baix Empordà: canvi de banyera per plat de dutxa, nova fontaneria, llum, ventilació, revestiments i mobles, tot amb el mateix equip.
 - [Reforma de cuines a l’Empordà](https://proinstalemporda.com/serveis/reforma-cuines-emporda.html): Renovem cuines a l’Alt i Baix Empordà: nova distribució, preses d’aigua i desguassos, circuits elèctrics per als electrodomèstics, extracció de fums, mobles i acabats, tot coordinat per un sol equip.
 - [Lampista i fontaneria a l’Empordà](https://proinstalemporda.com/serveis/fontaneria-emporda.html): Som lampistes a l’Alt i Baix Empordà: reparem fuites i avaries, canviem termos i calderes, muntem sanitaris i renovem instal·lacions d’aigua de cases, pisos, locals i comunitats.
@@ -26,6 +28,8 @@
 ## Servicios (castellano)
 
 - [Reformas integrales en el Empordà](https://proinstalemporda.com/es/servicios/reformas-integrales-emporda.html): Proinstal Empordà hace reformas integrales de casas, pisos, locales, cocinas y baños en el Alt y Baix Empordà, con un solo equipo que coordina electricidad, fontanería, climatización, carpintería y acabados.
+- [Construcciones y obra en el Empordà](https://proinstalemporda.com/es/servicios/construccion-emporda.html): Proinstal Empordà hace obras de construcción en el Alt y Baix Empordà: ampliaciones, garajes, porches, muros y vallas, albañilería y estructura, y las deja terminadas con las instalaciones y los acabados del mismo equipo.
+- [Rehabilitación de casas y fachadas en el Empordà](https://proinstalemporda.com/es/servicios/rehabilitacion-casas-fachadas-emporda.html): Rehabilitamos casas antiguas, masías y fachadas en el Alt y Baix Empordà: reparamos cubiertas, humedades y elementos degradados, ponemos instalaciones nuevas y rehacemos los acabados respetando el edificio original.
 - [Reforma de baños en el Empordà](https://proinstalemporda.com/es/servicios/reforma-banos-emporda.html): Reformamos baños enteros o por partes en el Alt y Baix Empordà: cambio de bañera por plato de ducha, fontanería nueva, luz, ventilación, revestimientos y muebles, todo con el mismo equipo.
 - [Reforma de cocinas en el Empordà](https://proinstalemporda.com/es/servicios/reforma-cocinas-emporda.html): Renovamos cocinas en el Alt y Baix Empordà: nueva distribución, tomas de agua y desagües, circuitos eléctricos para los electrodomésticos, extracción de humos, muebles y acabados, todo coordinado por un solo equipo.
 - [Fontanero en el Empordà](https://proinstalemporda.com/es/servicios/fontaneria-emporda.html): Somos fontaneros en el Alt y Baix Empordà: reparamos fugas y averías, cambiamos termos y calderas, montamos sanitarios y renovamos instalaciones de agua de casas, pisos, locales y comunidades.
@@ -41,6 +45,8 @@
 ## Services (français)
 
 - [Rénovation de maisons sur la Costa Brava](https://proinstalemporda.com/fr/services/renovation-maison-costa-brava-espagne.html): Proinstal Empordà rénove maisons, appartements, cuisines et salles de bain dans l’Alt et le Baix Empordà, avec une seule équipe qui coordonne électricité, plomberie, climatisation, menuiserie et finitions.
+- [Construction et travaux sur la Costa Brava](https://proinstalemporda.com/fr/services/construction-empuriabrava-roses-espagne.html): Proinstal Empordà réalise des travaux de construction dans l’Alt et le Baix Empordà : agrandissements, garages, auvents, murs et clôtures, maçonnerie et structure, et les livre finis avec les installations et finitions de la même équipe.
+- [Réhabilitation de maisons et façades sur la Costa Brava](https://proinstalemporda.com/fr/services/rehabilitation-maison-facade-costa-brava.html): Nous réhabilitons maisons anciennes, mas catalans et façades dans l’Alt et le Baix Empordà : toitures, humidité et éléments abîmés, installations neuves et finitions, dans le respect du bâtiment d’origine.
 - [Plombier à Roses, Empuriabrava et L’Escala](https://proinstalemporda.com/fr/services/plombier-roses-empuriabrava-espagne.html): Proinstal Empordà est une entreprise de plomberie et de rénovation basée à Vilajuïga, sur la Costa Brava. Nous réparons les fuites, remplaçons chauffe-eau et sanitaires et rénovons les installations d’eau, et nous vous répondons en français.
 - [Électricien à Roses, Empuriabrava et L’Escala](https://proinstalemporda.com/fr/services/electricien-roses-empuriabrava-espagne.html): Nous réalisons des installations électriques neuves, réparons les pannes et rénovons tableaux et circuits dans les maisons, appartements et commerces de l’Empordà, seuls ou dans le cadre d’une rénovation.
 - [Climatisation à Roses et Empuriabrava](https://proinstalemporda.com/fr/services/climatisation-roses-empuriabrava-espagne.html): Nous installons, réparons et entretenons la climatisation dans l’Alt et le Baix Empordà : splits, multisplits, gainable et pompes à chaleur réversibles qui chauffent aussi en hiver, pour maisons, appartements et commerces.
@@ -63,6 +69,7 @@
 
 ## Zones / Zonas
 
+- [Costa Brava](https://proinstalemporda.com/zones/reformes-costa-brava.html) · [ES](https://proinstalemporda.com/es/zonas/reformas-costa-brava.html)
 - [Figueres, Roses i Empuriabrava](https://proinstalemporda.com/zones/reformes-figueres-roses-empuriabrava.html) · [ES](https://proinstalemporda.com/es/zonas/reformas-figueres-roses-empuriabrava.html)
 - [Cadaqués, Llançà i Baix Empordà](https://proinstalemporda.com/zones/reformes-cadaques-llanca-baix-emporda.html) · [ES](https://proinstalemporda.com/es/zonas/reformas-cadaques-llanca-baix-emporda.html)
 

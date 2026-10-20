@@ -131,7 +131,7 @@ def chips(enllacos):
 def peu(lang):
     u = UI[lang]
     serveis = "".join(f'<a href="/{s[lang]["slug"]}">{e(s[lang]["nom"])}</a>' for s in en(SERVEIS, lang))
-    pobles = "".join(f'<a href="/{p[lang]["slug"]}">{e(p["nom"])}</a>' for p in en(POBLES, lang))
+    pobles = "".join(f'<a href="/{p[lang]["slug"]}">{e(p[lang].get("nom", p["nom"]))}</a>' for p in en(POBLES + ZONES, lang))
     priv = '<a href="/privacitat.html">' + u["privacitat"] + "</a>"
     priv += "".join(f'<a href="{UI[l]["home"]}" hreflang="{l}">{l.upper()}</a>' for l in LANGS if l != lang)
     return (f'<footer><div class="wrap fcols"><div><b>{u["serveis_peu"]}</b>{serveis}</div>'
@@ -293,7 +293,7 @@ def bloc_enllacos(lang, text):
     """Omple els enllaços del peu de la portada entre <!--enllacos--> i <!--/enllacos-->."""
     u = UI[lang]
     serveis = "".join(f'<a href="/{s[lang]["slug"]}">{e(s[lang]["nom"])}</a>' for s in en(SERVEIS, lang))
-    zones = "".join(f'<a href="/{p[lang]["slug"]}">{e(p["nom"])}</a>' for p in en(POBLES, lang))
+    zones = "".join(f'<a href="/{p[lang]["slug"]}">{e(p[lang].get("nom", p["nom"]))}</a>' for p in en(POBLES + ZONES, lang))
     bloc = (f'<!--enllacos--><div class="wrap fx"><b>{u["serveis_peu"]}</b>{serveis}</div>'
             f'<div class="wrap fx"><b>{u["zones_peu"]}</b>{zones}</div><!--/enllacos-->')
     return re.sub(r"<!--enllacos-->.*?<!--/enllacos-->", lambda m: bloc, text, count=1, flags=re.S)

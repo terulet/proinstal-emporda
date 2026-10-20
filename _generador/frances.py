@@ -115,6 +115,42 @@ FR = {
   ["Combien coûte une pergola bioclimatique ?", "Cela dépend des dimensions, du type (adossée ou autoportante) et des options : éclairage, moteur, fermetures latérales. Après la prise de mesures, nous vous remettons un devis fermé."]],
  "cta_h": "Envie de transformer votre terrasse ?", "cta_p": "Envoyez-nous des photos, des mesures approximatives et la commune.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur une pergola"
 },
+"construccio": {
+ "slug": "fr/services/construction-empuriabrava-roses-espagne.html", "nom": "Construction",
+ "title": "Construction et travaux à Empuriabrava et Roses (Espagne) | Proinstal",
+ "desc": "Construction et travaux sur la Costa Brava : agrandissements, garages, auvents, murs, clôtures et maçonnerie à Empuriabrava, Roses et L’Escala, avec électricité, plomberie et finitions. On parle français.",
+ "eyebrow": "Construction · Agrandissements · Maçonnerie", "h1": "Construction et travaux sur la Costa Brava",
+ "intro": "Proinstal Empordà réalise des travaux de construction dans l’Alt et le Baix Empordà : agrandissements, garages, auvents, murs et clôtures, maçonnerie et structure, et les livre finis avec les installations et finitions de la même équipe.",
+ "alt": "Escalier extérieur en construction",
+ "e2": "De la structure aux finitions", "h2": "Une seule entreprise pour tout le chantier",
+ "lead": "Quand la maçonnerie, l’électricité, la plomberie et la menuiserie viennent de la même entreprise, le chantier ne s’arrête pas en attendant un autre corps de métier. Nous travaillons avec votre architecte si le projet en demande un.",
+ "llista": ["Agrandissements de maisons et nouvelles pièces.", "Garages, auvents et abris.", "Murs, clôtures maçonnées et fermetures de terrain.", "Escaliers extérieurs, rampes et sols.", "Installations et finitions de tout le chantier."],
+ "h2b": "Types de travaux",
+ "fitxes": [["Agrandissements", "Une pièce de plus, un auvent fermé ou un étage, installations comprises."], ["Extérieurs", "Murs, clôtures, escaliers, rampes et sols de terrain."], ["Travaux avec projet", "Coordination avec votre architecte et avec la mairie pour le permis."]],
+ "faq": [
+  ["Construisez-vous des maisons neuves ?", "Présentez-nous le projet et nous vous dirons si nous pouvons le réaliser et dans quels délais. Nous faisons surtout des agrandissements, garages, auvents, murs et rénovations avec structure."],
+  ["Faut-il un architecte pour un agrandissement ?", "En général oui : un agrandissement demande un projet et un permis de construire. Si vous n’en avez pas, nous vous orientons."],
+  ["Parlez-vous français ?", "Oui. Nous vous répondons en français par téléphone, WhatsApp et e-mail, et vous envoyons des photos de l’avancement si vous êtes en France."]],
+ "cta_h": "Un projet de construction ?", "cta_p": "Dites-nous ce que vous voulez construire, où, et si vous avez déjà un projet.", "wa": "Bonjour Proinstal Empordà, je voudrais un devis pour des travaux"
+},
+"rehabilitacio": {
+ "slug": "fr/services/rehabilitation-maison-facade-costa-brava.html", "nom": "Réhabilitation de maisons et façades",
+ "title": "Réhabilitation de maisons, mas et façades sur la Costa Brava | Proinstal",
+ "desc": "Réhabilitation de maisons anciennes, mas catalans et façades dans l’Empordà, Espagne : structure, toitures, humidité, installations neuves et finitions dans le respect du bâtiment.",
+ "eyebrow": "Réhabilitation · Façades · Mas", "h1": "Réhabilitation de maisons et façades sur la Costa Brava",
+ "intro": "Nous réhabilitons maisons anciennes, mas catalans et façades dans l’Alt et le Baix Empordà : toitures, humidité et éléments abîmés, installations neuves et finitions, dans le respect du bâtiment d’origine.",
+ "alt": "Maison réhabilitée",
+ "e2": "Conserver et moderniser", "h2": "Des maisons anciennes avec le confort d’aujourd’hui",
+ "lead": "Beaucoup de maisons de village et de mas ont des murs en pierre, des poutres en bois et des installations anciennes. Nous les examinons en détail avant de proposer quoi que ce soit, pour que la réhabilitation dure.",
+ "llista": ["Façades : enduits, peinture, balcons et corniches.", "Toitures, tuiles et toits-terrasses avec infiltrations.", "Humidité par remontées capillaires, infiltration ou condensation.", "Installations neuves d’eau, d’électricité et de climatisation.", "Mas catalans et maisons en pierre des centres anciens."],
+ "h2b": "Ce que nous réhabilitons",
+ "fitxes": [["Façades", "Réparation, imperméabilisation et peinture selon les règles de la commune."], ["Maisons et mas", "Structure, toitures, installations et finitions dans un esprit de conservation."], ["Copropriétés", "Façades, toits-terrasses et parties communes."]],
+ "faq": [
+  ["Peut-on réhabiliter une maison en vivant en France ?", "Oui. Un seul responsable vous parle en français et vous envoie des photos et des comptes rendus de chaque étape."],
+  ["Réhabilitez-vous des mas ?", "Oui : gros œuvre, toiture, humidité, installations et finitions, en coordination avec l’architecte si nécessaire."],
+  ["Comment commencer ?", "Par une visite pour évaluer l’état du bâtiment. Nous vous remettons ensuite un devis par étapes."]],
+ "cta_h": "Une maison à réhabiliter ?", "cta_p": "Envoyez-nous des photos de la façade ou de la maison et la commune.", "wa": "Bonjour Proinstal Empordà, je voudrais réhabiliter une maison"
+},
 "roses": {
  "slug": "fr/villes/renovation-roses-espagne.html",
  "title": "Rénovation, climatisation et plombier à Roses (Espagne) | Proinstal",

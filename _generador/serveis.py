@@ -8,7 +8,7 @@ SERVEIS = [
  "tipus": "Reformes integrals",
  "ca": {
   "slug": "serveis/reformes-integrals-emporda.html", "nom": "Reformes integrals",
-  "title": "Reformes integrals a l’Empordà | Proinstal Empordà",
+  "title": "Reformes integrals a l’Empordà i la Costa Brava | Proinstal Empordà",
   "desc": "Reformes integrals de cases, pisos, locals, cuines i banys a l’Alt i Baix Empordà. Un sol equip coordina instal·lacions, fusteria i acabats. Pressupost gratuït.",
   "eyebrow": "Reformes · Coordinació d’oficis", "h1": "Reformes integrals a l’Empordà",
   "intro": "Proinstal Empordà fa reformes integrals de cases, pisos, locals, cuines i banys a l’Alt i Baix Empordà, amb un sol equip que coordina electricitat, fontaneria, climatització, fusteria i acabats.",
@@ -28,7 +28,7 @@ SERVEIS = [
  },
  "es": {
   "slug": "es/servicios/reformas-integrales-emporda.html", "nom": "Reformas integrales",
-  "title": "Reformas integrales en el Empordà | Proinstal Empordà",
+  "title": "Reformas integrales en el Empordà y la Costa Brava | Proinstal Empordà",
   "desc": "Reformas integrales de casas, pisos, locales, cocinas y baños en el Alt y Baix Empordà. Un solo equipo coordina instalaciones, carpintería y acabados. Presupuesto gratis.",
   "eyebrow": "Reformas · Coordinación de oficios", "h1": "Reformas integrales en el Empordà",
   "intro": "Proinstal Empordà hace reformas integrales de casas, pisos, locales, cocinas y baños en el Alt y Baix Empordà, con un solo equipo que coordina electricidad, fontanería, climatización, carpintería y acabados.",
@@ -45,6 +45,90 @@ SERVEIS = [
    ["¿Puedo hacer la reforma si no vivo en el Empordà?", "Sí. Trabajamos con segundas residencias: te enviamos fotos e informes del avance y un solo responsable te atiende en castellano, catalán, francés, inglés o alemán."],
    ["¿Hacéis también reformas parciales?", "Sí. Podemos hacer solo el baño, la cocina, el suelo o la instalación eléctrica, o una reforma por fases si prefieres repartir la obra."]],
   "cta_h": "¿Hablamos de tu reforma?", "cta_p": "Dinos el municipio, el tipo de espacio y qué quieres cambiar. Te responderemos para valorar una visita.", "wa": "Hola Proinstal Empordà, quiero pedir presupuesto para una reforma"
+ }
+},
+{
+ "id": "construccio", "hero": "/hero-portada/hero-reformas-instalaciones-04.jpg", "img": "/exteriores-fachadas-cerramientos/cerramiento-fachada-07.jpg",
+ "tipus": "Construcció",
+ "ca": {
+  "slug": "serveis/construccio-emporda.html", "nom": "Construcció i obra",
+  "title": "Construcció i obra a l’Empordà i la Costa Brava | Proinstal Empordà",
+  "desc": "Construccions i obres a Figueres, Roses, Empuriabrava i tot l’Empordà: ampliacions, garatges, porxos, murs, tanques i obra de paleta, amb instal·lacions i acabats del mateix equip.",
+  "eyebrow": "Construcció · Ampliacions · Paleta", "h1": "Construcció i obra a l’Empordà",
+  "intro": "Proinstal Empordà fa obres de construcció a l’Alt i Baix Empordà: ampliacions, garatges, porxos, murs i tanques, obra de paleta i estructura, i les deixa acabades amb les instal·lacions i els acabats del mateix equip.",
+  "alt": "Escala exterior en construcció",
+  "e2": "De l’estructura a l’acabat", "h2": "Una sola empresa per a tota l’obra",
+  "lead": "Quan la paleta, l’electricitat, l’aigua i la fusteria són de la mateixa empresa, l’obra no s’atura esperant un altre ofici. Ens coordinem amb l’arquitecte si el projecte en necessita.",
+  "llista": ["Ampliacions d’habitatges i noves estances.", "Garatges, porxos i coberts.", "Murs, tanques d’obra i tancaments de parcel·la.", "Escales exteriors, rampes i paviments.", "Instal·lacions i acabats de tota l’obra."],
+  "h2b": "Tipus d’obra",
+  "fitxes": [["Ampliacions", "Una habitació més, un porxo tancat o una planta nova, amb instal·lacions incloses."], ["Exteriors d’obra", "Murs, tanques, escales, rampes i paviments de parcel·la."], ["Obra amb projecte", "Ens coordinem amb el vostre arquitecte i amb l’ajuntament per a la llicència."]],
+  "faq": [
+   ["Feu obra nova?", "Expliqueu-nos el projecte i us direm si el podem assumir i amb quin calendari. Fem sobretot ampliacions, garatges, porxos, murs i obres de reforma amb estructura."],
+   ["Cal arquitecte per a una ampliació?", "Normalment sí: una ampliació necessita projecte i llicència d’obres. Si no en teniu, us orientem perquè el projecte i l’obra vagin coordinats."],
+   ["Treballeu a Figueres, Roses i Empuriabrava?", "Sí, i a tot l’Alt Empordà i bona part del Baix Empordà. Sortim de Vilajuïga."],
+   ["La visita i el pressupost tenen cost?", "No. Visitem l’obra i us donem un pressupost detallat per partides sense compromís."]],
+  "cta_h": "Tens una obra en ment?", "cta_p": "Explica’ns què vols construir, on i si ja tens projecte. Et respondrem per valorar una visita.", "wa": "Hola Proinstal Empordà, vull pressupost per a una obra"
+ },
+ "es": {
+  "slug": "es/servicios/construccion-emporda.html", "nom": "Construcción y obra",
+  "title": "Construcciones y obra en el Empordà y la Costa Brava | Proinstal Empordà",
+  "desc": "Construcciones y obras en Figueres, Roses, Empuriabrava y todo el Empordà: ampliaciones, garajes, porches, muros, vallas y albañilería, con instalaciones y acabados del mismo equipo.",
+  "eyebrow": "Construcción · Ampliaciones · Albañilería", "h1": "Construcciones y obra en el Empordà",
+  "intro": "Proinstal Empordà hace obras de construcción en el Alt y Baix Empordà: ampliaciones, garajes, porches, muros y vallas, albañilería y estructura, y las deja terminadas con las instalaciones y los acabados del mismo equipo.",
+  "alt": "Escalera exterior en construcción",
+  "e2": "De la estructura al acabado", "h2": "Una sola empresa para toda la obra",
+  "lead": "Cuando la albañilería, la electricidad, el agua y la carpintería son de la misma empresa, la obra no se para esperando a otro oficio. Nos coordinamos con el arquitecto si el proyecto lo necesita.",
+  "llista": ["Ampliaciones de viviendas y nuevas estancias.", "Garajes, porches y cobertizos.", "Muros, vallas de obra y cerramientos de parcela.", "Escaleras exteriores, rampas y pavimentos.", "Instalaciones y acabados de toda la obra."],
+  "h2b": "Tipos de obra",
+  "fitxes": [["Ampliaciones", "Una habitación más, un porche cerrado o una planta nueva, con instalaciones incluidas."], ["Exteriores de obra", "Muros, vallas, escaleras, rampas y pavimentos de parcela."], ["Obra con proyecto", "Nos coordinamos con tu arquitecto y con el ayuntamiento para la licencia."]],
+  "faq": [
+   ["¿Hacéis obra nueva?", "Cuéntanos el proyecto y te diremos si podemos asumirlo y con qué calendario. Hacemos sobre todo ampliaciones, garajes, porches, muros y reformas con estructura."],
+   ["¿Hace falta arquitecto para una ampliación?", "Normalmente sí: una ampliación necesita proyecto y licencia de obras. Si no tienes, te orientamos para que el proyecto y la obra vayan coordinados."],
+   ["¿Trabajáis en Figueres, Roses y Empuriabrava?", "Sí, y en todo el Alt Empordà y buena parte del Baix Empordà. Salimos de Vilajuïga."],
+   ["¿La visita y el presupuesto tienen coste?", "No. Visitamos la obra y te damos un presupuesto detallado por partidas sin compromiso."]],
+  "cta_h": "¿Tienes una obra en mente?", "cta_p": "Cuéntanos qué quieres construir, dónde y si ya tienes proyecto. Te responderemos para valorar una visita.", "wa": "Hola Proinstal Empordà, quiero presupuesto para una obra"
+ }
+},
+{
+ "id": "rehabilitacio", "hero": "/hero-portada/hero-reformas-instalaciones-03.jpg", "img": None,
+ "tipus": "Rehabilitació",
+ "ca": {
+  "slug": "serveis/rehabilitacio-cases-facanes-emporda.html", "nom": "Rehabilitació de cases i façanes",
+  "title": "Rehabilitació de cases, masies i façanes a l’Empordà | Proinstal",
+  "desc": "Rehabilitació de cases antigues, masies i façanes a l’Alt i Baix Empordà: estructura, cobertes, humitats, instal·lacions noves i acabats respectant l’edifici original.",
+  "eyebrow": "Rehabilitació · Façanes · Masies", "h1": "Rehabilitació de cases i façanes a l’Empordà",
+  "intro": "Rehabilitem cases antigues, masies i façanes a l’Alt i Baix Empordà: reparem cobertes, humitats i elements degradats, posem instal·lacions noves i refem els acabats respectant l’edifici original.",
+  "alt": "Casa rehabilitada",
+  "e2": "Conservar i posar al dia", "h2": "Cases velles amb confort d’avui",
+  "lead": "Moltes cases del nucli antic i masies tenen murs de pedra, bigues de fusta i instal·lacions de fa dècades. Les revisem a fons abans de proposar res, perquè la rehabilitació duri i no amagui problemes.",
+  "llista": ["Rehabilitació de façanes: arrebossats, pintura, balcons i cornises.", "Cobertes, teulades i terrats amb filtracions.", "Humitats per capil·laritat, filtració o condensació.", "Instal·lacions noves d’aigua, llum i clima en parets velles.", "Masies i cases de pedra del nucli antic."],
+  "h2b": "Què rehabilitem",
+  "fitxes": [["Façanes", "Reparació, impermeabilització i pintura d’acord amb la normativa municipal."], ["Cases i masies", "Estructura, cobertes, instal·lacions i acabats amb criteri de conservació."], ["Comunitats", "Façanes, terrats i elements comuns d’edificis de pisos."]],
+  "faq": [
+   ["Hi ha ajuts per rehabilitar façanes?", "Sovint hi ha subvencions de la Generalitat, dels ajuntaments o fons europeus per a rehabilitació i eficiència. T’informem de les vigents i et preparem el pressupost que demanen."],
+   ["Rehabiliteu masies?", "Sí. Fem la part d’obra, coberta, humitats, instal·lacions i acabats, i ens coordinem amb l’arquitecte quan l’obra en necessita."],
+   ["Treballeu per a comunitats de veïns?", "Sí. Façanes, terrats i elements comuns, coordinats amb l’administrador de la finca."],
+   ["Com es comença?", "Amb una visita per revisar l’estat de l’edifici. Després et donem un pressupost per fases perquè puguis decidir per on començar."]],
+  "cta_h": "Tens una casa per rehabilitar?", "cta_p": "Envia’ns fotos de la façana o de la casa i el municipi. Et proposarem una visita.", "wa": "Hola Proinstal Empordà, vull rehabilitar una casa"
+ },
+ "es": {
+  "slug": "es/servicios/rehabilitacion-casas-fachadas-emporda.html", "nom": "Rehabilitación de casas y fachadas",
+  "title": "Rehabilitación de casas, masías y fachadas en el Empordà | Proinstal",
+  "desc": "Rehabilitación de casas antiguas, masías y fachadas en el Alt y Baix Empordà: estructura, cubiertas, humedades, instalaciones nuevas y acabados respetando el edificio original.",
+  "eyebrow": "Rehabilitación · Fachadas · Masías", "h1": "Rehabilitación de casas y fachadas en el Empordà",
+  "intro": "Rehabilitamos casas antiguas, masías y fachadas en el Alt y Baix Empordà: reparamos cubiertas, humedades y elementos degradados, ponemos instalaciones nuevas y rehacemos los acabados respetando el edificio original.",
+  "alt": "Casa rehabilitada",
+  "e2": "Conservar y poner al día", "h2": "Casas viejas con el confort de hoy",
+  "lead": "Muchas casas del casco antiguo y masías tienen muros de piedra, vigas de madera e instalaciones de hace décadas. Las revisamos a fondo antes de proponer nada, para que la rehabilitación dure y no esconda problemas.",
+  "llista": ["Rehabilitación de fachadas: revocos, pintura, balcones y cornisas.", "Cubiertas, tejados y azoteas con filtraciones.", "Humedades por capilaridad, filtración o condensación.", "Instalaciones nuevas de agua, luz y clima en paredes viejas.", "Masías y casas de piedra del casco antiguo."],
+  "h2b": "Qué rehabilitamos",
+  "fitxes": [["Fachadas", "Reparación, impermeabilización y pintura conforme a la normativa municipal."], ["Casas y masías", "Estructura, cubiertas, instalaciones y acabados con criterio de conservación."], ["Comunidades", "Fachadas, azoteas y elementos comunes de edificios de pisos."]],
+  "faq": [
+   ["¿Hay ayudas para rehabilitar fachadas?", "A menudo hay subvenciones de la Generalitat, de los ayuntamientos o fondos europeos para rehabilitación y eficiencia. Te informamos de las vigentes y te preparamos el presupuesto que piden."],
+   ["¿Rehabilitáis masías?", "Sí. Hacemos la obra, la cubierta, las humedades, las instalaciones y los acabados, y nos coordinamos con el arquitecto cuando la obra lo necesita."],
+   ["¿Trabajáis para comunidades de vecinos?", "Sí. Fachadas, azoteas y elementos comunes, coordinados con el administrador de la finca."],
+   ["¿Cómo se empieza?", "Con una visita para revisar el estado del edificio. Después te damos un presupuesto por fases para que decidas por dónde empezar."]],
+  "cta_h": "¿Tienes una casa para rehabilitar?", "cta_p": "Envíanos fotos de la fachada o de la casa y el municipio. Te propondremos una visita.", "wa": "Hola Proinstal Empordà, quiero rehabilitar una casa"
  }
 },
 {

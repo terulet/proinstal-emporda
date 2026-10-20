@@ -286,6 +286,40 @@ POBLES = [
 
 ZONES = [
 {
+ "id": "zona-costa-brava", "nom": "Costa Brava", "hero": "/hero-portada/hero-reformas-instalaciones-01.jpg", "img": "/exteriores-fachadas-cerramientos/cerramiento-fachada-13.jpg",
+ "pobles": ["roses", "empuriabrava", "cadaques", "llanca", "lescala", "castello", "figueres", "vilajuiga"],
+ "ca": {
+  "slug": "zones/reformes-costa-brava.html", "nom": "Costa Brava",
+  "title": "Reformes, construcció i instal·lacions a la Costa Brava | Proinstal",
+  "desc": "Reformes integrals, construcció, rehabilitació, aire condicionat, lampisteria, electricitat, pèrgoles i humitats a la Costa Brava nord: Roses, Empuriabrava, Cadaqués, Llançà i l’Escala.",
+  "eyebrow": "Costa Brava · Alt i Baix Empordà", "h1": "Reformes i construcció a la Costa Brava",
+  "intro": "Proinstal Empordà és una empresa de reformes, construcció i instal·lacions de la Costa Brava nord, amb base a Vilajuïga. Un sol equip fa l’obra, la lampisteria, l’electricitat, la climatització i els exteriors.",
+  "alt": "Pèrgola bioclimàtica en una casa de costa",
+  "e2": "Empresa local", "h2": "Tots els oficis per a cases de costa",
+  "lead": "A la Costa Brava, les cases pateixen sal, sol, humitat i tramuntana, i moltes passen mesos tancades. Triem materials i solucions pensats per a aquestes condicions i atenem els propietaris en el seu idioma.",
+  "llista": ["Reformes integrals i construcció d’ampliacions.", "Rehabilitació de cases, masies i façanes.", "Aire condicionat, aerotèrmia i plaques solars.", "Lampisteria, electricitat i reparació d’humitats.", "Pèrgoles, terrasses i manteniment de segones residències."],
+  "fitxes": [["Golf de Roses", "Roses, Empuriabrava, Castelló d’Empúries i l’Escala."], ["Cap de Creus", "Cadaqués, Llançà i el Port de la Selva."], ["Interior", "Figueres, Vilajuïga i els pobles de l’Alt Empordà."]],
+  "faq": [
+   ["Quines zones de la Costa Brava cobriu?", "La Costa Brava nord i l’Alt Empordà: Roses, Empuriabrava, Castelló d’Empúries, l’Escala, Cadaqués, Llançà, el Port de la Selva i Figueres, i també part del Baix Empordà."],
+   ["Atenen propietaris estrangers?", "Sí, en francès, anglès i alemany, a més de català i castellà."]]
+ },
+ "es": {
+  "slug": "es/zonas/reformas-costa-brava.html", "nom": "Costa Brava",
+  "title": "Reformas, construcción e instalaciones en la Costa Brava | Proinstal",
+  "desc": "Reformas integrales, construcción, rehabilitación, aire acondicionado, fontanería, electricidad, pérgolas y humedades en la Costa Brava norte: Roses, Empuriabrava, Cadaqués, Llançà y L’Escala.",
+  "eyebrow": "Costa Brava · Alt y Baix Empordà", "h1": "Reformas y construcción en la Costa Brava",
+  "intro": "Proinstal Empordà es una empresa de reformas, construcción e instalaciones de la Costa Brava norte, con base en Vilajuïga. Un solo equipo hace la obra, la fontanería, la electricidad, la climatización y los exteriores.",
+  "alt": "Pérgola bioclimática en una casa de costa",
+  "e2": "Empresa local", "h2": "Todos los oficios para casas de costa",
+  "lead": "En la Costa Brava, las casas sufren sal, sol, humedad y tramontana, y muchas pasan meses cerradas. Elegimos materiales y soluciones pensados para estas condiciones y atendemos a los propietarios en su idioma.",
+  "llista": ["Reformas integrales y construcción de ampliaciones.", "Rehabilitación de casas, masías y fachadas.", "Aire acondicionado, aerotermia y placas solares.", "Fontanería, electricidad y reparación de humedades.", "Pérgolas, terrazas y mantenimiento de segundas residencias."],
+  "fitxes": [["Golfo de Roses", "Roses, Empuriabrava, Castelló d’Empúries y L’Escala."], ["Cabo de Creus", "Cadaqués, Llançà y El Port de la Selva."], ["Interior", "Figueres, Vilajuïga y los pueblos del Alt Empordà."]],
+  "faq": [
+   ["¿Qué zonas de la Costa Brava cubrís?", "La Costa Brava norte y el Alt Empordà: Roses, Empuriabrava, Castelló d’Empúries, L’Escala, Cadaqués, Llançà, El Port de la Selva y Figueres, y también parte del Baix Empordà."],
+   ["¿Atendéis a propietarios extranjeros?", "Sí, en francés, inglés y alemán, además de castellano y catalán."]]
+ }
+},
+{
  "id": "zona-nord", "nom": "Figueres, Roses i Empuriabrava", "hero": "/hero-portada/hero-reformas-instalaciones-03.jpg", "img": "/interiores-reformas/reforma-interior-12.jpg",
  "pobles": ["figueres", "roses", "empuriabrava", "castello", "vilajuiga"],
  "ca": {
