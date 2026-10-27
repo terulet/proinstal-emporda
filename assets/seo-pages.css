@@ -62,7 +62,7 @@ footer .fcols a{margin-right:0;color:#ccc;text-decoration:none}
 footer .fcols a:hover{color:var(--orange)}
 footer .fnote{margin-top:22px;padding-top:18px;border-top:1px solid #222;font-size:.85rem}
 @media(max-width:760px){footer .fcols{grid-template-columns:1fr}.nav .lang{display:inline-flex!important}}
-@media(max-width:760px){.nav a:not(.cta){display:none}.hero{min-height:470px}.grid,.split{grid-template-columns:1fr}.split img{height:310px}.consent-banner{align-items:flex-start;flex-direction:column}.consent-banner div{width:100%}.consent-banner button{flex:1}}
+@media(max-width:760px){.topbar .wrap{flex-wrap:wrap;gap:8px;padding:8px 0}.nav{flex-wrap:wrap;gap:8px;max-width:100%}.nav a:not(.cta){display:none}.hero{min-height:470px}.grid,.split{grid-template-columns:1fr}.split img{height:310px}.consent-banner{align-items:flex-start;flex-direction:column}.consent-banner div{width:100%}.consent-banner button{flex:1}}
 .abdes .adg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:26px;margin-top:30px}
 .ad{margin:0}
 .ad2{display:grid;grid-template-columns:1fr 1fr;gap:8px}

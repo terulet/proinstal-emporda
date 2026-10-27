@@ -40,11 +40,30 @@
 
   function showConsentBanner() {
     if (!validMeasurementId() || localStorage.getItem(consentKey)) return;
+    var language = (document.documentElement.lang || 'ca').toLowerCase().split('-')[0];
+    var messages = {
+      ca: {
+        label: 'Preferències d’analítica', title: 'Analítica opcional',
+        description: 'Amb el teu permís, mesurem visites i contactes per millorar la web. No enviem a Google el nom, telèfon ni el text del formulari.',
+        more: 'Més informació', reject: 'Rebutjar', accept: 'Acceptar'
+      },
+      es: {
+        label: 'Preferencias de analítica', title: 'Analítica opcional',
+        description: 'Con tu permiso, medimos visitas y contactos para mejorar la web. No enviamos a Google el nombre, el teléfono ni el texto del formulario.',
+        more: 'Más información', reject: 'Rechazar', accept: 'Aceptar'
+      },
+      fr: {
+        label: 'Préférences de mesure d’audience', title: 'Mesure d’audience facultative',
+        description: 'Avec votre accord, nous mesurons les visites et les prises de contact pour améliorer le site. Nous ne transmettons pas à Google le nom, le numéro de téléphone ni le texte du formulaire.',
+        more: 'Plus d’informations', reject: 'Refuser', accept: 'Accepter'
+      }
+    };
+    var message = messages[language] || messages.ca;
     var banner = document.createElement('aside');
     banner.id = 'analytics-consent';
     banner.className = 'consent-banner';
-    banner.setAttribute('aria-label', 'Preferències d’analítica');
-    banner.innerHTML = '<p><strong>Analítica opcional</strong><br>Amb el teu permís, mesurem visites i contactes per millorar la web. No enviem a Google el nom, telèfon ni el text del formulari. <a href="/privacitat.html">Més informació</a>.</p><div><button type="button" data-consent="rejected">Rebutjar</button><button type="button" class="accept" data-consent="accepted">Acceptar</button></div>';
+    banner.setAttribute('aria-label', message.label);
+    banner.innerHTML = '<p><strong>' + message.title + '</strong><br>' + message.description + ' <a href="/privacitat.html">' + message.more + '</a>.</p><div><button type="button" data-consent="rejected">' + message.reject + '</button><button type="button" class="accept" data-consent="accepted">' + message.accept + '</button></div>';
     banner.addEventListener('click', function (event) {
       var button = event.target.closest('[data-consent]');
       if (button) setConsent(button.getAttribute('data-consent'));

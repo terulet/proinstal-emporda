@@ -174,6 +174,8 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     ld = json.dumps({"@context": "https://schema.org", "@graph": grafs}, ensure_ascii=False, separators=(",", ":"))
     hreflang = "".join(f'<link rel="alternate" hreflang="{l}" href="{url(comu[l]["slug"])}">' for l in LANGS if l in comu)
     hreflang += f'<link rel="alternate" hreflang="x-default" href="{url(comu["ca"]["slug"])}">'
+    context = "".join(f'<a href="/{e(href)}">{e(text)}</a>' if href else e(text) for text, href in d.get("context", []))
+    context_html = f'<p class="lead">{context}</p>' if context else ""
     llista = "".join(f"<li>{e(x)}</li>" for x in d["llista"])
     fitxes = "".join(f'<article class="card"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in d["fitxes"])
     faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
@@ -189,7 +191,7 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
 <script type="application/ld+json">{ld}</script>
 </head><body><header class="topbar"><div class="wrap"><a class="brand" href="{u["home"]}"><img src="/logo.jpg" alt="Proinstal Empordà">PROINSTAL <em>EMPORDÀ</em></a><nav class="nav"><a href="{u["home"]}#serveis">{u["serveis"]}</a><a href="{u["home"]}#zones">{u["zones"]}</a>{altres_idiomes}<a class="cta" href="{wa(d.get("wa", ""))}">{u["contactar"]}</a></nav></div></header>
 <section class="hero" style="--hero:url('{comu["hero"]}')"><div class="wrap"><nav class="crumbs" aria-label="breadcrumb">{crumbs}</nav><div class="eyebrow">{e(d["eyebrow"])}</div><h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p><div class="actions"><a class="button" href="{wa(d.get("wa", ""))}">{u["wa_btn"]}</a><a class="button secondary" href="tel:+34671510146">{u["trucar"]}</a></div></div></section>
-<main><section><div class="wrap{" split" if comu["img"] else ""}"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p><ul class="checklist">{llista}</ul></div>{f'<img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy">' if comu["img"] else ""}</div></section>
+<main><section><div class="wrap{" split" if comu["img"] else ""}"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p>{context_html}<ul class="checklist">{llista}</ul></div>{f'<img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy">' if comu["img"] else ""}</div></section>
 {abans_despres(lang, comu["parelles"])}
 <section class="areas"><div class="wrap"><h2>{e(d["h2b"])}</h2><div class="grid">{fitxes}</div></div></section>
 <section class="faq"><div class="wrap"><div class="eyebrow">{u["faq_e"]}</div><h2>{u["faq"]}</h2>{faq_html}</div></section>

@@ -294,6 +294,7 @@ ZONES = [
   "desc": "Reformes integrals, construcció, rehabilitació, aire condicionat, lampisteria, electricitat, pèrgoles i humitats a la Costa Brava nord: Roses, Empuriabrava, Cadaqués, Llançà i l’Escala.",
   "eyebrow": "Costa Brava · Alt i Baix Empordà", "h1": "Reformes i construcció a la Costa Brava",
   "intro": "Proinstal Empordà és una empresa de reformes, construcció i instal·lacions de la Costa Brava nord, amb base a Vilajuïga. Un sol equip fa l’obra, la lampisteria, l’electricitat, la climatització i els exteriors.",
+  "context": [("Reformem ", None), ("banys", "serveis/reforma-banys-emporda.html"), (", ", None), ("cuines", "serveis/reforma-cuines-emporda.html"), (" i habitatges a la Costa Brava nord. Coordinem els treballs d’obra, electricitat i lampisteria segons les necessitats de cada projecte. Explica’ns on és l’habitatge i què vols reformar per valorar el pressupost.", None)],
   "alt": "Pèrgola bioclimàtica en una casa de costa",
   "e2": "Empresa local", "h2": "Tots els oficis per a cases de costa",
   "lead": "A la Costa Brava, les cases pateixen sal, sol, humitat i tramuntana, i moltes passen mesos tancades. Triem materials i solucions pensats per a aquestes condicions i atenem els propietaris en el seu idioma.",
