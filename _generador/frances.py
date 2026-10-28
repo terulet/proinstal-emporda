@@ -20,7 +20,7 @@ FR = {
   ["Que faire en cas de fuite d’eau ?", "Fermez le robinet d’arrêt général et envoyez-nous une photo par WhatsApp en montrant l’endroit de la fuite. Nous vous dirons comment procéder et quand nous pouvons passer."],
   ["Je n’habite pas en Espagne. Pouvez-vous intervenir en mon absence ?", "Oui. Beaucoup de propriétaires de la côte vivent en France. Nous vous envoyons des photos avant et après l’intervention et nous vous parlons en français."],
   ["Remplacez-vous les chauffe-eau électriques ?", "Oui. Nous retirons l’ancien appareil, adaptons les raccordements et mettons le nouveau en service. Nous pouvons aussi vous proposer une pompe à chaleur pour l’eau chaude."]],
- "cta_h": "Besoin d’un plombier sur la Costa Brava ?", "cta_p": "Envoyez-nous une photo ou décrivez le problème, la commune et l’urgence.", "wa": "Bonjour Proinstal Empordà, j’ai besoin d’un plombier"
+ "cta_h": "Besoin d’un plombier sur la Costa Brava ?", "cta_p": "Nos réalisations comprennent des travaux variés à Santa Margarida (Roses) et à Empuriabrava. Pour demander un devis, indiquez la commune, le problème et la date souhaitée. Vous pouvez joindre des photos à votre message WhatsApp. Horaires de contact : du lundi au vendredi, de 8 h à 17 h.", "wa": "Bonjour Proinstal Empordà, j’ai besoin d’un plombier"
 },
 "aire": {
  "slug": "fr/services/climatisation-roses-empuriabrava-espagne.html", "nom": "Climatisation",
@@ -39,7 +39,7 @@ FR = {
   ["Split ou gainable ?", "Le split est la solution la plus directe pour une ou deux pièces. Le gainable répartit l’air dans toute la maison avec un seul appareil caché dans le faux plafond. Nous vous conseillons lors de la visite."],
   ["La tramontane et le sel abîment-ils le groupe extérieur ?", "Le groupe doit être bien fixé et, en bord de mer, mieux protégé et nettoyé plus souvent. Nous en tenons compte au moment de choisir son emplacement."],
   ["Pouvez-vous préparer la climatisation avant notre arrivée ?", "Oui. Nous faisons l’entretien au printemps pour que tout fonctionne le jour où vous arrivez."]],
- "cta_h": "Installer ou réparer votre climatisation ?", "cta_p": "Dites-nous combien de pièces vous voulez climatiser, la commune et si vous avez déjà un appareil.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur la climatisation"
+ "cta_h": "Installer ou réparer votre climatisation ?", "cta_p": "Nos réalisations comprennent des travaux variés à Santa Margarida (Roses) et à Empuriabrava. Pour demander un devis, indiquez la commune, le nombre de pièces, votre besoin et la date souhaitée. Précisez si vous avez déjà un appareil et joignez des photos à votre message WhatsApp si vous le souhaitez. Horaires de contact : du lundi au vendredi, de 8 h à 17 h.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur la climatisation"
 },
 "electricitat": {
  "slug": "fr/services/electricien-roses-empuriabrava-espagne.html", "nom": "Électricien",
@@ -113,7 +113,7 @@ FR = {
   ["Une pergola résiste-t-elle à la tramontane ?", "Oui, si la structure et les ancrages sont calculés pour le vent. Nous fixons solidement les poteaux et choisissons le modèle selon l’exposition de la terrasse."],
   ["Faut-il une autorisation de la mairie ?", "Cela dépend de la commune et de la taille. Souvent une déclaration préalable suffit, parfois il faut un permis. Nous le vérifions avant de commencer."],
   ["Combien coûte une pergola bioclimatique ?", "Cela dépend des dimensions, du type (adossée ou autoportante) et des options : éclairage, moteur, fermetures latérales. Après la prise de mesures, nous vous remettons un devis fermé."]],
- "cta_h": "Envie de transformer votre terrasse ?", "cta_p": "Envoyez-nous des photos, des mesures approximatives et la commune.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur une pergola"
+ "cta_h": "Envie de transformer votre terrasse ?", "cta_p": "Nos réalisations comprennent des travaux variés à Santa Margarida (Roses) et à Empuriabrava. Pour demander un devis, indiquez la commune, votre projet, les dimensions approximatives et la date souhaitée. Vous pouvez joindre des photos de l’espace à votre message WhatsApp. Horaires de contact : du lundi au vendredi, de 8 h à 17 h.", "wa": "Bonjour Proinstal Empordà, je voudrais des informations sur une pergola"
 },
 "construccio": {
  "slug": "fr/services/construction-empuriabrava-roses-espagne.html", "nom": "Construction",

@@ -44,17 +44,17 @@
     var messages = {
       ca: {
         label: 'Preferències d’analítica', title: 'Analítica opcional',
-        description: 'Amb el teu permís, mesurem visites i contactes per millorar la web. No enviem a Google el nom, telèfon ni el text del formulari.',
+        description: 'Amb el teu permís, mesurem visites i clics als canals de contacte per millorar la web. No enviem a Google el nom, telèfon ni el text del formulari.',
         more: 'Més informació', reject: 'Rebutjar', accept: 'Acceptar'
       },
       es: {
         label: 'Preferencias de analítica', title: 'Analítica opcional',
-        description: 'Con tu permiso, medimos visitas y contactos para mejorar la web. No enviamos a Google el nombre, el teléfono ni el texto del formulario.',
+        description: 'Con tu permiso, medimos visitas y clics en los canales de contacto para mejorar la web. No enviamos a Google el nombre, el teléfono ni el texto del formulario.',
         more: 'Más información', reject: 'Rechazar', accept: 'Aceptar'
       },
       fr: {
         label: 'Préférences de mesure d’audience', title: 'Mesure d’audience facultative',
-        description: 'Avec votre accord, nous mesurons les visites et les prises de contact pour améliorer le site. Nous ne transmettons pas à Google le nom, le numéro de téléphone ni le texte du formulaire.',
+        description: 'Avec votre accord, nous mesurons les visites et les clics vers les moyens de contact pour améliorer le site. Nous ne transmettons pas à Google le nom, le numéro de téléphone ni le texte du formulaire.',
         more: 'Plus d’informations', reject: 'Refuser', accept: 'Accepter'
       }
     };
@@ -81,7 +81,7 @@
       else if (href.indexOf('tel:') === 0) method = 'phone';
       else if (href.indexOf('mailto:') === 0) method = 'email';
       else if (href.indexOf('instagram.com/') !== -1) method = 'instagram';
-      if (method) window.proinstalTrack(method === 'instagram' ? 'outbound_click' : 'generate_lead', { method: method });
+      if (method) window.proinstalTrack(method === 'instagram' ? 'outbound_click' : 'contact_click', { method: method });
     });
   }
 
