@@ -1,7 +1,7 @@
 # Proinstal Empordà web
 
 - Repository: `https://github.com/terulet/proinstal-emporda`
-- Canonical checkout: `/Volumes/Crucial X9/Projects/proinstal-emporda` on Mac Server
+- Canonical checkout: `/Volumes/Crucial X9/BOAB TECH/WEBS/PROINSTAL_EMPORDA` on Mac Server
 - Hosting: GitHub Pages at `https://proinstalemporda.com/`
 - Build: none; the site is static HTML, CSS and JavaScript
 - Local preview on Mac Server: `ruby -run -e httpd . -p 8008`
@@ -44,3 +44,18 @@ Service, town and zone pages (CA, ES and FR), `es/index.html`, `fr/index.html`, 
 - `es/index.html` and `fr/index.html` are built from `index.html` with the `es` and `fr` strings of its translation dictionary. Edit the Catalan homepage, then regenerate.
 - The footer links of the homepage are filled between `<!--enllacos-->` markers.
 - `_generador/` is not published: GitHub Pages skips folders starting with `_`.
+
+## Candidato de contacto francés · 29-10-2026
+
+Base comprobada: cde2c543e377451f7c1c495fdefbc93ceea240bb, igual a origin y a los tres HTML públicos al iniciar.
+Candidato aislado en PROINSTAL_CANDIDATAS/seo-datos-20261029, sin publicar.
+
+Prioridad basada en los datos guardados de Search Console del 28/10: fontanería FR (2 clics/33 impresiones), climatización FR (2/30) y electricidad FR (0/28). Son agregados por página y una muestra pequeña; no prueban origen nacional, demanda total, contactos ni causas. La lectura API de 76 filas tiene otro desglose y periodo: no se mezclan cifras.
+
+Cambios: instrucciones para pedir presupuesto, horario confirmado L-V de 8 a 17 y fin de semana cerrado, teléfono y enlace al formulario francés junto a WhatsApp. Se conserva el contenido de trabajos reales anterior. El formulario existente abre WhatsApp; no se ha conectado un nuevo receptor ni se acredita recepción automática en RADAR. No se cambian títulos, canonical, hreflang ni datos estructurados, que ya eran coherentes.
+
+Regeneración acotada: python3 _generador/generar.py --fr-contact-only.
+Dos regeneraciones idénticas; otras 58 páginas de servicio/zona y sitemap intactos.
+QA independiente: tres páginas en 390 y 1280 px, enlaces y fragmento de formulario, sin errores JS ni desbordamiento. Consentimiento y contact_click probados con gtag simulado y peticiones externas bloqueadas; no confirma recepción real en GA4 ni contacto recibido. Evidencia externa al sitio publicado: ../qa-seo-datos-20261029/qa-results.json y capturas.
+Preview privada: http://100.98.237.124:18771/; Analytics desactivado mediante respuesta del servidor de preview.
+Publicación pendiente de autorización y comprobación posterior. Sin nuevas llamadas pagadas a OpenAI o búsquedas.

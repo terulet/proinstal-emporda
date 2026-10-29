@@ -179,6 +179,15 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     llista = "".join(f"<li>{e(x)}</li>" for x in d["llista"])
     fitxes = "".join(f'<article class="card"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in d["fitxes"])
     faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
+    # Extended contact options are opt-in per page; other generated pages stay unchanged.
+    contact_extra = ""
+    if lang == "fr" and d.get("contact_steps"):
+        steps = "".join(f"<li>{e(step)}</li>" for step in d["contact_steps"])
+        contact_extra = (f'<div class="actions" style="justify-content:center">'
+                         f'<a class="button secondary" href="tel:+34671510146">📞 Appeler le 671 510 146</a>'
+                         f'<a class="button secondary" href="/fr/#contacte">✉️ Formulaire de contact</a></div>'
+                         f'<h3>Comment faire votre demande</h3>'
+                         f'<ol style="max-width:680px;margin:0 auto;text-align:left">{steps}</ol>')
     crumbs = " › ".join(
         (f'<a href="/{s}">{e(n)}</a>' if s else f'<a href="{u["home"]}">{e(n)}</a>') if i < len(molla) - 1 else f"<span>{e(n)}</span>"
         for i, (n, s) in enumerate(molla))
@@ -196,7 +205,7 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
 <section class="areas"><div class="wrap"><h2>{e(d["h2b"])}</h2><div class="grid">{fitxes}</div></div></section>
 <section class="faq"><div class="wrap"><div class="eyebrow">{u["faq_e"]}</div><h2>{u["faq"]}</h2>{faq_html}</div></section>
 {cos_extra}</main>
-<section class="contact"><div class="wrap"><h2>{e(d["cta_h"])}</h2><p>{e(d["cta_p"])}</p><a class="button" href="{wa(d.get("wa", ""))}">{u["wa_btn"]}</a></div></section>{peu(lang)}</body></html>
+<section class="contact"><div class="wrap"><h2>{e(d["cta_h"])}</h2><p>{e(d["cta_p"])}</p><a class="button" href="{wa(d.get("wa", ""))}">{u["wa_btn"]}</a>{contact_extra}</div></section>{peu(lang)}</body></html>
 """
 
 
@@ -408,4 +417,18 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:] == ["--fr-contact-only"]:
+        # Regenerate these pages without touching sitemap dates or unrelated pages.
+        slugs = {_f.FR[key]["slug"] for key in ("fontaneria", "electricitat", "aire")}
+        generated = set()
+        for slug, content in pagines_servei():
+            if slug in slugs:
+                (ARREL / slug).write_text(content, encoding="utf8")
+                generated.add(slug)
+        if generated != slugs:
+            raise SystemExit("Missing targeted French service page")
+        print("3 pàgines franceses de contacte regenerades")
+    elif not sys.argv[1:]:
+        main()
+    else:
+        raise SystemExit("Usage: python3 _generador/generar.py [--fr-contact-only]")
