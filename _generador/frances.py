@@ -152,6 +152,10 @@ FR = {
  "cta_h": "Une maison à réhabiliter ?", "cta_p": "Envoyez-nous des photos de la façade ou de la maison et la commune.", "wa": "Bonjour Proinstal Empordà, je voudrais réhabiliter une maison"
 },
 "roses": {
+ "context": [["Pour vos travaux, consultez nos services : ", None], ["plomberie à Roses et Empuriabrava", "fr/services/plombier-roses-empuriabrava-espagne.html"], [", ", None], ["électricité à Roses, Empuriabrava et Cadaqués", "fr/services/electricien-roses-empuriabrava-espagne.html"], [" et ", None], ["installation et entretien de climatisation", "fr/services/climatisation-roses-empuriabrava-espagne.html"], [". Nous intervenons dans tout l’Alt Empordà.", None]],
+ "cta_h": "Un projet à Roses ?",
+ "cta_p": "Pour demander un devis, indiquez la commune, les travaux souhaités et la date qui vous convient. Horaires de contact : du lundi au vendredi, de 8 h à 17 h. Fermé le samedi et le dimanche.",
+ "contact_steps": ["Choisissez le téléphone, WhatsApp ou le formulaire de contact.", "Décrivez les travaux souhaités et précisez l’adresse du chantier dans votre message.", "Vous pouvez joindre des photos à votre message WhatsApp pour expliquer votre demande."],
  "slug": "fr/villes/renovation-roses-espagne.html",
  "title": "Rénovation, climatisation et plombier à Roses (Espagne) | Proinstal",
  "desc": "Rénovation d’appartements et de maisons, pergolas, climatisation, plombier et électricien à Roses, Santa Margarida, Canyelles et l’Almadrava. On parle français.",
@@ -168,6 +172,10 @@ FR = {
   ["Parlez-vous français ?", "Oui. Nous vous répondons en français par téléphone, WhatsApp et e-mail."]]
 },
 "empuriabrava": {
+ "context": [["Pour vos travaux, consultez nos services : ", None], ["plomberie à Roses et Empuriabrava", "fr/services/plombier-roses-empuriabrava-espagne.html"], [", ", None], ["électricité à Roses, Empuriabrava et Cadaqués", "fr/services/electricien-roses-empuriabrava-espagne.html"], [" et ", None], ["installation et entretien de climatisation", "fr/services/climatisation-roses-empuriabrava-espagne.html"], [". Nous intervenons dans tout l’Alt Empordà.", None]],
+ "cta_h": "Un projet à Empuriabrava ?",
+ "cta_p": "Pour demander un devis, indiquez la commune, les travaux souhaités et la date qui vous convient. Horaires de contact : du lundi au vendredi, de 8 h à 17 h. Fermé le samedi et le dimanche.",
+ "contact_steps": ["Choisissez le téléphone, WhatsApp ou le formulaire de contact.", "Décrivez les travaux souhaités et précisez l’adresse du chantier dans votre message.", "Vous pouvez joindre des photos à votre message WhatsApp pour expliquer votre demande."],
  "slug": "fr/villes/renovation-empuriabrava.html",
  "title": "Entreprise de rénovation à Empuriabrava (Espagne) | Proinstal",
  "desc": "Rénovation, humidité, pergolas, climatisation, plombier et électricien à Empuriabrava. Maisons avec amarrage et appartements sur les canaux. Entreprise locale, on parle français.",
