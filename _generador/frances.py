@@ -43,9 +43,9 @@ FR = {
 },
 "electricitat": {
  "slug": "fr/services/electricien-roses-empuriabrava-espagne.html", "nom": "Électricien",
- "title": "Électricien à Roses, Empuriabrava et L’Escala (Espagne) | Proinstal",
+ "title": "Électricien à Roses, Empuriabrava et Cadaqués (Espagne) | Proinstal",
  "desc": "Électricien francophone sur la Costa Brava : tableaux électriques, pannes, nouveaux circuits, éclairage et bornes de recharge à Roses, Empuriabrava, L’Escala et Figueres.",
- "eyebrow": "Électricité · Sécurité · On parle français", "h1": "Électricien à Roses, Empuriabrava et L’Escala",
+ "eyebrow": "Électricité · Sécurité · On parle français", "h1": "Électricien à Roses, Empuriabrava et Cadaqués",
  "intro": "Nous réalisons des installations électriques neuves, réparons les pannes et rénovons tableaux et circuits dans les maisons, appartements et commerces de l’Empordà, seuls ou dans le cadre d’une rénovation. Nous intervenons dans tout l’Alt Empordà, notamment à Vilajuïga, Cadaqués, Roses, Empuriabrava, Figueres, Palau-saverdera et Pau, ainsi que dans le Baix Empordà.",
  "alt": "Escalier rénové avec nouvelle applique",
  "e2": "Installations électriques", "h2": "Une installation à la hauteur de l’usage actuel",
