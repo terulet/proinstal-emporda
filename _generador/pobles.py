@@ -39,73 +39,231 @@ POBLES = [
 },
 {
  "id": "roses", "nom": "Roses", "hero": "/hero-portada/hero-reformas-instalaciones-05.jpg", "img": "/exteriores-fachadas-cerramientos/cerramiento-fachada-13.jpg",
- "ca": {
-  "slug": "zones/reformes-roses.html",
-  "title": "Reformes, pèrgoles i aire condicionat a Roses | Proinstal Empordà",
-  "desc": "Reformes d’apartaments i cases, pèrgoles, terrasses, aire condicionat, lampista i electricista a Roses, Santa Margarida, Canyelles i Almadrava. Pressupost gratuït.",
-  "eyebrow": "Roses · Golf de Roses", "h1": "Reformes i instal·lacions a Roses",
-  "intro": "Proinstal Empordà fa reformes d’apartaments i cases, pèrgoles i terrasses, aire condicionat, fontaneria i electricitat a Roses i les seves urbanitzacions, per a residents i segones residències.",
-  "alt": "Terrassa amb pèrgola en una casa de Roses",
-  "e2": "Habitatges de costa", "h2": "Apartaments, cases i terrasses",
-  "lead": "A Roses molts habitatges són apartaments i cases d’estiu, a prop del mar i exposats a la tramuntana. Triem materials i solucions que aguantin la sal, el sol i el vent, i que es mantinguin bé encara que la casa estigui tancada mesos.",
-  "llista": ["Reformes d’apartaments per a ús propi o de lloguer turístic.", "Pèrgoles bioclimàtiques i tendals preparats per a la tramuntana.", "Aire condicionat i bombes de calor.", "Fusteria exterior i tancaments resistents a la salinitat.", "Manteniment de segones residències durant l’any."],
-  "fitxes": [["Apartaments", "Reformes ràpides entre temporades, amb el calendari pactat."], ["Terrasses", "Pèrgoles, tarimes, paviments i tancaments."], ["Manteniment", "Revisions i reparacions quan el propietari no hi és."]],
-  "faq": [
-   ["Treballeu a les urbanitzacions de Roses?", "Sí: Santa Margarida, Canyelles, l’Almadrava, Mas Fumats, Mas Oliva i la resta del terme."],
-   ["Podeu fer la reforma fora de temporada?", "Sí, i és el que recomanem per a apartaments de lloguer. Planifiquem l’obra perquè estigui acabada abans de l’estiu."],
-   ["Les pèrgoles aguanten la tramuntana a Roses?", "Sí, si estan ben calculades i ancorades. Triem el model i la fixació segons l’exposició de la terrassa."]]
- },
- "es": {
-  "slug": "es/zonas/reformas-roses.html",
-  "title": "Reformas, pérgolas y aire acondicionado en Roses | Proinstal Empordà",
-  "desc": "Reformas de apartamentos y casas, pérgolas, terrazas, aire acondicionado, fontanero y electricista en Roses, Santa Margarida, Canyelles y Almadrava. Presupuesto gratis.",
-  "eyebrow": "Roses · Golfo de Roses", "h1": "Reformas e instalaciones en Roses",
-  "intro": "Proinstal Empordà hace reformas de apartamentos y casas, pérgolas y terrazas, aire acondicionado, fontanería y electricidad en Roses y sus urbanizaciones, para residentes y segundas residencias.",
-  "alt": "Terraza con pérgola en una casa de Roses",
-  "e2": "Viviendas de costa", "h2": "Apartamentos, casas y terrazas",
-  "lead": "En Roses muchas viviendas son apartamentos y casas de verano, cerca del mar y expuestas a la tramontana. Elegimos materiales y soluciones que aguanten la sal, el sol y el viento, y que se mantengan bien aunque la casa esté cerrada meses.",
-  "llista": ["Reformas de apartamentos para uso propio o alquiler turístico.", "Pérgolas bioclimáticas y toldos preparados para la tramontana.", "Aire acondicionado y bombas de calor.", "Carpintería exterior y cerramientos resistentes a la salinidad.", "Mantenimiento de segundas residencias durante el año."],
-  "fitxes": [["Apartamentos", "Reformas rápidas entre temporadas, con el calendario pactado."], ["Terrazas", "Pérgolas, tarimas, pavimentos y cerramientos."], ["Mantenimiento", "Revisiones y reparaciones cuando el propietario no está."]],
-  "faq": [
-   ["¿Trabajáis en las urbanizaciones de Roses?", "Sí: Santa Margarida, Canyelles, l’Almadrava, Mas Fumats, Mas Oliva y el resto del término."],
-   ["¿Podéis hacer la reforma fuera de temporada?", "Sí, y es lo que recomendamos para apartamentos de alquiler. Planificamos la obra para que esté terminada antes del verano."],
-   ["¿Las pérgolas aguantan la tramontana en Roses?", "Sí, si están bien calculadas y ancladas. Elegimos el modelo y la fijación según la exposición de la terraza."]]
- }
+ "ca": {'slug': 'zones/reformes-roses.html',
+ 'title': 'Reformes integrals i parcials a Roses | Proinstal',
+ 'desc': 'Reformes de pisos i cases a Roses: banys, cuines i instal·lacions coordinades. Ens desplacem des '
+         'de Vilajuïga. Explica’ns el projecte i demana pressupost.',
+ 'eyebrow': 'Roses · Golf de Roses',
+ 'h1': 'Reformes integrals i parcials a Roses',
+ 'intro': 'Proinstal Empordà fa reformes integrals i parcials de pisos i cases a Roses. Coordinem els '
+          'treballs de banys, cuines, electricitat i fontaneria segons el projecte. Ens desplacem des de '
+          'Vilajuïga i també treballem a Santa Margarida i a la resta de l’Alt Empordà.',
+ 'alt': 'Terrassa amb pèrgola en una casa de Roses',
+ 'e2': 'La reforma que necessites',
+ 'h2': 'Què vols reformar del teu pis o casa?',
+ 'lead': 'Una reforma pot afectar tot l’habitatge o només el bany, la cuina o les instal·lacions. Per '
+         'valorar una obra a Roses o Santa Margarida, explica’ns quines estances vols canviar, què vols '
+         'conservar i quan et convindria fer els treballs.',
+ 'llista': ['Reformes integrals o parcials de pisos i cases.',
+            'Reformes de banys: distribució, dutxa, sanitaris i instal·lacions d’aigua.',
+            'Reformes de cuines i coordinació de les instal·lacions necessàries.',
+            'Actualització de fontaneria, electricitat i climatització segons el projecte.',
+            'Valoració d’humitats i treballs complementaris en habitatges de costa.'],
+ 'fitxes': [['Abast dels treballs',
+             'Indica si vols reformar tot l’habitatge o només algunes estances, i què necessites conservar.'],
+            ['Instal·lacions coordinades',
+             'El bany i la cuina poden requerir treballs d’aigua i electricitat. Revisem quines '
+             'instal·lacions afecta el projecte.'],
+            ['Accés i calendari',
+             'Explica’ns l’accés a l’habitatge, si hi viu algú i les dates que et convenen per valorar la '
+             'intervenció.']],
+ 'faq': [['Feu reformes integrals i parcials a Roses?',
+          'Sí. Fem reformes de pisos i cases, de l’habitatge complet o de banys, cuines i altres estances '
+          'segons el projecte.'],
+         ['Com puc demanar pressupost?',
+          'Indica el municipi, el tipus d’habitatge, les estances que vols reformar i la data desitjada. '
+          'Pots enviar fotos per WhatsApp per explicar millor la consulta.'],
+         ['Quant costa i quant dura una reforma?',
+          'Depèn de l’abast, les dimensions, l’estat de les instal·lacions i els materials. Cal valorar el '
+          'projecte abans de concretar preu i calendari.'],
+         ['Puc fer una reforma si visc al pis o només hi soc de vacances?',
+          'Explica’ns si el pis estarà ocupat i les teves dates de presència. Així podem valorar les fases, '
+          'l’accés i les condicions del projecte abans de concretar els treballs.'],
+         ['Treballeu també a Santa Margarida?',
+          'Sí. Hem fet treballs diversos a Santa Margarida, a Roses, i donem servei a la resta del municipi '
+          'des de Vilajuïga.']],
+ 'h2b': 'Com preparar la teva reforma a Roses',
+ 'cta_h': 'Vols reformar un habitatge a Roses?',
+ 'cta_p': 'Explica’ns el tipus d’habitatge, les estances, els treballs desitjats i la data que et convé. '
+          'Horari de contacte: de dilluns a divendres, de 8 a 17 h. Dissabtes i diumenges tancat.',
+ 'wa': 'Hola Proinstal Empordà, voldria informació per a una reforma a Roses',
+ 'context': [['Consulta els detalls de les ', None],
+             ['reformes integrals', 'serveis/reformes-integrals-emporda.html'],
+             [', les ', None],
+             ['reformes de banys', 'serveis/reforma-banys-emporda.html'],
+             [' i les ', None],
+             ['reformes de cuines', 'serveis/reforma-cuines-emporda.html'],
+             ['. La proposta concreta depèn del teu habitatge i dels treballs que necessitis.', None]]},
+ "es": {'slug': 'es/zonas/reformas-roses.html',
+ 'title': 'Reformas integrales y parciales en Roses | Proinstal',
+ 'desc': 'Reformas de pisos y casas en Roses: baños, cocinas e instalaciones coordinadas. Nos desplazamos '
+         'desde Vilajuïga. Cuéntanos tu proyecto y pide presupuesto.',
+ 'eyebrow': 'Roses · Golfo de Roses',
+ 'h1': 'Reformas integrales y parciales en Roses',
+ 'intro': 'Proinstal Empordà realiza reformas integrales y parciales de pisos y casas en Roses. Coordinamos '
+          'los trabajos de baños, cocinas, electricidad y fontanería según el proyecto. Nos desplazamos '
+          'desde Vilajuïga y también trabajamos en Santa Margarida y en el resto del Alt Empordà.',
+ 'alt': 'Terraza con pérgola en una casa de Roses',
+ 'e2': 'La reforma que necesitas',
+ 'h2': '¿Qué quieres reformar de tu piso o casa?',
+ 'lead': 'Una reforma puede afectar a toda la vivienda o solo al baño, la cocina o las instalaciones. Para '
+         'valorar una obra en Roses o Santa Margarida, cuéntanos qué estancias quieres cambiar, qué quieres '
+         'conservar y cuándo te convendría hacer los trabajos.',
+ 'llista': ['Reformas integrales o parciales de pisos y casas.',
+            'Reformas de baños: distribución, ducha, sanitarios e instalaciones de agua.',
+            'Reformas de cocinas y coordinación de las instalaciones necesarias.',
+            'Actualización de fontanería, electricidad y climatización según el proyecto.',
+            'Valoración de humedades y trabajos complementarios en viviendas de costa.'],
+ 'fitxes': [['Alcance de los trabajos',
+             'Indica si quieres reformar toda la vivienda o solo algunas estancias y qué necesitas '
+             'conservar.'],
+            ['Instalaciones coordinadas',
+             'El baño y la cocina pueden requerir trabajos de agua y electricidad. Revisamos qué '
+             'instalaciones afecta el proyecto.'],
+            ['Acceso y calendario',
+             'Cuéntanos el acceso a la vivienda, si vive alguien y las fechas que te convienen para valorar '
+             'la intervención.']],
+ 'faq': [['¿Hacéis reformas integrales y parciales en Roses?',
+          'Sí. Hacemos reformas de pisos y casas, de la vivienda completa o de baños, cocinas y otras '
+          'estancias según el proyecto.'],
+         ['¿Cómo puedo pedir presupuesto?',
+          'Indica el municipio, el tipo de vivienda, las estancias que quieres reformar y la fecha deseada. '
+          'Puedes enviar fotos por WhatsApp para explicar mejor la consulta.'],
+         ['¿Cuánto cuesta y cuánto dura una reforma?',
+          'Depende del alcance, las dimensiones, el estado de las instalaciones y los materiales. Hay que '
+          'valorar el proyecto antes de concretar precio y calendario.'],
+         ['¿Puedo hacer una reforma si vivo en el piso o solo estoy de vacaciones?',
+          'Cuéntanos si el piso estará ocupado y tus fechas de presencia. Así podemos valorar las fases, el '
+          'acceso y las condiciones del proyecto antes de concretar los trabajos.'],
+         ['¿Trabajáis también en Santa Margarida?',
+          'Sí. Hemos hecho trabajos diversos en Santa Margarida, en Roses, y damos servicio al resto del '
+          'municipio desde Vilajuïga.']],
+ 'h2b': 'Cómo preparar tu reforma en Roses',
+ 'cta_h': '¿Quieres reformar una vivienda en Roses?',
+ 'cta_p': 'Cuéntanos el tipo de vivienda, las estancias, los trabajos deseados y la fecha que te conviene. '
+          'Horario de contacto: de lunes a viernes, de 8 a 17 h. Sábados y domingos cerrado.',
+ 'wa': 'Hola Proinstal Empordà, quisiera información para una reforma en Roses',
+ 'context': [['Consulta los detalles de las ', None],
+             ['reformas integrales', 'es/servicios/reformas-integrales-emporda.html'],
+             [', las ', None],
+             ['reformas de baños', 'es/servicios/reforma-banos-emporda.html'],
+             [' y las ', None],
+             ['reformas de cocinas', 'es/servicios/reforma-cocinas-emporda.html'],
+             ['. La propuesta concreta depende de tu vivienda y de los trabajos que necesites.', None]]}
 },
 {
  "id": "empuriabrava", "nom": "Empuriabrava", "hero": "/exteriores-fachadas-cerramientos/cerramiento-fachada-14.jpg", "img": "/exteriores-fachadas-cerramientos/cerramiento-fachada-06.jpg",
- "ca": {
-  "slug": "zones/reformes-empuriabrava.html",
-  "title": "Reformes i manteniment a Empuriabrava | Proinstal Empordà",
-  "desc": "Reformes, humitats, pèrgoles, aire condicionat, lampista i electricista a Empuriabrava. Cases amb amarratge i apartaments als canals. Atenem en francès, alemany i anglès.",
-  "eyebrow": "Empuriabrava · Castelló d’Empúries", "h1": "Reformes i manteniment a Empuriabrava",
-  "intro": "Proinstal Empordà fa reformes, reparació d’humitats, pèrgoles, aire condicionat i manteniment de cases i apartaments a Empuriabrava, i atén els propietaris en català, castellà, francès, alemany i anglès.",
-  "alt": "Vista d’un canal d’Empuriabrava des d’una terrassa",
-  "e2": "Cases als canals", "h2": "Aigua, sal i sol",
-  "lead": "Empuriabrava és una marina residencial construïda sobre antigues zones humides, amb cases i apartaments tocant als canals. La humitat del terreny, la sal i el sol desgasten les instal·lacions i els exteriors més de pressa que terra endins.",
-  "llista": ["Reparació d’humitats per capil·laritat i filtracions.", "Terrasses, pèrgoles i tarimes al costat dels canals.", "Aire condicionat amb màquines protegides de la salinitat.", "Renovació de fontaneria i electricitat en cases dels anys setanta i vuitanta.", "Manteniment de cases de propietaris que viuen a l’estranger."],
-  "fitxes": [["Cases amb amarratge", "Exteriors, terrasses i instal·lacions pensats per a l’ambient marí."], ["Apartaments", "Reformes de cuina, bany i clima per a ús propi o lloguer."], ["Propietaris de fora", "Comunicació en el teu idioma i informes amb fotos."]],
-  "faq": [
-   ["Per què hi ha tantes humitats a Empuriabrava?", "El terreny té el nivell de l’aigua molt alt i moltes cases passen mesos tancades. Això afavoreix la capil·laritat i la condensació. Primer en busquem la causa i després reparem."],
-   ["Atenen en francès i alemany?", "Sí. Molts propietaris d’Empuriabrava són de França, Alemanya i altres països, i els atenem en el seu idioma."],
-   ["Ens podeu revisar la casa mentre som fora?", "Sí. Fem revisions periòdiques i et mantenim informat per WhatsApp o correu, amb fotos."]]
- },
- "es": {
-  "slug": "es/zonas/reformas-empuriabrava.html",
-  "title": "Reformas y mantenimiento en Empuriabrava | Proinstal Empordà",
-  "desc": "Reformas, humedades, pérgolas, aire acondicionado, fontanero y electricista en Empuriabrava. Casas con amarre y apartamentos en los canales. Atendemos en francés, alemán e inglés.",
-  "eyebrow": "Empuriabrava · Castelló d’Empúries", "h1": "Reformas y mantenimiento en Empuriabrava",
-  "intro": "Proinstal Empordà hace reformas, reparación de humedades, pérgolas, aire acondicionado y mantenimiento de casas y apartamentos en Empuriabrava, y atiende a los propietarios en castellano, catalán, francés, alemán e inglés.",
-  "alt": "Vista de un canal de Empuriabrava desde una terraza",
-  "e2": "Casas en los canales", "h2": "Agua, sal y sol",
-  "lead": "Empuriabrava es una marina residencial construida sobre antiguas zonas húmedas, con casas y apartamentos junto a los canales. La humedad del terreno, la sal y el sol desgastan las instalaciones y los exteriores más deprisa que tierra adentro.",
-  "llista": ["Reparación de humedades por capilaridad y filtraciones.", "Terrazas, pérgolas y tarimas junto a los canales.", "Aire acondicionado con máquinas protegidas de la salinidad.", "Renovación de fontanería y electricidad en casas de los años setenta y ochenta.", "Mantenimiento de casas de propietarios que viven en el extranjero."],
-  "fitxes": [["Casas con amarre", "Exteriores, terrazas e instalaciones pensados para el ambiente marino."], ["Apartamentos", "Reformas de cocina, baño y clima para uso propio o alquiler."], ["Propietarios de fuera", "Comunicación en tu idioma e informes con fotos."]],
-  "faq": [
-   ["¿Por qué hay tantas humedades en Empuriabrava?", "El terreno tiene el nivel del agua muy alto y muchas casas pasan meses cerradas. Eso favorece la capilaridad y la condensación. Primero buscamos la causa y después reparamos."],
-   ["¿Atendéis en francés y alemán?", "Sí. Muchos propietarios de Empuriabrava son de Francia, Alemania y otros países, y los atendemos en su idioma."],
-   ["¿Podéis revisar la casa mientras estamos fuera?", "Sí. Hacemos revisiones periódicas y te mantenemos informado por WhatsApp o correo, con fotos."]]
- }
+ "ca": {'slug': 'zones/reformes-empuriabrava.html',
+ 'title': 'Reformes integrals i parcials a Empuriabrava | Proinstal',
+ 'desc': 'Reformes de pisos i cases a Empuriabrava: banys, cuines i instal·lacions coordinades. Ens '
+         'desplacem des de Vilajuïga. Explica’ns el projecte i demana pressupost.',
+ 'eyebrow': 'Empuriabrava · Castelló d’Empúries',
+ 'h1': 'Reformes integrals i parcials a Empuriabrava',
+ 'intro': 'Proinstal Empordà fa reformes integrals i parcials de pisos i cases a Empuriabrava. Coordinem els '
+          'treballs de banys, cuines, electricitat i fontaneria segons el projecte. Ens desplacem des de '
+          'Vilajuïga i treballem a Empuriabrava i a la resta de l’Alt Empordà.',
+ 'alt': 'Vista d’un canal d’Empuriabrava des d’una terrassa',
+ 'e2': 'La reforma que necessites',
+ 'h2': 'Què vols reformar del teu pis o casa?',
+ 'lead': 'Per preparar una reforma a Empuriabrava, indica si es tracta d’un pis o una casa, quines estances '
+         'vols actualitzar i si l’habitatge estarà ocupat. En una segona residència, ajuda saber quan hi '
+         'seràs i com es podrà accedir a l’immoble.',
+ 'llista': ['Reformes integrals o parcials de pisos i cases.',
+            'Reformes de banys: distribució, dutxa, sanitaris i instal·lacions d’aigua.',
+            'Reformes de cuines i coordinació de les instal·lacions necessàries.',
+            'Actualització de fontaneria, electricitat i climatització segons el projecte.',
+            'Valoració d’humitats i treballs complementaris en habitatges de costa.'],
+ 'fitxes': [['Abast dels treballs',
+             'Indica si vols reformar tot l’habitatge o només algunes estances, i què necessites conservar.'],
+            ['Instal·lacions coordinades',
+             'El bany i la cuina poden requerir treballs d’aigua i electricitat. Revisem quines '
+             'instal·lacions afecta el projecte.'],
+            ['Accés i calendari',
+             'Explica’ns l’accés a l’habitatge, si hi viu algú i les dates que et convenen per valorar la '
+             'intervenció.']],
+ 'faq': [['Feu reformes integrals i parcials a Empuriabrava?',
+          'Sí. Fem reformes de pisos i cases, de l’habitatge complet o de banys, cuines i altres estances '
+          'segons el projecte.'],
+         ['Com puc demanar pressupost?',
+          'Indica el municipi, el tipus d’habitatge, les estances que vols reformar i la data desitjada. '
+          'Pots enviar fotos per WhatsApp per explicar millor la consulta.'],
+         ['Quant costa i quant dura una reforma?',
+          'Depèn de l’abast, les dimensions, l’estat de les instal·lacions i els materials. Cal valorar el '
+          'projecte abans de concretar preu i calendari.'],
+         ['Puc fer una reforma si visc al pis o només hi soc de vacances?',
+          'Explica’ns si el pis estarà ocupat i les teves dates de presència. Així podem valorar les fases, '
+          'l’accés i les condicions del projecte abans de concretar els treballs.'],
+         ['Teniu oficina a Empuriabrava?',
+          'La nostra base és a Vilajuïga i ens desplacem a Empuriabrava per fer els treballs. No cal que et '
+          'desplacis a una oficina per explicar-nos la consulta.']],
+ 'h2b': 'Com preparar la teva reforma a Empuriabrava',
+ 'cta_h': 'Vols reformar un habitatge a Empuriabrava?',
+ 'cta_p': 'Explica’ns el tipus d’habitatge, les estances, els treballs desitjats i la data que et convé. '
+          'Horari de contacte: de dilluns a divendres, de 8 a 17 h. Dissabtes i diumenges tancat.',
+ 'wa': 'Hola Proinstal Empordà, voldria informació per a una reforma a Empuriabrava',
+ 'context': [['Consulta els detalls de les ', None],
+             ['reformes integrals', 'serveis/reformes-integrals-emporda.html'],
+             [', les ', None],
+             ['reformes de banys', 'serveis/reforma-banys-emporda.html'],
+             [' i les ', None],
+             ['reformes de cuines', 'serveis/reforma-cuines-emporda.html'],
+             ['. La proposta concreta depèn del teu habitatge i dels treballs que necessitis.', None]]},
+ "es": {'slug': 'es/zonas/reformas-empuriabrava.html',
+ 'title': 'Reformas integrales y parciales en Empuriabrava | Proinstal',
+ 'desc': 'Reformas de pisos y casas en Empuriabrava: baños, cocinas e instalaciones coordinadas. Nos '
+         'desplazamos desde Vilajuïga. Cuéntanos tu proyecto y pide presupuesto.',
+ 'eyebrow': 'Empuriabrava · Castelló d’Empúries',
+ 'h1': 'Reformas integrales y parciales en Empuriabrava',
+ 'intro': 'Proinstal Empordà realiza reformas integrales y parciales de pisos y casas en Empuriabrava. '
+          'Coordinamos los trabajos de baños, cocinas, electricidad y fontanería según el proyecto. Nos '
+          'desplazamos desde Vilajuïga y trabajamos en Empuriabrava y en el resto del Alt Empordà.',
+ 'alt': 'Vista de un canal de Empuriabrava desde una terraza',
+ 'e2': 'La reforma que necesitas',
+ 'h2': '¿Qué quieres reformar de tu piso o casa?',
+ 'lead': 'Para preparar una reforma en Empuriabrava, indica si se trata de un piso o una casa, qué estancias '
+         'quieres actualizar y si la vivienda estará ocupada. En una segunda residencia, ayuda saber cuándo '
+         'estarás y cómo se podrá acceder al inmueble.',
+ 'llista': ['Reformas integrales o parciales de pisos y casas.',
+            'Reformas de baños: distribución, ducha, sanitarios e instalaciones de agua.',
+            'Reformas de cocinas y coordinación de las instalaciones necesarias.',
+            'Actualización de fontanería, electricidad y climatización según el proyecto.',
+            'Valoración de humedades y trabajos complementarios en viviendas de costa.'],
+ 'fitxes': [['Alcance de los trabajos',
+             'Indica si quieres reformar toda la vivienda o solo algunas estancias y qué necesitas '
+             'conservar.'],
+            ['Instalaciones coordinadas',
+             'El baño y la cocina pueden requerir trabajos de agua y electricidad. Revisamos qué '
+             'instalaciones afecta el proyecto.'],
+            ['Acceso y calendario',
+             'Cuéntanos el acceso a la vivienda, si vive alguien y las fechas que te convienen para valorar '
+             'la intervención.']],
+ 'faq': [['¿Hacéis reformas integrales y parciales en Empuriabrava?',
+          'Sí. Hacemos reformas de pisos y casas, de la vivienda completa o de baños, cocinas y otras '
+          'estancias según el proyecto.'],
+         ['¿Cómo puedo pedir presupuesto?',
+          'Indica el municipio, el tipo de vivienda, las estancias que quieres reformar y la fecha deseada. '
+          'Puedes enviar fotos por WhatsApp para explicar mejor la consulta.'],
+         ['¿Cuánto cuesta y cuánto dura una reforma?',
+          'Depende del alcance, las dimensiones, el estado de las instalaciones y los materiales. Hay que '
+          'valorar el proyecto antes de concretar precio y calendario.'],
+         ['¿Puedo hacer una reforma si vivo en el piso o solo estoy de vacaciones?',
+          'Cuéntanos si el piso estará ocupado y tus fechas de presencia. Así podemos valorar las fases, el '
+          'acceso y las condiciones del proyecto antes de concretar los trabajos.'],
+         ['¿Tenéis oficina en Empuriabrava?',
+          'Nuestra base está en Vilajuïga y nos desplazamos a Empuriabrava para realizar los trabajos. No '
+          'necesitas desplazarte a una oficina para explicarnos tu consulta.']],
+ 'h2b': 'Cómo preparar tu reforma en Empuriabrava',
+ 'cta_h': '¿Quieres reformar una vivienda en Empuriabrava?',
+ 'cta_p': 'Cuéntanos el tipo de vivienda, las estancias, los trabajos deseados y la fecha que te conviene. '
+          'Horario de contacto: de lunes a viernes, de 8 a 17 h. Sábados y domingos cerrado.',
+ 'wa': 'Hola Proinstal Empordà, quisiera información para una reforma en Empuriabrava',
+ 'context': [['Consulta los detalles de las ', None],
+             ['reformas integrales', 'es/servicios/reformas-integrales-emporda.html'],
+             [', las ', None],
+             ['reformas de baños', 'es/servicios/reforma-banos-emporda.html'],
+             [' y las ', None],
+             ['reformas de cocinas', 'es/servicios/reforma-cocinas-emporda.html'],
+             ['. La propuesta concreta depende de tu vivienda y de los trabajos que necesites.', None]]}
 },
 {
  "id": "cadaques", "nom": "Cadaqués", "hero": "/hero-portada/hero-reformas-instalaciones-06.jpg", "img": "/exteriores-fachadas-cerramientos/cerramiento-fachada-02.jpg",
