@@ -68,6 +68,7 @@ FR = {
  "alt": "Salle de bain rénovée avec douche et meuble suspendu",
  "e2": "Un seul interlocuteur", "h2": "De l’idée à la remise des clés",
  "lead": "Une rénovation se passe mieux quand les décisions, les corps de métier et les délais sont coordonnés. Nous visitons, définissons les travaux, établissons un devis détaillé et organisons le chantier.",
+ "context": [('Pour préparer votre projet, consultez nos informations sur la ', None), ('rénovation à Roses', 'fr/villes/renovation-roses-espagne.html'), (' et la ', None), ('rénovation à Empuriabrava', 'fr/villes/renovation-empuriabrava.html'), ('.', None)],
  "llista": ["Rénovations complètes et partielles de logements et commerces.", "Cuisines, salles de bain, sols et revêtements.", "Mise à jour de l’eau, de l’électricité et de la climatisation.", "Menuiserie, fermetures, peinture et finitions.", "Matériaux adaptés à l’humidité, au vent, au soleil et au sel."],
  "h2b": "Des rénovations pensées pour votre logement",
  "fitxes": [["Résidences secondaires", "Suivi à distance, photos de l’avancement et un seul responsable qui parle français."], ["Appartements", "Cuisine, salle de bain ou rénovation complète, en accord avec la copropriété."], ["Maisons sur les canaux", "Extérieurs, terrasses et installations pensés pour l’air marin d’Empuriabrava."]],
