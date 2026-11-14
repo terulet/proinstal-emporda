@@ -324,6 +324,14 @@ def portada(lang, index):
     t = llegeix_diccionari(index, lang)
     txt = PORTADA[lang]
 
+    if lang == "fr":
+        # Les noves accions i mètriques de portada només són per a CA i ES.
+        index = re.sub(r'/assets/analytics\.js(?:\?[^"]+)?" data-separate-contact-events', '/assets/analytics.js"', index)
+        index = re.sub(r'^\.hb:has\(\.hero-call\)[^\n]*\n', '', index, flags=re.M)
+        index = re.sub(r'^<a class="btn bg hero-call"[^\n]*\n', '', index, flags=re.M)
+        index = index.replace('data-t="hcontact"', 'data-t="hc1"')
+        index = re.sub(r',hcontact:"[^"]*",hcall:"[^"]*"', '', index)
+
     def tradueix(m):
         clau = m.group(3)
         return m.group(1) + t[clau] + m.group(5) if clau in t else m.group(0)

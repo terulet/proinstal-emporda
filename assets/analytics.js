@@ -4,6 +4,8 @@
   var consentKey = 'proinstal_analytics_consent';
   var measurementId = String(window.PROINSTAL_GA4_ID || '');
   var analyticsReady = false;
+  var separateContactEvents = document.currentScript &&
+    document.currentScript.hasAttribute('data-separate-contact-events');
 
   function validMeasurementId() {
     return /^G-[A-Z0-9]{6,}$/.test(measurementId);
@@ -29,6 +31,13 @@
   window.proinstalTrack = function (eventName, parameters) {
     if (!analyticsReady || typeof window.gtag !== 'function') return;
     window.gtag('event', eventName, parameters || {});
+
+    if (!separateContactEvents || eventName !== 'contact_click' || !parameters) return;
+    if (parameters.method === 'phone') {
+      window.gtag('event', 'phone_click', { method: 'phone' });
+    } else if (parameters.method === 'whatsapp' || parameters.method === 'whatsapp_form') {
+      window.gtag('event', 'whatsapp_click', { method: parameters.method });
+    }
   };
 
   function setConsent(value) {
