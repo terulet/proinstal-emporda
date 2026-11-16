@@ -72,3 +72,26 @@ footer .fnote{margin-top:22px;padding-top:18px;border-top:1px solid #222;font-si
 .ad2 span.d{background:var(--orange)}
 .ad figcaption{margin-top:10px;font-weight:650;color:#444}
 @media(max-width:760px){.ad2 img{height:220px}}
+
+/* Botons de contacte a les pàgines de reformes de Roses i Empuriabrava. */
+.municipal-contact-actions{flex-wrap:nowrap;gap:10px;margin:12px 0 0}
+.municipal-contact-actions .button{min-height:48px;padding:8px 18px}
+.municipal-contact-actions .button:not(.secondary){background:#b74408}
+.municipal-contact-actions .button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.hero .municipal-intro{margin:0}
+.hero .municipal-hours{font-size:.9rem;margin:8px 0 0;color:#fff}
+.contact .municipal-contact-actions{justify-content:center}
+@media(max-width:760px){
+  .hero.municipal-contact{min-height:0;padding:30px 0 44px}
+  .municipal-contact h1{margin-bottom:8px}
+}
+@media(max-width:400px) and (max-height:700px){
+  .hero.municipal-contact{padding-top:8px}
+  .municipal-contact .crumbs{margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .municipal-contact .eyebrow{font-size:.72rem;letter-spacing:.08em}
+  .municipal-contact h1{font-size:2.05rem}
+  .hero.municipal-contact .municipal-intro{font-size:1rem;line-height:1.35}
+  .municipal-contact-page .consent-banner{left:10px;right:10px;bottom:10px;padding:10px 12px;gap:8px}
+  .municipal-contact-page .consent-banner p{line-height:1.35}
+  .municipal-contact-page .consent-banner button{min-height:44px}
+}

@@ -45,6 +45,7 @@ POBLES = [
          'de Vilajuïga. Explica’ns el projecte i demana pressupost.',
  'eyebrow': 'Roses · Golf de Roses',
  'h1': 'Reformes integrals i parcials a Roses',
+ 'contact_intro': 'Banys, cuines, pisos i cases.',
  'intro': 'Proinstal Empordà fa reformes integrals i parcials de pisos i cases a Roses. Coordinem els '
           'treballs de banys, cuines, electricitat i fontaneria segons el projecte. Ens desplacem des de '
           'Vilajuïga i també treballem a Santa Margarida i a la resta de l’Alt Empordà.',
@@ -102,6 +103,7 @@ POBLES = [
          'desde Vilajuïga. Cuéntanos tu proyecto y pide presupuesto.',
  'eyebrow': 'Roses · Golfo de Roses',
  'h1': 'Reformas integrales y parciales en Roses',
+ 'contact_intro': 'Baños, cocinas, pisos y casas.',
  'intro': 'Proinstal Empordà realiza reformas integrales y parciales de pisos y casas en Roses. Coordinamos '
           'los trabajos de baños, cocinas, electricidad y fontanería según el proyecto. Nos desplazamos '
           'desde Vilajuïga y también trabajamos en Santa Margarida y en el resto del Alt Empordà.',
@@ -161,6 +163,7 @@ POBLES = [
          'desplacem des de Vilajuïga. Explica’ns el projecte i demana pressupost.',
  'eyebrow': 'Empuriabrava · Castelló d’Empúries',
  'h1': 'Reformes integrals i parcials a Empuriabrava',
+ 'contact_intro': 'Banys, cuines, pisos i cases.',
  'intro': 'Proinstal Empordà fa reformes integrals i parcials de pisos i cases a Empuriabrava. Coordinem els '
           'treballs de banys, cuines, electricitat i fontaneria segons el projecte. Ens desplacem des de '
           'Vilajuïga i treballem a Empuriabrava i a la resta de l’Alt Empordà.',
@@ -218,6 +221,7 @@ POBLES = [
          'desplazamos desde Vilajuïga. Cuéntanos tu proyecto y pide presupuesto.',
  'eyebrow': 'Empuriabrava · Castelló d’Empúries',
  'h1': 'Reformas integrales y parciales en Empuriabrava',
+ 'contact_intro': 'Baños, cocinas, pisos y casas.',
  'intro': 'Proinstal Empordà realiza reformas integrales y parciales de pisos y casas en Empuriabrava. '
           'Coordinamos los trabajos de baños, cocinas, electricidad y fontanería según el proyecto. Nos '
           'desplazamos desde Vilajuïga y trabajamos en Empuriabrava y en el resto del Alt Empordà.',

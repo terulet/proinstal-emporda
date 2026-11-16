@@ -59,6 +59,7 @@ UI = {
         "inici": "Inici", "serveis": "Serveis", "zones": "Zones", "contactar": "Contactar",
         "home": "/", "locale": "ca_ES",
         "wa_btn": "💬 Demanar pressupost per WhatsApp", "trucar": "📞 Trucar",
+        "contact_hours": "De dilluns a divendres, de 8 a 17 h.",
         "faq": "Preguntes freqüents", "faq_e": "Dubtes habituals",
         "on": "On treballem", "on_lead": "Sortim de Vilajuïga i treballem a tot l’Alt Empordà i a bona part del Baix Empordà.",
         "altres_serveis": "Altres serveis", "serveis_a": "Serveis a {nom}", "altres_pobles": "Altres municipis",
@@ -74,6 +75,7 @@ UI = {
         "inici": "Inicio", "serveis": "Servicios", "zones": "Zonas", "contactar": "Contactar",
         "home": "/es/", "locale": "es_ES",
         "wa_btn": "💬 Pedir presupuesto por WhatsApp", "trucar": "📞 Llamar",
+        "contact_hours": "De lunes a viernes, de 8 a 17 h.",
         "faq": "Preguntas frecuentes", "faq_e": "Dudas habituales",
         "on": "Dónde trabajamos", "on_lead": "Salimos de Vilajuïga y trabajamos en todo el Alt Empordà y en buena parte del Baix Empordà.",
         "altres_serveis": "Otros servicios", "serveis_a": "Servicios en {nom}", "altres_pobles": "Otros municipios",
@@ -180,6 +182,27 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     llista = "".join(f"<li>{e(x)}</li>" for x in d["llista"])
     fitxes = "".join(f'<article class="card"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in d["fitxes"])
     faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
+    whatsapp = wa(d.get("wa", ""))
+    hero_class = "hero"
+    body_class = ""
+    stylesheet = "/assets/seo-pages.css"
+    analytics = '<script defer src="/assets/analytics.js"></script>'
+    intro = f'<p>{e(d["intro"])}</p>'
+    wa_button = f'<a class="button" href="{whatsapp}">{u["wa_btn"]}</a>'
+    call_button = f'<a class="button secondary" href="tel:+{WA}">{u["trucar"]}</a>'
+    hero_contact = f'{intro}<div class="actions">{wa_button}{call_button}</div>'
+    final_contact = wa_button
+    if d.get("contact_intro"):
+        hero_class += " municipal-contact"
+        body_class = ' class="municipal-contact-page"'
+        stylesheet += "?v=20261116"
+        analytics = '<script defer src="/assets/analytics.js?v=20261114" data-separate-contact-events></script>'
+        buttons = (f'<div class="actions municipal-contact-actions">'
+                   f'<a class="button" href="tel:+{WA}">{u["trucar"]}</a>'
+                   f'<a class="button secondary" href="{whatsapp}">WhatsApp</a></div>')
+        hero_contact = (f'<p class="municipal-intro">{e(d["contact_intro"])}</p>{buttons}'
+                        f'<p class="municipal-hours">{u["contact_hours"]}</p>{intro}')
+        final_contact = buttons
     # Extended contact options are opt-in per page; other generated pages stay unchanged.
     contact_extra = ""
     if lang == "fr" and d.get("contact_steps"):
@@ -200,16 +223,16 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
 <meta name="description" content="{e(d["desc"])}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="{canon}">
 {hreflang}
 <meta property="og:type" content="website"><meta property="og:locale" content="{u["locale"]}"><meta property="og:site_name" content="Proinstal Empordà"><meta property="og:title" content="{e(d["h1"])}"><meta property="og:description" content="{e(d["desc"])}"><meta property="og:url" content="{canon}"><meta property="og:image" content="{DOMINI}{comu["hero"]}">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/seo-pages.css"><script src="/assets/analytics-config.js"></script><script defer src="/assets/analytics.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="{stylesheet}"><script src="/assets/analytics-config.js"></script>{analytics}
 <script type="application/ld+json">{ld}</script>
-</head><body><header class="topbar"><div class="wrap"><a class="brand" href="{u["home"]}"><img src="/logo.jpg" alt="Proinstal Empordà">PROINSTAL <em>EMPORDÀ</em></a><nav class="nav"><a href="{u["home"]}#serveis">{u["serveis"]}</a><a href="{u["home"]}#zones">{u["zones"]}</a>{altres_idiomes}<a class="cta" href="{wa(d.get("wa", ""))}">{u["contactar"]}</a></nav></div></header>
-<section class="hero" style="--hero:url('{comu["hero"]}')"><div class="wrap"><nav class="crumbs" aria-label="breadcrumb">{crumbs}</nav><div class="eyebrow">{e(d["eyebrow"])}</div><h1>{e(d["h1"])}</h1><p>{e(d["intro"])}</p><div class="actions"><a class="button" href="{wa(d.get("wa", ""))}">{u["wa_btn"]}</a><a class="button secondary" href="tel:+34671510146">{u["trucar"]}</a></div></div></section>
+</head><body{body_class}><header class="topbar"><div class="wrap"><a class="brand" href="{u["home"]}"><img src="/logo.jpg" alt="Proinstal Empordà">PROINSTAL <em>EMPORDÀ</em></a><nav class="nav"><a href="{u["home"]}#serveis">{u["serveis"]}</a><a href="{u["home"]}#zones">{u["zones"]}</a>{altres_idiomes}<a class="cta" href="{wa(d.get("wa", ""))}">{u["contactar"]}</a></nav></div></header>
+<section class="{hero_class}" style="--hero:url('{comu["hero"]}')"><div class="wrap"><nav class="crumbs" aria-label="breadcrumb">{crumbs}</nav><div class="eyebrow">{e(d["eyebrow"])}</div><h1>{e(d["h1"])}</h1>{hero_contact}</div></section>
 <main><section><div class="wrap{" split" if comu["img"] else ""}"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p>{context_html}<ul class="checklist">{llista}</ul></div>{f'<img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy">' if comu["img"] else ""}</div></section>
 {abans_despres(lang, comu["parelles"], d.get("gallery_intro", ""))}
 <section class="areas"><div class="wrap"><h2>{e(d["h2b"])}</h2><div class="grid">{fitxes}</div></div></section>
 <section class="faq"><div class="wrap"><div class="eyebrow">{u["faq_e"]}</div><h2>{u["faq"]}</h2>{faq_html}</div></section>
 {cos_extra}</main>
-<section class="contact"><div class="wrap"><h2>{e(d["cta_h"])}</h2><p>{e(d["cta_p"])}</p><a class="button" href="{wa(d.get("wa", ""))}">{u["wa_btn"]}</a>{contact_extra}</div></section>{peu(lang)}</body></html>
+<section class="contact"><div class="wrap"><h2>{e(d["cta_h"])}</h2><p>{e(d["cta_p"])}</p>{final_contact}{contact_extra}</div></section>{peu(lang)}</body></html>
 """
 
 
