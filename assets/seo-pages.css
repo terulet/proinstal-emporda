@@ -95,3 +95,10 @@ footer .fnote{margin-top:22px;padding-top:18px;border-top:1px solid #222;font-si
   .municipal-contact-page .consent-banner p{line-height:1.35}
   .municipal-contact-page .consent-banner button{min-height:44px}
 }
+
+@media(max-width:360px) and (max-height:700px){
+  html[lang="fr"] .hero.municipal-contact{padding-top:6px}
+  html[lang="fr"] .municipal-contact .crumbs{margin-bottom:4px}
+  html[lang="fr"] .municipal-contact h1{font-size:1.875rem}
+  html[lang="fr"] .municipal-contact .municipal-contact-actions{margin-top:8px}
+}

@@ -91,6 +91,7 @@ UI = {
         "inici": "Accueil", "serveis": "Services", "zones": "Zones", "contactar": "Contact",
         "home": "/fr/", "locale": "fr_FR",
         "wa_btn": "💬 Demander un devis par WhatsApp", "trucar": "📞 Appeler",
+        "contact_hours": "Du lundi au vendredi, de 8 h à 17 h.",
         "faq": "Questions fréquentes", "faq_e": "Vos questions",
         "on": "Où nous intervenons", "on_lead": "Nous partons de Vilajuïga et intervenons dans tout l’Alt Empordà et une bonne partie du Baix Empordà : Roses, Empuriabrava, L’Escala, Cadaqués, Llançà, Figueres et Castelló d’Empúries.",
         "altres_serveis": "Autres services", "serveis_a": "Nos services à {nom}", "altres_pobles": "Autres communes",
@@ -195,14 +196,15 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     if d.get("contact_intro"):
         hero_class += " municipal-contact"
         body_class = ' class="municipal-contact-page"'
-        stylesheet += "?v=20261116"
+        stylesheet += "?v=20261117" if lang == "fr" else "?v=20261116"
         analytics = '<script defer src="/assets/analytics.js?v=20261114" data-separate-contact-events></script>'
         buttons = (f'<div class="actions municipal-contact-actions">'
                    f'<a class="button" href="tel:+{WA}">{u["trucar"]}</a>'
                    f'<a class="button secondary" href="{whatsapp}">WhatsApp</a></div>')
         hero_contact = (f'<p class="municipal-intro">{e(d["contact_intro"])}</p>{buttons}'
                         f'<p class="municipal-hours">{u["contact_hours"]}</p>{intro}')
-        final_contact = buttons
+        if not d.get("contact_steps"):
+            final_contact = buttons
     # Extended contact options are opt-in per page; other generated pages stay unchanged.
     contact_extra = ""
     if lang == "fr" and d.get("contact_steps"):
