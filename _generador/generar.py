@@ -378,14 +378,14 @@ def portada(lang, index):
     cos = bloc_enllacos(lang, cos)
     for vell, nou in [
         ('<html lang="ca">', f'<html lang="{lang}">'),
-        ('content="Proinstal Empordà: reformes, instal·lacions, electricitat, fontaneria, plaques solars, climatització, fusteria i pèrgoles a l\'Empordà."', f'content="{e(txt["desc"])}"'),
-        ("<title>Proinstal Empordà | Reformes i Instal·lacions</title>", f"<title>{e(txt['title'])}</title>"),
+        ('<meta name="description" content="Reformes, instal·lacions i reparacions per a particulars, comunitats i locals a l’Alt i Baix Empordà. Un sol equip per coordinar els treballs."/>', f'<meta name="description" content="{e(txt["desc"])}"/>'),
+        ("<title>Reformes i instal·lacions a l’Empordà | Proinstal</title>", f"<title>{e(txt['title'])}</title>"),
         ('<link rel="canonical" href="https://proinstalemporda.com/"/>', f'<link rel="canonical" href="https://proinstalemporda.com/{lang}/"/>'),
         ('content="ca_ES"', f'content="{UI[lang]["locale"]}"'),
-        ('content="Proinstal Empordà | Reformes i Instal·lacions"', f'content="{e(txt["title"])}"'),
-        ('content="Reformes, electricitat, fontaneria, climatització, plaques solars, fusteria i pèrgoles a l\'Alt i Baix Empordà."', f'content="{e(txt["og_desc"])}"'),
+        ('content="Reformes i instal·lacions a l’Empordà | Proinstal"', f'content="{e(txt["title"])}"'),
+        ('<meta property="og:description" content="Reformes, instal·lacions i reparacions per a particulars, comunitats i locals a l’Alt i Baix Empordà. Un sol equip per coordinar els treballs."/>', f'<meta property="og:description" content="{e(txt["og_desc"])}"/>'),
         ('<meta property="og:url" content="https://proinstalemporda.com/"/>', f'<meta property="og:url" content="https://proinstalemporda.com/{lang}/"/>'),
-        ('content="Un sol equip per a reformes i instal·lacions a l\'Empordà."', f'content="{e(txt["tw"])}"'),
+        ('<meta name="twitter:description" content="Reformes, instal·lacions i reparacions per a particulars, comunitats i locals a l’Alt i Baix Empordà. Un sol equip per coordinar els treballs."/>', f'<meta name="twitter:description" content="{e(txt["tw"])}"/>'),
     ]:
         cap = substitueix(cap, vell, nou)
     return cap + "<body>" + cos + "<script>\nvar I=" + script
