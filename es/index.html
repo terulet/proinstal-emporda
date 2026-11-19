@@ -233,9 +233,13 @@ footer a:hover{color:var(--o)}
 .bp,.np,.bbt.ac,.bbt:hover,.bld{background:var(--od)}
 .intro .sc,#serveis .sc{color:var(--od)}
 @media(max-width:600px){.hk h1{font-size:clamp(1.9rem,8.2vw,2.9rem);overflow-wrap:anywhere}.tt{font-size:clamp(1.65rem,7.7vw,2.2rem);overflow-wrap:anywhere}}
+.skip-link{position:fixed;top:1rem;left:1rem;z-index:10000;transform:translateY(calc(-100% - 1rem));padding:.75rem 1rem;background:#fff;color:#171717;font-weight:700;border-radius:.375rem}
+.skip-link:focus{transform:none;outline:3px solid #171717;outline-offset:3px}
+#contenido-principal{scroll-margin-top:5rem}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <nav>
 <div class="ni">
 <a href="/es/" class="lw"><img src="/logo.jpg" alt="Proinstal Empordà"><span>PROINSTAL <em>EMPORDÀ</em></span></a>
@@ -259,6 +263,7 @@ footer a:hover{color:var(--o)}
 </div>
 </div>
 </nav>
+<main id="contenido-principal" tabindex="-1">
 <header class="hero">
 <div class="hbg" style="background-image:url('/equip.png')"></div>
 <div class="hf"></div>
@@ -424,6 +429,7 @@ footer a:hover{color:var(--o)}
 </div>
 </div>
 </section>
+</main>
 <footer>
 <div class="wrap ft">
 <div class="fl">
