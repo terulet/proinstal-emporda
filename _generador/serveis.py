@@ -73,8 +73,8 @@ SERVEIS = [
  },
  "es": {
   "slug": "es/servicios/construccion-emporda.html", "nom": "Construcción y obra",
-  "title": "Construcciones y obra en el Empordà y la Costa Brava | Proinstal Empordà",
-  "desc": "Construcciones y obras en Figueres, Roses, Empuriabrava y todo el Empordà: ampliaciones, garajes, porches, muros, vallas y albañilería, con instalaciones y acabados del mismo equipo.",
+  "title": "Constructora en el Empordà | Proinstal Empordà",
+  "desc": "Ampliaciones, garajes, porches y obras de albañilería en el Alt y Baix Empordà. Un solo equipo para la obra, las instalaciones y los acabados.",
   "eyebrow": "Construcción · Ampliaciones · Albañilería", "h1": "Construcciones y obra en el Empordà",
   "intro": "Proinstal Empordà hace obras de construcción en el Alt y Baix Empordà: ampliaciones, garajes, porches, muros y vallas, albañilería y estructura, y las deja terminadas con las instalaciones y los acabados del mismo equipo.",
   "alt": "Escalera exterior en construcción",
