@@ -188,6 +188,8 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     body_class = ""
     stylesheet = "/assets/seo-pages.css"
     analytics = '<script defer src="/assets/analytics.js"></script>'
+    if d.get("contact_intro") or d.get("separate_contact_events"):
+        analytics = '<script defer src="/assets/analytics.js?v=20261114" data-separate-contact-events></script>'
     intro = f'<p>{e(d["intro"])}</p>'
     wa_button = f'<a class="button" href="{whatsapp}">{u["wa_btn"]}</a>'
     call_button = f'<a class="button secondary" href="tel:+{WA}">{u["trucar"]}</a>'
@@ -197,7 +199,6 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
         hero_class += " municipal-contact"
         body_class = ' class="municipal-contact-page"'
         stylesheet += "?v=20261117" if lang == "fr" else "?v=20261116"
-        analytics = '<script defer src="/assets/analytics.js?v=20261114" data-separate-contact-events></script>'
         buttons = (f'<div class="actions municipal-contact-actions">'
                    f'<a class="button" href="tel:+{WA}">{u["trucar"]}</a>'
                    f'<a class="button secondary" href="{whatsapp}">WhatsApp</a></div>')
