@@ -35,6 +35,7 @@ POBLES, ZONES = _p.POBLES, _p.ZONES
 PER_ID = {p["id"]: p for p in POBLES}
 _i = carrega("imatges")
 PARELLES, FOTOS, ALTS = _i.PARELLES, _i.FOTOS, _i.ALTS
+ILLUSTRACIONS = _i.ILLUSTRACIONS
 _f = carrega("frances")
 PEUS_FR = _f.PEUS_FR
 LANGS = ("ca", "es", "fr")
@@ -61,6 +62,7 @@ UI = {
         "home": "/", "locale": "ca_ES",
         "wa_btn": "💬 Demanar pressupost per WhatsApp", "trucar": "📞 Trucar",
         "contact_hours": "Horari de trucades · De dilluns a divendres, de 8 a 18 h.",
+        "illustration": "Imatge il·lustrativa generada amb IA",
         "faq": "Preguntes freqüents", "faq_e": "Dubtes habituals",
         "on": "On treballem", "on_lead": "Sortim de Vilajuïga i treballem a tot l’Alt Empordà i a bona part del Baix Empordà.",
         "altres_serveis": "Altres serveis", "serveis_a": "Serveis a {nom}", "altres_pobles": "Altres municipis",
@@ -77,6 +79,7 @@ UI = {
         "home": "/es/", "locale": "es_ES",
         "wa_btn": "💬 Pedir presupuesto por WhatsApp", "trucar": "📞 Llamar",
         "contact_hours": "Horario de llamadas · De lunes a viernes, de 8 a 18 h.",
+        "illustration": "Imagen ilustrativa generada con IA",
         "faq": "Preguntas frecuentes", "faq_e": "Dudas habituales",
         "on": "Dónde trabajamos", "on_lead": "Salimos de Vilajuïga y trabajamos en todo el Alt Empordà y en buena parte del Baix Empordà.",
         "altres_serveis": "Otros servicios", "serveis_a": "Servicios en {nom}", "altres_pobles": "Otros municipios",
@@ -93,6 +96,7 @@ UI = {
         "home": "/fr/", "locale": "fr_FR",
         "wa_btn": "💬 Demander un devis par WhatsApp", "trucar": "📞 Appeler",
         "contact_hours": "Horaires d’appel · Du lundi au vendredi, de 8 h à 18 h.",
+        "illustration": "Image illustrative générée par IA",
         "faq": "Questions fréquentes", "faq_e": "Vos questions",
         "on": "Où nous intervenons", "on_lead": "Nous partons de Vilajuïga et intervenons dans tout l’Alt Empordà et une bonne partie du Baix Empordà : Roses, Empuriabrava, L’Escala, Cadaqués, Llançà, Figueres et Castelló d’Empúries.",
         "altres_serveis": "Autres services", "serveis_a": "Nos services à {nom}", "altres_pobles": "Autres communes",
@@ -206,8 +210,22 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
     whatsapp = wa(d.get("wa", ""))
     hero_class = "hero"
+    hero_style = ""
+    share_image = comu["hero"] or comu["img"]
+    if comu["hero"]:
+        hero_style = f" style=\"--hero:url('{comu['hero']}')\""
+    else:
+        hero_class += " hero-text"
+    side_image = ""
+    if comu["img"]:
+        side_image = f'<img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy">'
+        if comu["id"] in ILLUSTRACIONS:
+            side_image = (f'<figure class="service-illustration">{side_image}'
+                          f'<figcaption>{u["illustration"]}</figcaption></figure>')
     body_class = ""
     stylesheet = "/assets/seo-pages.css"
+    if comu["id"] in ILLUSTRACIONS:
+        stylesheet += "?v=20261124-illustracions"
     analytics = '<script defer src="/assets/analytics.js"></script>'
     if d.get("contact_intro") or d.get("separate_contact_events"):
         analytics = '<script defer src="/assets/analytics.js?v=20261114" data-separate-contact-events></script>'
@@ -246,12 +264,12 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(d["title"])}</title>
 <meta name="description" content="{e(d["desc"])}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="{canon}">
 {hreflang}
-<meta property="og:type" content="website"><meta property="og:locale" content="{u["locale"]}"><meta property="og:site_name" content="Proinstal Empordà"><meta property="og:title" content="{e(d["h1"])}"><meta property="og:description" content="{e(d.get("og_desc", d["desc"]))}"><meta property="og:url" content="{canon}"><meta property="og:image" content="{DOMINI}{comu["hero"]}">
+<meta property="og:type" content="website"><meta property="og:locale" content="{u["locale"]}"><meta property="og:site_name" content="Proinstal Empordà"><meta property="og:title" content="{e(d["h1"])}"><meta property="og:description" content="{e(d.get("og_desc", d["desc"]))}"><meta property="og:url" content="{canon}"><meta property="og:image" content="{DOMINI}{share_image}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="{stylesheet}"><link rel="stylesheet" href="/assets/contact-phones.css"><script defer src="/assets/contact-phones.js"></script><script src="/assets/analytics-config.js"></script>{analytics}
 <script type="application/ld+json">{ld}</script>
 </head><body{body_class}><header class="topbar"><div class="wrap"><a class="brand" href="{u["home"]}"><img src="/logo.jpg" alt="Proinstal Empordà">PROINSTAL <em>EMPORDÀ</em></a><nav class="nav"><a href="{u["home"]}#serveis">{u["serveis"]}</a><a href="{u["home"]}#zones">{u["zones"]}</a>{altres_idiomes}<a class="cta" href="{wa(d.get("wa", ""))}">{u["contactar"]}</a></nav></div></header>
-<section class="{hero_class}" style="--hero:url('{comu["hero"]}')"><div class="wrap"><nav class="crumbs" aria-label="breadcrumb">{crumbs}</nav><div class="eyebrow">{e(d["eyebrow"])}</div><h1>{e(d["h1"])}</h1>{hero_contact}</div></section>
-<main><section><div class="wrap{" split" if comu["img"] else ""}"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p>{context_html}<ul class="checklist">{llista}</ul></div>{f'<img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy">' if comu["img"] else ""}</div></section>
+<section class="{hero_class}"{hero_style}><div class="wrap"><nav class="crumbs" aria-label="breadcrumb">{crumbs}</nav><div class="eyebrow">{e(d["eyebrow"])}</div><h1>{e(d["h1"])}</h1>{hero_contact}</div></section>
+<main><section><div class="wrap{" split" if comu["img"] else ""}"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p>{context_html}<ul class="checklist">{llista}</ul></div>{side_image}</div></section>
 {abans_despres(lang, comu["parelles"], d.get("gallery_intro", ""))}
 <section class="areas"><div class="wrap"><h2>{e(d["h2b"])}</h2><div class="grid">{fitxes}</div></div></section>
 {sections}<section class="faq"><div class="wrap"><div class="eyebrow">{u["faq_e"]}</div><h2>{u["faq"]}</h2>{faq_html}</div></section>

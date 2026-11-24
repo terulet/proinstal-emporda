@@ -36,11 +36,11 @@ PARELLES = {
 FOTOS = {
     "reformes": ("/interiores-reformas/reforma-interior-15.jpg", "/interiores-reformas/reforma-interior-07.jpg", ["bany", "garatge_int", "hum_escala"]),
     "banys": ("/banos-lavaderos-fontaneria/bano-fontaneria-04.jpg", "/interiores-reformas/reforma-interior-21.jpg", ["bany"]),
-    "cuines": ("/interiores-reformas/reforma-interior-15.jpg", "/interiores-reformas/reforma-interior-09.jpg", []),
+    "cuines": (None, "/assets/illustracions/reforma-cuina.jpg", []),
     "fontaneria": ("/banos-lavaderos-fontaneria/bano-fontaneria-05.jpg", "/interiores-reformas/reforma-interior-07.jpg", ["bany", "hum_safareig"]),
     "electricitat": ("/slide-05-garage-int-despres.jpg", "/interiores-reformas/reforma-interior-01.jpg", ["garatge_int", "garatge"]),
-    "aire": ("/interiores-reformas/reforma-interior-22.jpg", "/interiores-reformas/reforma-interior-29.jpg", []),
-    "aerotermia": ("/slide-06-solars-despres.jpg", "/banos-lavaderos-fontaneria/bano-fontaneria-05.jpg", []),
+    "aire": (None, "/assets/illustracions/aire-condicionat-split.jpg", []),
+    "aerotermia": (None, "/assets/illustracions/bomba-calor-aerotermia.jpg", []),
     "plaques": ("/slide-06-solars-despres.jpg", None, ["solars"]),
     "pergoles": ("/hero-portada/hero-reformas-instalaciones-01.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-19.jpg", ["terrassa", "garatge"]),
     "fusteria": ("/terrazas-suelos-exteriores/terraza-suelo-exterior-04.jpg", "/interiores-reformas/reforma-interior-23.jpg", ["furgo"]),
@@ -56,23 +56,27 @@ FOTOS = {
     "vilajuiga": ("/exteriores-fachadas-cerramientos/cerramiento-fachada-16.jpg", "/interiores-reformas/reforma-interior-23.jpg", []),
     "construccio": ("/hero-portada/hero-reformas-instalaciones-04.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-07.jpg", ["garatge", "terrassa"]),
     "rehabilitacio": ("/hero-portada/hero-reformas-instalaciones-03.jpg", None, ["hum_rebedor", "hum_volta", "hum_escala", "hum_terra"]),
-    "zona-costa-brava": ("/hero-portada/hero-reformas-instalaciones-01.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-13.jpg", ["terrassa", "bany", "solars"]),
+    "zona-costa-brava": ("/hero-portada/hero-reformas-instalaciones-01.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-19.jpg", ["terrassa", "bany", "solars"]),
     "zona-nord": ("/hero-portada/hero-reformas-instalaciones-03.jpg", "/interiores-reformas/reforma-interior-15.jpg", ["bany", "terrassa"]),
     "zona-costa": ("/exteriores-fachadas-cerramientos/cerramiento-fachada-01.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-22.jpg", ["terrassa", "hum_terra"]),
 }
+
+ILLUSTRACIONS = {"cuines", "aire", "aerotermia"}
 
 # Text alternatiu de la foto lateral quan la foto ha canviat (ca, es).
 # A les pàgines de municipi no es diu el poble: no sabem on es va fer cada foto.
 ALTS = {
     "reformes": ("Bany reformat amb dutxa i moble suspès", "Baño reformado con ducha y mueble suspendido"),
-    "cuines": ("Reforma interior en curs", "Reforma interior en curso"),
+    "cuines": ("Cuina amb armaris de fusta, aigüera i placa d’inducció", "Cocina con armarios de madera, fregadero y placa de inducción"),
     "fontaneria": ("Bany renovat amb dutxa i moble suspès", "Baño renovado con ducha y mueble suspendido"),
     "electricitat": ("Escala reformada amb aplic de llum nou", "Escalera reformada con aplique de luz nuevo"),
-    "aire": ("Dormitori reformat", "Dormitorio reformado"),
-    "aerotermia": ("Equip d’aigua en un armari exterior", "Equipo de agua en un armario exterior"),
+    "aire": ("Unitat interior d’aire condicionat tipus split muntada a la paret", "Unidad interior de aire acondicionado tipo split montada en la pared"),
+    "aerotermia": ("Unitat exterior d’una bomba de calor aire-aigua", "Unidad exterior de una bomba de calor aire-agua"),
+    "manteniment": ("Façana amb tancament de lames fosques", "Fachada con cerramiento de lamas oscuras"),
+    "zona-costa-brava": ("Detall de les lames orientables d’una pèrgola", "Detalle de las lamas orientables de una pérgola"),
     "figueres": ("Bany reformat", "Baño reformado"),
     "roses": ("Pèrgola bioclimàtica en una casa de costa", "Pérgola bioclimática en una casa de costa"),
-    "empuriabrava": ("Persiana i terrassa a tocar d’un canal", "Persiana y terraza junto a un canal"),
+    "empuriabrava": ("Coberta de lames d’una pèrgola vora un canal", "Cubierta de lamas de una pérgola junto a un canal"),
     "cadaques": ("Façana amb gelosia de fusta", "Fachada con celosía de madera"),
     "llanca": ("Tanca d’obra amb lames d’alumini", "Valla de obra con lamas de aluminio"),
     "lescala": ("Escala exterior en obra", "Escalera exterior en obra"),

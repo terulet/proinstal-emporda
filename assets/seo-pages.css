@@ -102,3 +102,24 @@ footer .fnote{margin-top:22px;padding-top:18px;border-top:1px solid #222;font-si
   html[lang="fr"] .municipal-contact h1{font-size:1.875rem}
   html[lang="fr"] .municipal-contact .municipal-contact-actions{margin-top:8px}
 }
+
+.hero.hero-text {
+    background: linear-gradient(112deg, #141413 24%, #292621 65%, #503b2e);
+}
+
+.service-illustration {
+    margin: 0;
+    min-width: 0;
+}
+
+.service-illustration img {
+    display: block;
+    object-position: center 42%;
+}
+
+.service-illustration figcaption {
+    color: #5f5f5f;
+    font-size: .9rem;
+    line-height: 1.4;
+    margin-top: .75rem;
+}
