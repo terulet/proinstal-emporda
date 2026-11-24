@@ -481,7 +481,7 @@ SERVEIS = [
  }
 },
 {
- "id": "fusteria", "hero": "/terrazas-suelos-exteriores/terraza-suelo-exterior-04.jpg", "img": "/interiores-reformas/reforma-interior-20.jpg",
+ "id": "fusteria", "hero": "/terrazas-suelos-exteriores/terraza-suelo-exterior-04.jpg", "img": "/interiores-reformas/reforma-interior-23.jpg",
  "tipus": "Fusteria",
  "ca": {
   "slug": "serveis/fusteria-emporda.html", "nom": "Fusteria",
@@ -489,7 +489,7 @@ SERVEIS = [
   "desc": "Fusteria a l’Alt i Baix Empordà: portes, finestres, armaris i mobles a mida, parquet, tarimes de terrassa i restauració de fusta per a cases i segones residències.",
   "eyebrow": "Fusteria · Mobles a mida · Tarimes", "h1": "Fusteria a l’Empordà",
   "intro": "Fem fusteria interior i exterior a l’Alt i Baix Empordà: portes, finestres, armaris i mobles a mida, parquet, tarimes de terrassa i restauració d’elements de fusta.",
-  "alt": "Moble de fusta fet a mida",
+  "alt": "Llit alt de fusta fet a mida amb escala",
   "e2": "Fusta interior i exterior", "h2": "Fet a mida per a cada casa",
   "lead": "Les mides de les cases antigues i de les segones residències rarament encaixen amb els mobles de catàleg. Prenem mides, proposem el material i ho muntem nosaltres.",
   "llista": ["Portes interiors i d’entrada.", "Finestres, porticons i persianes.", "Armaris encastats i mobles a mida.", "Parquet, tarimes i escales.", "Tarimes de terrassa i revestiments exteriors."],
@@ -508,7 +508,7 @@ SERVEIS = [
   "desc": "Carpintería en el Alt y Baix Empordà: puertas, ventanas, armarios y muebles a medida, parquet, tarimas de terraza y restauración de madera para casas y segundas residencias.",
   "eyebrow": "Carpintería · Muebles a medida · Tarimas", "h1": "Carpintería en el Empordà",
   "intro": "Hacemos carpintería interior y exterior en el Alt y Baix Empordà: puertas, ventanas, armarios y muebles a medida, parquet, tarimas de terraza y restauración de elementos de madera.",
-  "alt": "Mueble de madera hecho a medida",
+  "alt": "Cama alta de madera hecha a medida con escalera",
   "e2": "Madera interior y exterior", "h2": "Hecho a medida para cada casa",
   "lead": "Las medidas de las casas antiguas y de las segundas residencias rara vez encajan con los muebles de catálogo. Tomamos medidas, proponemos el material y lo montamos nosotros.",
   "llista": ["Puertas interiores y de entrada.", "Ventanas, contraventanas y persianas.", "Armarios empotrados y muebles a medida.", "Parquet, tarimas y escaleras.", "Tarimas de terraza y revestimientos exteriores."],

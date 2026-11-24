@@ -43,7 +43,7 @@ FOTOS = {
     "aerotermia": ("/slide-06-solars-despres.jpg", "/banos-lavaderos-fontaneria/bano-fontaneria-05.jpg", []),
     "plaques": ("/slide-06-solars-despres.jpg", None, ["solars"]),
     "pergoles": ("/hero-portada/hero-reformas-instalaciones-01.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-19.jpg", ["terrassa", "garatge"]),
-    "fusteria": ("/terrazas-suelos-exteriores/terraza-suelo-exterior-04.jpg", "/interiores-reformas/reforma-interior-20.jpg", ["furgo"]),
+    "fusteria": ("/terrazas-suelos-exteriores/terraza-suelo-exterior-04.jpg", "/interiores-reformas/reforma-interior-23.jpg", ["furgo"]),
     "humitats": ("/humedades-reparaciones/reparacion-humedad-12.jpg", None, ["hum_terra", "hum_habitacio", "hum_escala", "hum_volta", "hum_rebedor", "hum_escaleta", "hum_safareig"]),
     "manteniment": ("/hero-portada/hero-reformas-instalaciones-03.jpg", "/exteriores-fachadas-cerramientos/cerramiento-fachada-17.jpg", ["garatge", "hum_terra"]),
     "figueres": ("/interiores-reformas/reforma-interior-12.jpg", "/interiores-reformas/reforma-interior-07.jpg", []),
