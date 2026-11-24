@@ -226,9 +226,7 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     stylesheet = "/assets/seo-pages.css"
     if comu["id"] in ILLUSTRACIONS:
         stylesheet += "?v=20261124-illustracions"
-    analytics = '<script defer src="/assets/analytics.js"></script>'
-    if d.get("contact_intro") or d.get("separate_contact_events"):
-        analytics = '<script defer src="/assets/analytics.js?v=20261114" data-separate-contact-events></script>'
+    analytics = '<script defer src="/assets/analytics.js?v=20261124-destins"></script>'
     intro = f'<p>{e(d["intro"])}</p>'
     wa_button = f'<a class="button" href="{whatsapp}">{u["wa_btn"]}</a>'
     call_button = f'<a class="button secondary" href="tel:+{WA}" data-call-default>{u["trucar"]}</a>'
@@ -393,10 +391,6 @@ def portada_catala():
 def portada(lang, index):
     t = llegeix_diccionari(index, lang)
     txt = PORTADA[lang]
-
-    if lang == "fr":
-        # Manté la configuració d’analítica de la portada francesa.
-        index = re.sub(r'/assets/analytics\.js(?:\?[^"]+)?" data-separate-contact-events', '/assets/analytics.js"', index)
 
     def tradueix(m):
         clau = m.group(3)

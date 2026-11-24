@@ -1,11 +1,16 @@
 (function () {
   'use strict';
 
+  // Marked QA pages never start the analytics tag, even with prior consent.
+  if (new URLSearchParams(window.location.search).has('qa_contactos')) return;
+
   var consentKey = 'proinstal_analytics_consent';
   var measurementId = String(window.PROINSTAL_GA4_ID || '');
   var analyticsReady = false;
-  var separateContactEvents = document.currentScript &&
-    document.currentScript.hasAttribute('data-separate-contact-events');
+  var lineEvents = {
+    'tel:+34671510146': 'phone_click_line_1',
+    'tel:+34635014684': 'phone_click_line_2'
+  };
 
   function validMeasurementId() {
     return /^G-[A-Z0-9]{6,}$/.test(measurementId);
@@ -32,7 +37,7 @@
     if (!analyticsReady || typeof window.gtag !== 'function') return;
     window.gtag('event', eventName, parameters || {});
 
-    if (!separateContactEvents || eventName !== 'contact_click' || !parameters) return;
+    if (eventName !== 'contact_click' || !parameters) return;
     if (parameters.method === 'phone') {
       window.gtag('event', 'phone_click', { method: 'phone' });
     } else if (parameters.method === 'whatsapp' || parameters.method === 'whatsapp_form') {
@@ -90,7 +95,13 @@
       else if (href.indexOf('tel:') === 0) method = 'phone';
       else if (href.indexOf('mailto:') === 0) method = 'email';
       else if (href.indexOf('instagram.com/') !== -1) method = 'instagram';
-      if (method) window.proinstalTrack(method === 'instagram' ? 'outbound_click' : 'contact_click', { method: method });
+      if (!method) return;
+      window.proinstalTrack(method === 'instagram' ? 'outbound_click' : 'contact_click', { method: method });
+
+      // Use the actual link tapped, after the call button has picked a destination.
+      if (method === 'phone' && lineEvents[href]) {
+        window.proinstalTrack(lineEvents[href], { method: 'phone' });
+      }
     });
   }
 

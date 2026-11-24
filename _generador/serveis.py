@@ -502,7 +502,6 @@ SERVEIS = [
  "id": "fusteria", "hero": "/terrazas-suelos-exteriores/terraza-suelo-exterior-04.jpg", "img": "/interiores-reformas/reforma-interior-23.jpg",
  "tipus": "Fusteria",
  "ca": {
-  "separate_contact_events": True,
   "slug": "serveis/fusteria-emporda.html", "nom": "Fusteria",
   "title": "Fusteria a l’Empordà: portes, finestres i mobles a mida | Proinstal",
   "desc": "Fusteria a l’Alt i Baix Empordà: portes, finestres, armaris i mobles a mida, parquet, tarimes de terrassa i restauració de fusta per a cases i segones residències.",
@@ -522,7 +521,6 @@ SERVEIS = [
   "cta_h": "Necessites un fuster?", "cta_p": "Envia’ns fotos i mides aproximades del que vols fer o reparar.", "wa": "Hola Proinstal Empordà, necessito un treball de fusteria"
  },
  "es": {
-  "separate_contact_events": True,
   "slug": "es/servicios/carpinteria-emporda.html", "nom": "Carpintería",
   "title": "Carpintería en el Empordà: puertas, ventanas y muebles a medida | Proinstal",
   "desc": "Carpintería en el Alt y Baix Empordà: puertas, ventanas, armarios y muebles a medida, parquet, tarimas de terraza y restauración de madera para casas y segundas residencias.",
