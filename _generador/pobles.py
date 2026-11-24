@@ -21,6 +21,7 @@ POBLES = [
    ["Teniu lampista i electricista per a avaries a Figueres?", "Sí. Venim des de Vilajuïga, molt a prop. Envia’ns una foto per WhatsApp i et diem quan podem venir."]]
  },
  "es": {
+  'service_note': ('¿Salta el diferencial o necesitas renovar el cuadro, añadir enchufes o preparar un circuito? Consulta el ', 'es/servicios/electricista-emporda.html#electricidad-figueres', 'servicio de electricidad en Figueres', ' para saber qué podemos revisar y qué datos necesitamos para valorar el trabajo.'),
   "slug": "es/zonas/reformas-figueres.html",
   "title": "Reformas e instalaciones en Figueres | Proinstal Empordà",
   "desc": "Reformas, fontanero, electricista, aire acondicionado, placas solares y pérgolas en Figueres. Pisos, casas, locales y comunidades. Presupuesto gratis y visita sin coste.",
@@ -86,7 +87,7 @@ POBLES = [
  'h2b': 'Com preparar la teva reforma a Roses',
  'cta_h': 'Vols reformar un habitatge a Roses?',
  'cta_p': 'Explica’ns el tipus d’habitatge, les estances, els treballs desitjats i la data que et convé. '
-          'Horari de contacte: de dilluns a divendres, de 8 a 17 h. Dissabtes i diumenges tancat.',
+          'Horari de contacte: de dilluns a divendres, de 8 a 18 h. Dissabtes i diumenges tancat.',
  'wa': 'Hola Proinstal Empordà, voldria informació per a una reforma a Roses',
  'context': [['Consulta els detalls de les ', None],
              ['reformes integrals', 'serveis/reformes-integrals-emporda.html'],
@@ -145,7 +146,7 @@ POBLES = [
  'h2b': 'Cómo preparar tu reforma en Roses',
  'cta_h': '¿Quieres reformar una vivienda en Roses?',
  'cta_p': 'Cuéntanos el tipo de vivienda, las estancias, los trabajos deseados y la fecha que te conviene. '
-          'Horario de contacto: de lunes a viernes, de 8 a 17 h. Sábados y domingos cerrado.',
+          'Horario de contacto: de lunes a viernes, de 8 a 18 h. Sábados y domingos cerrado.',
  'wa': 'Hola Proinstal Empordà, quisiera información para una reforma en Roses',
  'context': [['Consulta los detalles de las ', None],
              ['reformas integrales', 'es/servicios/reformas-integrales-emporda.html'],
@@ -204,7 +205,7 @@ POBLES = [
  'h2b': 'Com preparar la teva reforma a Empuriabrava',
  'cta_h': 'Vols reformar un habitatge a Empuriabrava?',
  'cta_p': 'Explica’ns el tipus d’habitatge, les estances, els treballs desitjats i la data que et convé. '
-          'Horari de contacte: de dilluns a divendres, de 8 a 17 h. Dissabtes i diumenges tancat.',
+          'Horari de contacte: de dilluns a divendres, de 8 a 18 h. Dissabtes i diumenges tancat.',
  'wa': 'Hola Proinstal Empordà, voldria informació per a una reforma a Empuriabrava',
  'context': [['Consulta els detalls de les ', None],
              ['reformes integrals', 'serveis/reformes-integrals-emporda.html'],
@@ -263,7 +264,7 @@ POBLES = [
  'h2b': 'Cómo preparar tu reforma en Empuriabrava',
  'cta_h': '¿Quieres reformar una vivienda en Empuriabrava?',
  'cta_p': 'Cuéntanos el tipo de vivienda, las estancias, los trabajos deseados y la fecha que te conviene. '
-          'Horario de contacto: de lunes a viernes, de 8 a 17 h. Sábados y domingos cerrado.',
+          'Horario de contacto: de lunes a viernes, de 8 a 18 h. Sábados y domingos cerrado.',
  'wa': 'Hola Proinstal Empordà, quisiera información para una reforma en Empuriabrava',
  'context': [['Consulta los detalles de las ', None],
              ['reformas integrales', 'es/servicios/reformas-integrales-emporda.html'],
@@ -416,6 +417,7 @@ POBLES = [
 {
  "id": "vilajuiga", "nom": "Vilajuïga", "hero": "/equipos-materiales/equipo-material-04.jpg", "img": "/hero-portada/hero-reformas-instalaciones-10.jpg",
  "ca": {
+  'service_note': ('Si vols climatitzar una habitació o renovar un equip, consulta el servei d’', 'serveis/aire-condicionat-emporda.html#climatitzacio-vilajuiga', 'instal·lació i reparació de climatització a Vilajuïga', '. Indica quantes estances vols climatitzar i si ja hi ha un equip o una preinstal·lació.'),
   "slug": "zones/reformes-vilajuiga.html",
   "title": "Reformes i instal·lacions a Vilajuïga | Proinstal Empordà",
   "desc": "Proinstal Empordà té la seu a Vilajuïga: reformes, lampista, electricista, aire condicionat, plaques solars i pèrgoles a Vilajuïga, Pau, Palau-saverdera i Pedret i Marzà.",

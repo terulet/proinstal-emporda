@@ -1,0 +1,42 @@
+.call-info {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: .95rem;
+  line-height: 1.45;
+}
+
+.call-info small {
+  display: block;
+  color: #e0dad5;
+  font-size: .9em;
+}
+
+.call-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1rem;
+}
+
+.call-numbers a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  font-variant-numeric: tabular-nums;
+}
+
+.call-numbers a:hover,
+.call-numbers a:focus-visible {
+  color: #ffd1b0;
+}
+
+.service-details {
+  scroll-margin-top: 82px;
+}
+
+.service-details h2 {
+  font-size: clamp(1.7rem, 4.5vw, 3rem);
+}

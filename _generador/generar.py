@@ -18,6 +18,7 @@ AQUI = Path(__file__).resolve().parent
 ARREL = AQUI.parent
 DOMINI = "https://proinstalemporda.com"
 WA = "34671510146"
+PHONES = (("+34671510146", "671 510 146"), ("+34635014684", "635 014 684"))
 AVUI = date.today().isoformat()
 
 
@@ -59,7 +60,7 @@ UI = {
         "inici": "Inici", "serveis": "Serveis", "zones": "Zones", "contactar": "Contactar",
         "home": "/", "locale": "ca_ES",
         "wa_btn": "💬 Demanar pressupost per WhatsApp", "trucar": "📞 Trucar",
-        "contact_hours": "De dilluns a divendres, de 8 a 17 h.",
+        "contact_hours": "Horari de trucades · De dilluns a divendres, de 8 a 18 h.",
         "faq": "Preguntes freqüents", "faq_e": "Dubtes habituals",
         "on": "On treballem", "on_lead": "Sortim de Vilajuïga i treballem a tot l’Alt Empordà i a bona part del Baix Empordà.",
         "altres_serveis": "Altres serveis", "serveis_a": "Serveis a {nom}", "altres_pobles": "Altres municipis",
@@ -67,7 +68,7 @@ UI = {
         "cta_poble_h": "Tens una obra a {nom}?", "cta_poble_p": "Explica’ns què necessites i on és l’habitatge. Et respondrem per valorar una visita.",
         "wa_poble": "Hola Proinstal Empordà, tinc una consulta per a una obra a {nom}",
         "serveis_peu": "Serveis", "zones_peu": "Zones", "privacitat": "Privacitat",
-        "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona) · 671 510 146 · info@proinstalemporda.com",
+        "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona) · info@proinstalemporda.com",
         "tipus_poble": "Reformes i instal·lacions",
         "ad_e": "Feina feta", "ad_h": "Abans i després", "abans": "Abans", "despres": "Després",
     },
@@ -75,7 +76,7 @@ UI = {
         "inici": "Inicio", "serveis": "Servicios", "zones": "Zonas", "contactar": "Contactar",
         "home": "/es/", "locale": "es_ES",
         "wa_btn": "💬 Pedir presupuesto por WhatsApp", "trucar": "📞 Llamar",
-        "contact_hours": "De lunes a viernes, de 8 a 17 h.",
+        "contact_hours": "Horario de llamadas · De lunes a viernes, de 8 a 18 h.",
         "faq": "Preguntas frecuentes", "faq_e": "Dudas habituales",
         "on": "Dónde trabajamos", "on_lead": "Salimos de Vilajuïga y trabajamos en todo el Alt Empordà y en buena parte del Baix Empordà.",
         "altres_serveis": "Otros servicios", "serveis_a": "Servicios en {nom}", "altres_pobles": "Otros municipios",
@@ -83,7 +84,7 @@ UI = {
         "cta_poble_h": "¿Tienes una obra en {nom}?", "cta_poble_p": "Cuéntanos qué necesitas y dónde está la vivienda. Te responderemos para valorar una visita.",
         "wa_poble": "Hola Proinstal Empordà, tengo una consulta para una obra en {nom}",
         "serveis_peu": "Servicios", "zones_peu": "Zonas", "privacitat": "Privacidad",
-        "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona) · 671 510 146 · info@proinstalemporda.com",
+        "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona) · info@proinstalemporda.com",
         "tipus_poble": "Reformas e instalaciones",
         "ad_e": "Trabajo hecho", "ad_h": "Antes y después", "abans": "Antes", "despres": "Después",
     },
@@ -91,7 +92,7 @@ UI = {
         "inici": "Accueil", "serveis": "Services", "zones": "Zones", "contactar": "Contact",
         "home": "/fr/", "locale": "fr_FR",
         "wa_btn": "💬 Demander un devis par WhatsApp", "trucar": "📞 Appeler",
-        "contact_hours": "Du lundi au vendredi, de 8 h à 17 h.",
+        "contact_hours": "Horaires d’appel · Du lundi au vendredi, de 8 h à 18 h.",
         "faq": "Questions fréquentes", "faq_e": "Vos questions",
         "on": "Où nous intervenons", "on_lead": "Nous partons de Vilajuïga et intervenons dans tout l’Alt Empordà et une bonne partie du Baix Empordà : Roses, Empuriabrava, L’Escala, Cadaqués, Llançà, Figueres et Castelló d’Empúries.",
         "altres_serveis": "Autres services", "serveis_a": "Nos services à {nom}", "altres_pobles": "Autres communes",
@@ -99,7 +100,7 @@ UI = {
         "cta_poble_h": "Un projet à {nom} ?", "cta_poble_p": "Dites-nous ce dont vous avez besoin et où se trouve le logement. Nous vous répondons pour organiser une visite.",
         "wa_poble": "Bonjour Proinstal Empordà, j’ai un projet à {nom}",
         "serveis_peu": "Services", "zones_peu": "Communes", "privacitat": "Confidentialité",
-        "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona, Espagne) · +34 671 510 146 · info@proinstalemporda.com",
+        "empresa": "Proinstal Empordà · Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona, Espagne) · info@proinstalemporda.com",
         "tipus_poble": "Rénovation et installations",
         "ad_e": "Travaux réalisés", "ad_h": "Avant et après", "abans": "Avant", "despres": "Après",
     },
@@ -110,7 +111,7 @@ NEGOCI = {
     "@id": f"{DOMINI}/#business",
     "name": "Proinstal Empordà",
     "url": f"{DOMINI}/",
-    "telephone": "+34671510146",
+    "telephone": [number for number, _ in PHONES],
     "email": "info@proinstalemporda.com",
     "address": {"@type": "PostalAddress", "streetAddress": "Carrer Roca de la Balena 4", "postalCode": "17493",
                 "addressLocality": "Vilajuïga", "addressRegion": "Girona", "addressCountry": "ES"},
@@ -131,6 +132,21 @@ def chips(enllacos):
     return "".join(f'<a href="/{s}">{e(n)}</a>' for n, s in enllacos)
 
 
+def phone_links(lang, attrs=""):
+    prefix = "+34 " if lang == "fr" else ""
+    return "".join(f'<a href="tel:{number}"{attrs}>{prefix}{label}</a>' for number, label in PHONES)
+
+
+def call_info(lang):
+    return (f'<div class="call-info"><small>{UI[lang]["contact_hours"]}</small>'
+            f'<div class="call-numbers" data-call-list>{phone_links(lang, " data-call-choice")}</div></div>')
+
+
+def linked_note(parts):
+    before, slug, label, after = parts
+    return f'<p>{e(before)}<a href="/{e(slug)}">{e(label)}</a>{e(after)}</p>'
+
+
 def peu(lang):
     u = UI[lang]
     serveis = "".join(f'<a href="/{s[lang]["slug"]}">{e(s[lang]["nom"])}</a>' for s in en(SERVEIS, lang))
@@ -140,7 +156,7 @@ def peu(lang):
     return (f'<footer><div class="wrap fcols"><div><b>{u["serveis_peu"]}</b>{serveis}</div>'
             f'<div><b>{u["zones_peu"]}</b>{pobles}</div>'
             f'<div><b>Proinstal Empordà</b><a href="{u["home"]}">{u["inici"]}</a>'
-            f'<a href="tel:+34671510146">671 510 146</a><a href="mailto:info@proinstalemporda.com">info@proinstalemporda.com</a>'
+            f'{phone_links(lang)}<a href="mailto:info@proinstalemporda.com">info@proinstalemporda.com</a>'
             f'<a href="https://www.instagram.com/proinstalemporda/">Instagram</a>{priv}</div></div>'
             f'<div class="wrap fnote">© {date.today().year} {e(u["empresa"])}</div></footer>')
 
@@ -182,6 +198,11 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     context_html = f'<p class="lead">{context}</p>' if context else ""
     llista = "".join(f"<li>{e(x)}</li>" for x in d["llista"])
     fitxes = "".join(f'<article class="card"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in d["fitxes"])
+    sections = "".join(
+        f'<section class="service-details" id="{e(anchor)}"><div class="wrap">'
+        f'<h2>{e(title)}</h2><p class="lead">{e(text)}</p></div></section>'
+        for anchor, title, text in d.get("sections", [])
+    )
     faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
     whatsapp = wa(d.get("wa", ""))
     hero_class = "hero"
@@ -192,18 +213,18 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
         analytics = '<script defer src="/assets/analytics.js?v=20261114" data-separate-contact-events></script>'
     intro = f'<p>{e(d["intro"])}</p>'
     wa_button = f'<a class="button" href="{whatsapp}">{u["wa_btn"]}</a>'
-    call_button = f'<a class="button secondary" href="tel:+{WA}">{u["trucar"]}</a>'
-    hero_contact = f'{intro}<div class="actions">{wa_button}{call_button}</div>'
+    call_button = f'<a class="button secondary" href="tel:+{WA}" data-call-default>{u["trucar"]}</a>'
+    hero_contact = f'{intro}<div class="actions">{wa_button}{call_button}</div>{call_info(lang)}'
     final_contact = wa_button
     if d.get("contact_intro"):
         hero_class += " municipal-contact"
         body_class = ' class="municipal-contact-page"'
         stylesheet += "?v=20261117" if lang == "fr" else "?v=20261116"
         buttons = (f'<div class="actions municipal-contact-actions">'
-                   f'<a class="button" href="tel:+{WA}">{u["trucar"]}</a>'
+                   f'<a class="button" href="tel:+{WA}" data-call-default>{u["trucar"]}</a>'
                    f'<a class="button secondary" href="{whatsapp}">WhatsApp</a></div>')
         hero_contact = (f'<p class="municipal-intro">{e(d["contact_intro"])}</p>{buttons}'
-                        f'<p class="municipal-hours">{u["contact_hours"]}</p>{intro}')
+                        f'{call_info(lang)}{intro}')
         if not d.get("contact_steps"):
             final_contact = buttons
     # Extended contact options are opt-in per page; other generated pages stay unchanged.
@@ -211,13 +232,13 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
     if lang == "fr" and d.get("contact_steps"):
         steps = "".join(f"<li>{e(step)}</li>" for step in d["contact_steps"])
         contact_extra = (f'<div class="actions" style="justify-content:center">'
-                         f'<a class="button secondary" href="tel:+34671510146">📞 Appeler le 671 510 146</a>'
+                         f'<a class="button secondary" href="tel:+{WA}" data-call-default>{u["trucar"]}</a>'
                          f'<a class="button secondary" href="/fr/#contacte">✉️ Formulaire de contact</a></div>'
                          f'<h3>Comment faire votre demande</h3>'
                          f'<ol style="max-width:680px;margin:0 auto;text-align:left">{steps}</ol>')
     if d.get("cta_phone"):
         contact_extra += (f'<div class="actions" style="justify-content:center">'
-                          f'<a class="button secondary" href="tel:+34671510146">{u["trucar"]}</a></div>')
+                          f'<a class="button secondary" href="tel:+{WA}" data-call-default>{u["trucar"]}</a></div>')
     crumbs = " › ".join(
         (f'<a href="/{s}">{e(n)}</a>' if s else f'<a href="{u["home"]}">{e(n)}</a>') if i < len(molla) - 1 else f"<span>{e(n)}</span>"
         for i, (n, s) in enumerate(molla))
@@ -225,15 +246,15 @@ def pagina(lang, d, comu, cos_extra, schema_principal, molla):
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(d["title"])}</title>
 <meta name="description" content="{e(d["desc"])}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="{canon}">
 {hreflang}
-<meta property="og:type" content="website"><meta property="og:locale" content="{u["locale"]}"><meta property="og:site_name" content="Proinstal Empordà"><meta property="og:title" content="{e(d["h1"])}"><meta property="og:description" content="{e(d["desc"])}"><meta property="og:url" content="{canon}"><meta property="og:image" content="{DOMINI}{comu["hero"]}">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="{stylesheet}"><script src="/assets/analytics-config.js"></script>{analytics}
+<meta property="og:type" content="website"><meta property="og:locale" content="{u["locale"]}"><meta property="og:site_name" content="Proinstal Empordà"><meta property="og:title" content="{e(d["h1"])}"><meta property="og:description" content="{e(d.get("og_desc", d["desc"]))}"><meta property="og:url" content="{canon}"><meta property="og:image" content="{DOMINI}{comu["hero"]}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="{stylesheet}"><link rel="stylesheet" href="/assets/contact-phones.css"><script defer src="/assets/contact-phones.js"></script><script src="/assets/analytics-config.js"></script>{analytics}
 <script type="application/ld+json">{ld}</script>
 </head><body{body_class}><header class="topbar"><div class="wrap"><a class="brand" href="{u["home"]}"><img src="/logo.jpg" alt="Proinstal Empordà">PROINSTAL <em>EMPORDÀ</em></a><nav class="nav"><a href="{u["home"]}#serveis">{u["serveis"]}</a><a href="{u["home"]}#zones">{u["zones"]}</a>{altres_idiomes}<a class="cta" href="{wa(d.get("wa", ""))}">{u["contactar"]}</a></nav></div></header>
 <section class="{hero_class}" style="--hero:url('{comu["hero"]}')"><div class="wrap"><nav class="crumbs" aria-label="breadcrumb">{crumbs}</nav><div class="eyebrow">{e(d["eyebrow"])}</div><h1>{e(d["h1"])}</h1>{hero_contact}</div></section>
 <main><section><div class="wrap{" split" if comu["img"] else ""}"><div><div class="eyebrow">{e(d["e2"])}</div><h2>{e(d["h2"])}</h2><p class="lead">{e(d["lead"])}</p>{context_html}<ul class="checklist">{llista}</ul></div>{f'<img src="{comu["img"]}" alt="{e(d["alt"])}" loading="lazy">' if comu["img"] else ""}</div></section>
 {abans_despres(lang, comu["parelles"], d.get("gallery_intro", ""))}
 <section class="areas"><div class="wrap"><h2>{e(d["h2b"])}</h2><div class="grid">{fitxes}</div></div></section>
-<section class="faq"><div class="wrap"><div class="eyebrow">{u["faq_e"]}</div><h2>{u["faq"]}</h2>{faq_html}</div></section>
+{sections}<section class="faq"><div class="wrap"><div class="eyebrow">{u["faq_e"]}</div><h2>{u["faq"]}</h2>{faq_html}</div></section>
 {cos_extra}</main>
 <section class="contact"><div class="wrap"><h2>{e(d["cta_h"])}</h2><p>{e(d["cta_p"])}</p>{final_contact}{contact_extra}</div></section>{peu(lang)}</body></html>
 """
@@ -251,6 +272,10 @@ def pagines_servei():
                          "areaServed": [{"@type": "City", "name": p["nom"]} for p in POBLES] + [{"@type": "AdministrativeArea", "name": "Alt Empordà"}, {"@type": "AdministrativeArea", "name": "Baix Empordà"}],
                          "url": url(d["slug"]), "inLanguage": lang}
             molla = [(u["inici"], None), (d["nom"], d["slug"])]
+            if d.get("local_section"):
+                anchor, title, text, note = d["local_section"]
+                extra = (f'<section class="areas" id="{e(anchor)}"><div class="wrap"><h2>{e(title)}</h2>'
+                         f'<p>{e(text)}</p>{linked_note(note)}</div></section>' + extra)
             yield d["slug"], pagina(lang, d, s, extra, principal, molla)
 
 
@@ -274,7 +299,8 @@ def pagines_poble():
                 altres = [(o["nom"], o[lang]["slug"]) for o in en(POBLES, lang) if o is not p]
                 bloc_pobles = f'<h3 class="sub">{u["altres_pobles"]}</h3><div class="chips">{chips(altres)}</div>'
                 area = {"@type": "City", "name": p["nom"]}
-            extra = (f'<section class="areas"><div class="wrap"><h2>{u["serveis_a"].format(nom=nom)}</h2>'
+            service_note = linked_note(d["service_note"]) if d.get("service_note") else ""
+            extra = (f'<section class="areas"><div class="wrap"><h2>{u["serveis_a"].format(nom=nom)}</h2>{service_note}'
                      f'<div class="chips">{chips(serveis)}</div>{bloc_pobles}</div></section>')
             principal = {"@type": "Service", "name": d["h1"], "serviceType": u["tipus_poble"], "provider": {"@id": NEGOCI["@id"]},
                          "areaServed": area, "url": url(d["slug"]), "inLanguage": lang}
@@ -351,12 +377,8 @@ def portada(lang, index):
     txt = PORTADA[lang]
 
     if lang == "fr":
-        # Les noves accions i mètriques de portada només són per a CA i ES.
+        # Manté la configuració d’analítica de la portada francesa.
         index = re.sub(r'/assets/analytics\.js(?:\?[^"]+)?" data-separate-contact-events', '/assets/analytics.js"', index)
-        index = re.sub(r'^\.hb:has\(\.hero-call\)[^\n]*\n', '', index, flags=re.M)
-        index = re.sub(r'^<a class="btn bg hero-call"[^\n]*\n', '', index, flags=re.M)
-        index = index.replace('data-t="hcontact"', 'data-t="hc1"')
-        index = re.sub(r',hcontact:"[^"]*",hcall:"[^"]*"', '', index)
 
     def tradueix(m):
         clau = m.group(3)
@@ -376,6 +398,10 @@ def portada(lang, index):
     ]:
         cos = substitueix(cos, vell, nou)
     script = substitueix(script, "var CL='ca';", f"var CL='{lang}';")
+    if lang == "es":
+        cos = substitueix(cos, '<nav>\n', '<a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>\n<nav>\n')
+        cos = substitueix(cos, '<header class="hero">', '<main id="contenido-principal" tabindex="-1">\n<header class="hero">')
+        cos = substitueix(cos, '<footer>', '</main>\n<footer>')
     cos = bloc_enllacos(lang, cos)
     for vell, nou in [
         ('<html lang="ca">', f'<html lang="{lang}">'),
@@ -416,15 +442,16 @@ def llms():
     l = ["# Proinstal Empordà", "",
          "> Empresa de reformes i instal·lacions de Vilajuïga (Alt Empordà, Girona). Un sol equip fa reformes integrals, "
          "lampisteria i fontaneria, electricitat, aire condicionat, aerotèrmia, plaques solars, fusteria, pèrgoles, "
-         "reparació d’humitats i manteniment de segones residències a l’Alt i Baix Empordà. "
+         "reparació d’humitats, calefacció per infrarojos IR-Radiant, neteja de circuits de calefacció, domòtica KNX i manteniment de segones residències a l’Alt i Baix Empordà. "
          "Atén en català, castellà, francès, anglès i alemany.", "",
          "- Adreça: Carrer Roca de la Balena 4, 17493 Vilajuïga (Girona)",
          "- Telèfons: +34 671 510 146 · +34 635 014 684 (també WhatsApp al 671 510 146)",
+         "- Horari de trucades: de dilluns a divendres, de 8 a 18 h.",
          "- Correu: info@proinstalemporda.com",
          "- Instagram: https://www.instagram.com/proinstalemporda/",
          "- Pressupost i visita sense cost.", "",
          "## Serveis (català)", ""]
-    l += [f"- [{s['ca']['h1']}]({url(s['ca']['slug'])}): {s['ca']['intro']}" for s in SERVEIS]
+    l += [f"- [{s['ca']['h1']}]({url(s['ca']['slug'])}): {s['ca'].get('llms_intro', s['ca']['intro'])}" for s in SERVEIS]
     l += ["", "## Servicios (castellano)", ""]
     l += [f"- [{s['es']['h1']}]({url(s['es']['slug'])}): {s['es']['intro']}" for s in SERVEIS]
     l += ["", "## Services (français)", ""]

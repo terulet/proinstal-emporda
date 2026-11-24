@@ -268,6 +268,10 @@ SERVEIS = [
  "id": "electricitat", "hero": "/slide-05-garage-int-despres.jpg", "img": "/equipos-materiales/equipo-material-04.jpg",
  "tipus": "Electricista",
  "ca": {
+  "sections": [
+   ["domotica-knx", "Instal·lacions de domòtica KNX", "Projectem i instal·lem sistemes de domòtica KNX amb un equip d’integradors especialitzats. Podem coordinar la il·luminació, les persianes i la climatització des d’un mateix sistema. T’ajudem a triar els equips de marques especialitzades segons l’ús de cada espai."],
+  ],
+  'llms_intro': 'Som electricistes a l’Empordà. Revisem i renovem quadres, circuits i punts de llum, i localitzem avaries en habitatges, locals i comunitats. Des de Vilajuïga treballem a Figueres, Roses, Empuriabrava i altres poblacions de l’Alt i Baix Empordà.',
   "slug": "serveis/electricitat-climatitzacio-emporda.html", "nom": "Electricista",
   "title": "Electricista a l’Empordà | Proinstal Empordà",
   "desc": "Electricista a Figueres, Roses, Empuriabrava i tot l’Empordà: quadres, avaries, nous circuits, il·luminació, punts de càrrega i renovació d’instal·lacions antigues.",
@@ -286,9 +290,13 @@ SERVEIS = [
    ["Cal renovar la instal·lació d’una casa antiga?", "Si té cables sense terra, un quadre antic o pocs circuits, sí que és recomanable. Primer la revisem i et diem què és urgent i què pot esperar."],
    ["Instal·leu punts de càrrega per a cotxe elèctric?", "Sí. Revisem la potència contractada i el quadre, i fem el circuit fins al garatge o la plaça d’aparcament."],
    ["Feu també l’aire condicionat i les plaques solars?", "Sí, amb el mateix equip. Tenim pàgines pròpies per a l’aire condicionat, l’aerotèrmia i les plaques solars."]],
-  "cta_h": "Necessites un electricista?", "cta_p": "Per demanar pressupost, indica el municipi, el tipus d’immoble i què cal reparar o instal·lar. Si és una avaria, explica quan passa i quina zona afecta. Atenem de dilluns a divendres, de 8 a 17 h.", "cta_phone": True, "wa": "Hola Proinstal Empordà, necessito un electricista"
+  "cta_h": "Necessites un electricista?", "cta_p": "Per demanar pressupost, indica el municipi, el tipus d’immoble i què cal reparar o instal·lar. Si és una avaria, explica quan passa i quina zona afecta. Atenem de dilluns a divendres, de 8 a 18 h.", "cta_phone": True, "wa": "Hola Proinstal Empordà, necessito un electricista"
  },
  "es": {
+  "sections": [
+   ["domotica-knx", "Instalaciones de domótica KNX", "Diseñamos e instalamos sistemas de domótica KNX con un equipo de integradores especializados. Podemos coordinar la iluminación, las persianas y la climatización desde un mismo sistema. Te ayudamos a elegir equipos de marcas especializadas según el uso de cada espacio."],
+  ],
+  'local_section': ('electricidad-figueres', 'Electricista en Figueres', 'Revisamos averías, cuadros eléctricos, circuitos e iluminación en viviendas y locales de Figueres. Si se dispara una protección, indícanos cuándo ocurre y qué zonas se quedan sin luz. Si vas a reformar, cuéntanos qué aparatos quieres instalar y dónde necesitas las nuevas tomas. Así podemos valorar el alcance de la visita.', ('Si la instalación forma parte de una obra más amplia, consulta también las ', 'es/zonas/reformas-figueres.html', 'reformas e instalaciones en Figueres', '.')),
   "slug": "es/servicios/electricista-emporda.html", "nom": "Electricista",
   "title": "Electricista en el Empordà | Proinstal Empordà",
   "desc": "Electricista en Figueres, Roses, Empuriabrava y todo el Empordà: cuadros, averías, circuitos nuevos, iluminación, puntos de carga y renovación de instalaciones antiguas.",
@@ -312,9 +320,15 @@ SERVEIS = [
  "id": "aire", "hero": "/interiores-reformas/reforma-interior-22.jpg", "img": "/interiores-reformas/reforma-interior-17.jpg",
  "tipus": "Instal·lació d’aire condicionat",
  "ca": {
+  "sections": [
+   ["ir-radiant", "Plaques de calefacció per infrarojos IR-Radiant", "Instal·lem plaques de calefacció per infrarojos IR-Radiant per a interiors i exteriors. Valorem on vols notar l’escalfor, la ubicació de les plaques i el model adequat per a cada espai."],
+   ["neteja-circuits", "Neteja i manteniment de circuits de calefacció", "Revisem i netegem els circuits de calefacció per ajudar a recuperar-ne el rendiment. Si els radiadors escalfen de manera irregular o hi ha zones que es queden fredes, comprovem l’estat del circuit abans de proposar la intervenció."],
+  ],
+  "og_desc": "Instal·lació, reparació i manteniment d’aire condicionat a Figueres, Roses, Empuriabrava i tot l’Empordà. Splits, conductes i bombes de calor per a cases i locals.",
+  'local_section': ('climatitzacio-vilajuiga', 'Instal·lació de climatització a Vilajuïga', 'Instal·lem i reparem aire condicionat a Vilajuïga. Per a una sola estança podem valorar un split. Si vols climatitzar diverses habitacions, revisem l’espai disponible per als conductes i la ubicació de la unitat exterior. Si ja tens un equip, indica’ns si falla en fred o en calefacció i, si la coneixes, la marca.', ('Si la climatització forma part d’una obra, consulta també les ', 'zones/reformes-vilajuiga.html', 'reformes i instal·lacions a Vilajuïga', '.')),
   "slug": "serveis/aire-condicionat-emporda.html", "nom": "Aire condicionat",
   "title": "Aire condicionat a l’Empordà: instal·lació i reparació | Proinstal",
-  "desc": "Instal·lació, reparació i manteniment d’aire condicionat a Figueres, Roses, Empuriabrava i tot l’Empordà. Splits, conductes i bombes de calor per a cases i locals.",
+  "desc": 'Instal·lació, reparació i manteniment de climatització a Vilajuïga, Figueres, Roses i l’Empordà. Splits i equips per conductes per a cases i locals.',
   "eyebrow": "Climatització · Splits · Conductes", "h1": "Aire condicionat a l’Empordà",
   "intro": "Instal·lem, reparem i mantenim aire condicionat a l’Alt i Baix Empordà: splits, multisplits, conductes i bombes de calor que també escalfen a l’hivern, per a cases, apartaments i locals.",
   "alt": "Habitació climatitzada en un habitatge de l’Empordà",
@@ -332,6 +346,10 @@ SERVEIS = [
   "cta_h": "Vols instal·lar o reparar l’aire condicionat?", "cta_p": "Digues-nos quantes estances vols climatitzar, el municipi i si tens un equip antic.", "wa": "Hola Proinstal Empordà, vull informació sobre aire condicionat"
  },
  "es": {
+  "sections": [
+   ["ir-radiant", "Paneles de calefacción por infrarrojos IR-Radiant", "Instalamos paneles de calefacción por infrarrojos IR-Radiant para interiores y exteriores. Valoramos dónde quieres notar el calor, la ubicación de los paneles y el modelo adecuado para cada espacio."],
+   ["neteja-circuits", "Limpieza y mantenimiento de circuitos de calefacción", "Revisamos y limpiamos circuitos de calefacción para ayudar a recuperar su rendimiento. Si los radiadores calientan de manera irregular o hay zonas que se quedan frías, comprobamos el estado del circuito antes de proponer la intervención."],
+  ],
   "slug": "es/servicios/aire-acondicionado-emporda.html", "nom": "Aire acondicionado",
   "title": "Aire acondicionado en el Empordà: instalación y reparación | Proinstal",
   "desc": "Instalación, reparación y mantenimiento de aire acondicionado en Figueres, Roses, Empuriabrava y todo el Empordà. Splits, conductos y bombas de calor para casas y locales.",
